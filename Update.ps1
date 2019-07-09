@@ -1,0 +1,2 @@
+
+$MyInvocation.MyCommand.Name

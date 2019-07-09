@@ -1,0 +1,1 @@
+Powershell.exe -Command "& '.\HyperV-Manager.ps1'"
