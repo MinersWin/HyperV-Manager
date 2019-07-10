@@ -31,7 +31,7 @@
       - Wenn Template Vorhanden soll das Benutzt werden (spart Installation)
       - Erstellung eines Clients für die Azubis, mit welchem sie VMs beantragen können.
       - Automatische Installation der Verwaltungsdienste auf den Azubi-Computern
-      - Möglichkeit RAM,CPU,NETZWERK,FESTPLATTENGRĂSSE usw. zu ändern
+      - Möglichkeit RAM,CPU,NETZWERK,FESTPLATTENGRÖßE usw. zu ändern
       - Start-Animation
       - ...
 
