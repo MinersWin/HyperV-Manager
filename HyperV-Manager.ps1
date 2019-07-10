@@ -12,48 +12,49 @@
         B.E.T.A. 1.9.0 - MinersWin - 10.04.2019 - Nun mit GUI + Auswahl des Hosts + Auswahl der VM
         B.E.T.A. 1.9.1 - MinersWin - 11.04.2019 - Erstellung einer TextBox um dauerhaft den Aktuellen Status anzeigen zu lassen + Erstellung eigener VMs (Ohne Funktion)
         B.E.T.A. 1.9.2 - MinersWin - 12.04.2019 - Einbringung einiger Funktionen: Snapshots, ISOS, und Start/Stop
-        B.E.T.A. 1.9.3 - MinersWin - 15.04.2019 - MÃ¶glichkeit der Erstellung Virtueller Switches, Bearbeiten der VMs, ERstellung von Startskripten, Installation der Verwaltungstools + Rechtevergabe
-        B.E.T.A. 1.9.4 - MinersWin - 16.04.2019 - Automatische erkennung der VMs, Ã¼bersichtlichere Formatierung, Einbindung der Thumbnailfunktion + ISO Wechsel + Feedback Form
-        B.E.T.A. 1.9.5 - MinersWin - 17.04.2019 - Erstellung einer Config.txt, Automatisches Erstellen einer temporÃ¤ren log-Datei, Einbau der Funktion, die Log + Computerinfos bei Problemen an den Entwickler zu senden
-        B.E.T.A. 1.9.6 - MinersWin - 18.04.2019 - MÃ¶glichkeit zur Speicherung der Log Datei, Automatisch Ã¼berprÃ¼fung der Version
-        B.E.T.A. 1.9.7 - MinersWin - 29.04.2019 - MÃ¶glichkeit der Erstellung von VMs, einfÃ¼gen einer Feedback Funktion
-        B.E.T.A. 1.9.8 - MinersWin - 30.04.2019 - MÃ¶glichkeit des An/Ausschaltens von VMs + MÃ¶glichkeit zur Festlegung von Prozessorkernen, RAM und ISO Datei bei der Erstellung
-        B.E.T.A. 1.9.9 - MinersWin - 20.05.2019 - MÃ¶glichkeit zur erstellung von Virtuellen Switches und verbesserung der LOG Datei
+        B.E.T.A. 1.9.3 - MinersWin - 15.04.2019 - Möglichkeit der Erstellung Virtueller Switches, Bearbeiten der VMs, ERstellung von Startskripten, Installation der Verwaltungstools + Rechtevergabe
+        B.E.T.A. 1.9.4 - MinersWin - 16.04.2019 - Automatische erkennung der VMs, übersichtlichere Formatierung, Einbindung der Thumbnailfunktion + ISO Wechsel + Feedback Form
+        B.E.T.A. 1.9.5 - MinersWin - 17.04.2019 - Erstellung einer Config.txt, Automatisches Erstellen einer temporären log-Datei, Einbau der Funktion, die Log + Computerinfos bei Problemen an den Entwickler zu senden
+        B.E.T.A. 1.9.6 - MinersWin - 18.04.2019 - Möglichkeit zur Speicherung der Log Datei, Automatisch überprüfung der Version
+        B.E.T.A. 1.9.7 - MinersWin - 29.04.2019 - Möglichkeit der Erstellung von VMs, einfügen einer Feedback Funktion
+        B.E.T.A. 1.9.8 - MinersWin - 30.04.2019 - Möglichkeit des An/Ausschaltens von VMs + Möglichkeit zur Festlegung von Prozessorkernen, RAM und ISO Datei bei der Erstellung
+        B.E.T.A. 1.9.9 - MinersWin - 20.05.2019 - Möglichkeit zur erstellung von Virtuellen Switches und verbesserung der LOG Datei
         B.E.T.A. 1.9.10 - MinersWin - 21.05.2019 - Fertigstellung der VM Edit Funktion + Autosenden des Feedbacks an den Creator.
         B.E.T.A. 1.9.11 - MinersWin - 02.07.2019 - Entfernen des MailServers + Configupdate
-        B.E.T.A. 1.9.12 - MinersWin - 04.07.2019 - Integration von BallonTips
+        B.E.T.A. 1.9.12 - MinersWin - 04.07.2019 - Integration von BallonTips, 
+        B.E.T.A. 1.9.13 - MinersWin - 10.07.2019 - Möglichkeit zur Änderung des Namens in der Config Datei sowie eintragen eigener Mail Server, Automatische erstellung der Config Datei, Erstellung einer Start.bat, Überarbeitung der Readme, Update auf GitHub
 
     .BEISPIEL
         .\HyperV-Manager.ps1 
     .IN_ZUKUNFT_GEPLANT
       - Automatische Erstellung von Connect-Skripts
-      - Automatische Rechtezuweisung fÃ¼r die Einzelen Personen
+      - Automatische Rechtezuweisung für die Einzelen Personen
       - Wenn Template Vorhanden soll das Benutzt werden (spart Installation)
-      - Erstellung eines Clients fÃ¼r die Azubis, mit welchem sie VMs beantragen kÃ¶nnen.
+      - Erstellung eines Clients für die Azubis, mit welchem sie VMs beantragen können.
       - Automatische Installation der Verwaltungsdienste auf den Azubi-Computern
-      - MÃ¶glichkeit RAM,CPU,NETZWERK,FESTPLATTENGRÃ–SSE usw. zu Ã¤ndern
+      - Möglichkeit RAM,CPU,NETZWERK,FESTPLATTENGRÃ–SSE usw. zu ändern
       - Start-Animation
       - ...
 
     .LIZENZ
       Es ist Verboten diese Dateien Weiterzuverkaufen, als Eigenwerk auszugeben oder zu Lizenzieren.
-      Es ist Erlaubt Teile des Codes bzw. Dateien fÃ¼r eigene Projekte zu Ã¼bernehmen, diese Projekte dÃ¼rfen jedoch keinen Kommerziellen Nutzen haben, mÃ¼ssen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt werden.
+      Es ist Erlaubt Teile des Codes bzw. Dateien für eigene Projekte zu übernehmen, diese Projekte dürfen jedoch keinen Kommerziellen Nutzen haben, müssen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt werden.
       Das Projekt unterliegt der Creative Commons Lizenz 4.0 mit "by", "nc" und "sa" Modulen, d.h. Der Name des Urhebers muss genannt werden, Kommerzielle Nutzung ist Verboten, die Weitergabe muss unter den Selben bedingungen geschehen. 
 
     .PROBLEMBEHANDLUNG
-      - Sollte es zu diesem Fehler kommen, "Die Datei .\HyperV-Manager.ps1 kann nicht geladen werden, da die AusfÃ¼hrung von Skripts auf diesem System deaktiviert ist." lÃ¤sst sich dieses durch das AusfÃ¼hrn des Folgenden Befehls beheben: "Set-ExecutionPolicy Unrestricted -Scope Process"
-      - Sollte es zu diesem Fehler kommen, "Get-ADComputer : Es wurde kein Standardserver gefunden, auf dem die Active Directory-Webdienste ausgefÃ¼hrt werden." Kann es sein, dass sich der Computer in keiner DomÃ¤ne befindet, oder dass die Active Directory Dienste nicht Installiert bzw. Aktiviert sind.#
-      - Sollte es zu diesem Fehler kommen, "Get-VM : Sie besitzen nicht die erforderliche Berechtigung fÃ¼r diese Aufgabe. Wenden Sie sich an den Administrator der Autorisierungsrichtlinie fÃ¼r Computer {Hostname}." Kann es sein, dass entweder die Hyper-V Plattform nicht auf dem ZielServer Installiert ist oder dem Nutzer die Rechte der Remotedesktopverwaltung fehlen.
-      - Sollte es zu diesem Fehler kommen, "Get-VM : Von Hyper-V wurde kein virtueller Computer mit dem Namen {Name} gefunden." dann ist entweder der Name der VM falsch eingegeben worden oder eine ungÃ¼ltige VM ausgewÃ¤hlt worden.
+      - Sollte es zu diesem Fehler kommen, "Die Datei .\HyperV-Manager.ps1 kann nicht geladen werden, da die Ausführung von Skripts auf diesem System deaktiviert ist." lässt sich dieses durch das Ausführn des Folgenden Befehls beheben: "Set-ExecutionPolicy Unrestricted -Scope Process"
+      - Sollte es zu diesem Fehler kommen, "Get-ADComputer : Es wurde kein Standardserver gefunden, auf dem die Active Directory-Webdienste ausgeführt werden." Kann es sein, dass sich der Computer in keiner Domäne befindet, oder dass die Active Directory Dienste nicht Installiert bzw. Aktiviert sind.#
+      - Sollte es zu diesem Fehler kommen, "Get-VM : Sie besitzen nicht die erforderliche Berechtigung für diese Aufgabe. Wenden Sie sich an den Administrator der Autorisierungsrichtlinie für Computer {Hostname}." Kann es sein, dass entweder die Hyper-V Plattform nicht auf dem ZielServer Installiert ist oder dem Nutzer die Rechte der Remotedesktopverwaltung fehlen.
+      - Sollte es zu diesem Fehler kommen, "Get-VM : Von Hyper-V wurde kein virtueller Computer mit dem Namen {Name} gefunden." dann ist entweder der Name der VM falsch eingegeben worden oder eine ungültige VM ausgewählt worden.
 
     .FAQ
       - Ich habe einen Fehler gefunden, wo kann ich ihn Melden? - Dazu kann man einfach im Reiter Aktion auf Feedback gehen und im Feld das Feedback eingeben. Alternativ einfach eine E-Mail an "HyperV-Manager@MinersWin.de" schreiben.
-      - Werden irgenwelche Daten gesammelt? - Die Log-Dateien werden mit dem Beenden des Programms gelÃ¶scht, sofern sie nicht Ã¼ber den Button Informationen Senden an den Ersteller Gesendet wurden.
+      - Werden irgenwelche Daten gesammelt? - Die Log-Dateien werden mit dem Beenden des Programms gelöscht, sofern sie nicht über den Button Informationen Senden an den Ersteller Gesendet wurden.
 
 #>
 
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
-#Setzt $MyDir zum Pfad, in welchem das Skript ausgefÃ¼hrt wird.
+#Setzt $MyDir zum Pfad, in welchem das Skript ausgeführt wird.
 $MyDir = Split-Path $script:MyInvocation.MyCommand.Path
 
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
@@ -492,7 +493,7 @@ $LinkLabel1.Name = [System.String]'LinkLabel1'
 $LinkLabel1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]112,[System.Int32]14))
 $LinkLabel1.TabIndex = [System.Int32]12
 $LinkLabel1.TabStop = $true
-$LinkLabel1.Text = [System.String]'https://mobatilo.de'
+$LinkLabel1.Text = $ConfigAboutSite
 $LinkLabel1.UseCompatibleTextRendering = $true
 $LinkLabel1.add_LinkClicked($LinkLabel1_LinkClicked)
 #
@@ -512,7 +513,7 @@ $Label20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label20.Name = [System.String]'Label20'
 $Label20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]733,[System.Int32]16))
 $Label20.TabIndex = [System.Int32]22
-$Label20.Text = [System.String]'Kommerziellen Nutzen haben, mÃ¼ssen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt'
+$Label20.Text = [System.String]'Kommerziellen Nutzen haben, müssen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt'
 $Label20.UseCompatibleTextRendering = $true
 #
 #Label21
@@ -643,7 +644,7 @@ $Label19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label19.Name = [System.String]'Label19'
 $Label19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]594,[System.Int32]16))
 $Label19.TabIndex = [System.Int32]21
-$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien fÃ¼r eigene Projekte zu Ã¼bernehmen, diese Projekte dÃ¼rfen jedoch keinen'
+$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien für eigene Projekte zu übernehmen, diese Projekte dürfen jedoch keinen'
 $Label19.UseCompatibleTextRendering = $true
 #
 #Label18
@@ -1048,7 +1049,7 @@ $Button25.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @(
 $Button25.Name = [System.String]'Button25'
 $Button25.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]138,[System.Int32]23))
 $Button25.TabIndex = [System.Int32]28
-$Button25.Text = [System.String]'Ã–ffne Hyper-V Manager'
+$Button25.Text = [System.String]'Öffne Hyper-V Manager'
 $Button25.UseCompatibleTextRendering = $true
 $Button25.UseVisualStyleBackColor = $true
 #
@@ -1684,7 +1685,7 @@ $FormOverview.Controls.Add($Panel1)
 $FormOverview.Controls.Add($LabelOverview)
 $FormOverview.Controls.Add($MenuStripOverview)
 $FormOverview.MainMenuStrip = $MenuStripOverview
-$FormOverview.Text = [System.String]'MinersWin Hyper-V Manager'
+$FormOverview.Text = $ConfigName
 $FormOverview.add_Load($FormOverview_Load)
 $MenuStripOverview.ResumeLayout($false)
 $MenuStripOverview.PerformLayout()
@@ -1865,7 +1866,7 @@ $AboutToolStripMenuItem.Add_Click({ About })
 $Button6.Add_Click{( Erstelle-VM )}
 $button2.Add_Click{( Get-BootISOFileName_2 )}
 $PictureBox1.Add_Click{( Connect-VM )}
-$Label38.Add_Click{( Invoke-Expression "$($MyDir)\Thumbnails\" <#Ã–ffnet Ordner beim Klick#> )}
+$Label38.Add_Click{( Invoke-Expression "$($MyDir)\Thumbnails\" <#Öffnet Ordner beim Klick#> )}
 $Button20.Add_Click{( Grant-Permission )}
 
 #Panel unsichtbar machen
@@ -1892,7 +1893,21 @@ $RadioButton1.Checked = $true
 
 }
 . InitializeComponent
-
+#
+#_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+#Funktion für BaloonTips
+Add-Type -AssemblyName  System.Windows.Forms 
+$global:balloon = New-Object System.Windows.Forms.NotifyIcon 
+Get-Member -InputObject  $Global:balloon 
+[void](Register-ObjectEvent  -InputObject $balloon  -EventName MouseDoubleClick  -SourceIdentifier IconClicked  -Action {
+    $global:balloon.dispose()
+    Unregister-Event  -SourceIdentifier IconClicked
+    Remove-Job -Name IconClicked
+    Remove-Variable  -Name balloon  -Scope Global
+  }) 
+  $path = (Get-Process -id $pid).Path
+  $balloon.Icon  = [System.Drawing.Icon]::ExtractAssociatedIcon($path) 
+  $balloon.BalloonTipIcon  = [System.Windows.Forms.ToolTipIcon]::Warning
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
 #Einlesen der Einstellungen aus der Config Datei
 if (Test-Path $MyDir\Log\Latest.log){
@@ -1908,7 +1923,7 @@ if (Test-Path $MyDir\Log\Latest.log){
     Write-Output ChickenHung
 }
 
-#Log schreiben bei Start Log mit Datum Speichern, welches in der ersten Zeile stehen wird und danach gelÃ¶scht und neu BefÃ¼llt wird Mfg Hullos
+#Log schreiben bei Start Log mit Datum Speichern, welches in der ersten Zeile stehen wird und danach gelöscht und neu Befüllt wird Mfg Hullos
 
 Write-Output (("{0:yyyy-MM-dd-HH-mm-ss}" -f (get-date)).ToString()) >> $MyDir\Log\Latest.log
 Write-Output "" >> $MyDir\Log\Latest.log
@@ -1948,24 +1963,31 @@ Write-Host "| | |_| | ||  ___  || |\ \| ||  ___  || | ____ |  __|   |     __|"
 Write-Host "| |     | || |   | || | \   || |   | || | \_  || |      | |\  |  "
 Write-Host "| |     | || |   | || |  \  || |   | || |___| || |____/\| | \ \__"
 Write-Host "|/       \||/     \||/    |_||/     \||_______||_______/|/   \__/"
+  $balloon.BalloonTipText  = 'Starte Hyper-V Manager V.2'
+  $balloon.BalloonTipTitle  = "Achtung  $Env:USERNAME" 
+  $balloon.Visible  = $true 
+  $balloon.ShowBalloonTip(20) 
 
-#FÃ¼gt Domain\Name in die Rechtevergabe ein
+Write-Host "Look behind this Window!"
+
+#Fügt Domain\Name in die Rechtevergabe ein
 $TextBox13.Text = "$($env:UserDomain)\$($env:UserName)"
+Write-Host "$($env:UserDomain)\$($env:UserName)"
 
-#ÃœberprÃ¼ft die Version
+#Überprüft die Version
 function Test-Version{
-    #LÃ¤dt den Inhalt der Pastebin Seite mit der neusten Version
+    #Lädt den Inhalt der Pastebin Seite mit der neusten Version
     $Update = Invoke-WebRequest https://pastebin.com/raw/zBUriG1D
 
     $Update.Content
-    if ($Update.Content -gt "1910"){
-        #Wenn Version Ã¤lter ist, als die aktuellte Gib Meldung aus
+    if ($Update.Content -gt "1.9.12"){
+        #Wenn Version älter ist, als die aktuellte Gib Meldung aus
         Write-Host "Update Erforderlich: https://pastebin.com/TvfCY9KQ"
         Write-Output "$(Get-Date) Es ist ein Update erforderlich." >> $MyDir\Log\Latest.log
     [System.Windows.Forms.MessageBox]::Show("Update ist Erforderlich, Bitte Update das Skript um die neusten Funktionen und Support zu erhalten. Alte Versionen werden nicht mehr Supportet. Aktuellste Version: https://pastebin.com/TvfCY9KQ","MinersWin Hyper-V Manager V.2",1)
-    } elseif ($Update.Content -lt 1910) {
+    } elseif ($Update.Content -lt "1.9.12") {
         #Wenn Version neuer ist als aktuellste Gib Fehler aus
-        Write-Output "$(Get-Date) Fehler bei der UpdateÃ¼berprofung, Aktuelle Version ist Ã¤lter als die Online zur verfÃ¼gung stehende." >> $MyDir\Log\Latest.log
+        Write-Output "$(Get-Date) Fehler bei der Updateüberprofung, Aktuelle Version ist älter als die Online zur verfügung stehende." >> $MyDir\Log\Latest.log
         Write-Host "Fehler"
     [System.Windows.Forms.MessageBox]::Show("Fehler beim Abruf der aktuellsten Version","MinersWin Hyper-V Manager V.2",1)
     } else {
@@ -1975,13 +1997,17 @@ function Test-Version{
     }
 }
 #Gib Version und Build im log aus
-Write-Output "$(Get-Date) Version 1.9.10 wird ausgefÃ¼hrt. Build: 22.05.2019" >> $MyDir\Log\Latest.log
-#FÃ¼hre Versionstest aus
+Write-Output "$(Get-Date) Version 1.9.13 wird ausgeführt. Build: 10.07.2019" >> $MyDir\Log\Latest.log
+$balloon.BalloonTipText  = 'Version 1.9.13 wird genutzt. Build: 10.07.2019'
+$balloon.BalloonTipTitle  = "Achtung  $Env:USERNAME" 
+$balloon.Visible  = $true 
+$balloon.ShowBalloonTip(20) 
+#Führe Versionstest aus
 Test-Version
 
 
 
-#PrÃ¼fe auf Adminrechte
+#Prüfe auf Adminrechte
 function Test-IsAdmin {
     try {
         Write-Output "$(Get-Date) Suche nach Adminrechten" >> $MyDir\Log\Latest.log
@@ -1989,12 +2015,12 @@ function Test-IsAdmin {
         $principal = New-Object Security.Principal.WindowsPrincipal -ArgumentList $identity
         return $principal.IsInRole( [Security.Principal.WindowsBuiltInRole]::Administrator )
     } catch {
-        Write-Output "$(Get-Date) Fehler beim Ã¼berprÃ¼fen der Adminrechten" >> $MyDir\Log\Latest.log
+        Write-Output "$(Get-Date) Fehler beim überprüfen der Adminrechten" >> $MyDir\Log\Latest.log
         throw "Fehler beim erstellen der Benutzerrechte. Error: '{0}'." -f $_
     }
   }
  #
-  #ÃœberprÃ¼ft Admin rechte
+  #Überprüft Admin rechte
 if (-not(Test-IsAdmin)) {
     Write-Output "$(Get-Date) Programm wurde ohne Adminrechte gestartet" >> $MyDir\Log\Latest.log
     $LabelOverview.text = "Keine Adminrechte!"
@@ -2012,11 +2038,11 @@ function Load-ComboBox-VMs{ #VM Auswahl
             Write-Output "" >> $MyDir\Log\Latest.log
             Write-Output "$(Get-Date) [Lade VMs]" >> $MyDir\Log\Latest.log
             $ComboBox1.Items.Clear()
-            Write-Output "$(Get-Date) LÃ¶sche VMs aus der Liste" >> $MyDir\Log\Latest.log
+            Write-Output "$(Get-Date) Lösche VMs aus der Liste" >> $MyDir\Log\Latest.log
     $MgrArray = Get-VM -ComputerName $Hostname |
     Select-Object Name
             Write-Output "$(Get-Date) Lade alle Virtuellen Maschinen $($MgrArray)" >> $MyDir\Log\Latest.log
-            Write-Output "$(Get-Date) FÃ¼lle ComboBox1 mit VMNamen" >> $MyDir\Log\Latest.log
+            Write-Output "$(Get-Date) Fülle ComboBox1 mit VMNamen" >> $MyDir\Log\Latest.log
             Write-Output "$(Get-Date) _" >> $MyDir\Log\Latest.log
     ForEach ($item in $MgrArray) {
         $ComboBox1.Items.Add($item.Name)
@@ -2029,9 +2055,9 @@ function Load-ComboBox-Hosts{
             Write-Output "$(Get-Date) [Lade Hosts]" >> $MyDir\Log\Latest.log
             Write-Output "$(Get-Date) Lade Server mit dem Betriebsystem Windows Server in der Active Diretory" >> $MyDir\Log\Latest.log
     $ComboBox4.Items.Clear()
-            Write-Output "$(Get-Date) LÃ¶sche Host Liste" >> $MyDir\Log\Latest.log
+            Write-Output "$(Get-Date) Lösche Host Liste" >> $MyDir\Log\Latest.log
     $ComboBox4.Items.Add("localhost")
-            Write-Output "$(Get-Date) FÃ¼ge localhost zur Hostliste hinzu" >> $MyDir\Log\Latest.log
+            Write-Output "$(Get-Date) Füge localhost zur Hostliste hinzu" >> $MyDir\Log\Latest.log
     $HostArray = Get-ADComputer -Filter "OperatingSystem -like '*Server*'" | Select-Object Name
             Write-Output "$(Get-Date) Lade alle Hyper-V Hosts $($HostArray)" >> $MyDir\Log\Latest.log
             Write-Output "$(Get-Date) _" >> $MyDir\Log\Latest.log
@@ -2041,17 +2067,17 @@ function Load-ComboBox-Hosts{
         Write-Output "$(Get-Date) Fertig" >> $MyDir\Log\Latest.log
 }
 
-$RichTextBox1.Text = "Bitte einen Host auswÃ¤hlen"
-            Write-Output "$(Get-Date) Gebe aus: Bitte einen Host auswÃ¤hlen" >> $MyDir\Log\Latest.log
+$RichTextBox1.Text = "Bitte einen Host auswählen"
+            Write-Output "$(Get-Date) Gebe aus: Bitte einen Host auswählen" >> $MyDir\Log\Latest.log
 
 
-#Setzt die gewÃ¤hlte VM als VM und listet Infos auf
+#Setzt die gewählte VM als VM und listet Infos auf
 function Set-VM{
             Write-Output "" >> $MyDir\Log\Latest.log
             Write-Output "$(Get-Date) [Set-VM]" >> $MyDir\Log\Latest.log
     switch ($ComboBox1.Text){
-        VM {[System.Windows.Forms.MessageBox]::Show("Bitte eine VM auswÃ¤hlen","MinersWin HyperV Manager",1)
-            Write-Output "$(Get-Date) Keine VM AusgewÃ¤hlt" >> $MyDir\Log\Latest.log}
+        VM {[System.Windows.Forms.MessageBox]::Show("Bitte eine VM auswählen","MinersWin HyperV Manager",1)
+            Write-Output "$(Get-Date) Keine VM Ausgewählt" >> $MyDir\Log\Latest.log}
         default {
             $VMName = $ComboBox1.Text
             $Hostname = $ComboBox4.Text
@@ -2085,7 +2111,7 @@ function Set-Host{
     Write-Output "" >> $MyDir\Log\Latest.log
     Write-Output "$(Get-Date) [Set-Host]" >> $MyDir\Log\Latest.log
     switch ($ComboBox4.Text){
-        Host {[System.Windows.Forms.MessageBox]::Show("Bitte einen Host auswÃ¤hlen","MinersWin HyperV Manager",1)}
+        Host {[System.Windows.Forms.MessageBox]::Show("Bitte einen Host auswählen","MinersWin HyperV Manager",1)}
         localhost {$Hostname = "localhost"
                 $VMs = Get-VM -ComputerName $Hostname -Name * | select VMName | Out-String
                 $RichTextBox1.Text = $VMs
@@ -2113,7 +2139,7 @@ function Set-Host{
     $Button26.Enabled = $false
     Get-Switch
     Load-ComboBox-VMs
-        "Bitte eine VM auswÃ¤hlen"
+        "Bitte eine VM auswählen"
 }
 #Snapshots erstellen
 function Show-Snapshot{
@@ -2128,12 +2154,19 @@ function Create-Snapshot{
     if ($snapshotName -eq "Name des Snapshots"){
         [System.Windows.Forms.MessageBox]::Show("Bitte einen Snapshotnamen eingeben","MinersWin HyperV Manager",1)
         Show-Snapshot
+        $balloon.BalloonTipText  = "Bitte Snapshotnamen eingeben"
+        $balloon.Visible  = $true 
+        $balloon.ShowBalloonTip(20)
     } else {
         $VMName = $ComboBox1.Text
         $Hostname = $ComboBox4.Text
         Get-VM -ComputerName $Hostname -Name $VMName | Checkpoint-VM -SnapshotName $snapshotName -asJob
         Show-Snapshot
+        $balloon.BalloonTipText  = "Snapshot der VM $($VMName) auf dem Host $($Hostname) wurde erstellt!"
+        $balloon.Visible  = $true 
+        $balloon.ShowBalloonTip(20)
     }
+
 }
 
 #Start
@@ -2145,6 +2178,9 @@ function VM-Start{
     Write-Host "Hostname"
     Write-Host $Hostname
     Get-VM $VMName -ComputerName $Hostname | Start-VM
+    $balloon.BalloonTipText  = "Die VM $($VMName) auf dem Host $($Hostname) wurde gestartet!"
+    $balloon.Visible  = $true 
+    $balloon.ShowBalloonTip(20)
     Set-VM
 }
 
@@ -2161,6 +2197,9 @@ function VM-Stop{
     } else {
         
     }
+    $balloon.BalloonTipText  = "Die VM $($VMName) auf dem Host $($Hostname) wurde gestoppt!"
+    $balloon.Visible  = $true 
+    $balloon.ShowBalloonTip(20)
     Set-VM
 
 }
@@ -2208,6 +2247,9 @@ function Set-ISO{
     $VMName = $ComboBox1.Text
     $Hostname = $ComboBox4.Text
     Set-VMDvdDrive -ComputerName $Hostname -VMName $VMName -Path $isopfad
+    $balloon.BalloonTipText  = "Die ISO $($isopfad) wurde in die VM $($VMName) auf dem Host $($Hostname) eingebunden!"
+    $balloon.Visible  = $true 
+    $balloon.ShowBalloonTip(20)
      
 
 }
@@ -2251,12 +2293,18 @@ function Get-Online{
         $Button8.Enabled = $false
         $Button9.Enabled = $true
         $Label12.ForeColor = "Green"
+        $balloon.BalloonTipText  = "Die VM $($VMName) auf dem Host $($Hostname) ist Eingeschaltet"
+        $balloon.Visible  = $true 
+        $balloon.ShowBalloonTip(20)
     } else {
         $Label12.Text = "Offline"
         $Label12.ForeColor = "Red"
         $Button9.Enabled = $false
         $Button8.Enabled = $true
         $PictureBox1.Enabled = $false
+        $balloon.BalloonTipText  = "Die VM $($VMName) auf dem Host $($Hostname) ist Offline!"
+        $balloon.Visible  = $true 
+        $balloon.ShowBalloonTip(20)
     }
 }
 
@@ -2272,7 +2320,7 @@ function Get-Switch{
 function Fill-Edit{
     Write-Output "[Fill-Edit]" >> $MyDir\Log\Latest.log
         $Datum = Get-Date
-        Write-Output "$Datum FÃ¼lle Textfelder aus" >> $MyDir\Log\Latest.log
+        Write-Output "$Datum Fülle Textfelder aus" >> $MyDir\Log\Latest.log
     $VMName = $ComboBox1.Text
     $Hostname = $ComboBox4.Text
     $CPU = Get-VM -ComputerName $Hostname -Name $VMName | Select ProcessorCount
@@ -2294,7 +2342,7 @@ function Fill-Edit{
     $TextBox11.Text = $Memory
     $TextBox12.Text = $VMName
         $Datum = Get-Date
-        Write-Output "$Datum LÃ¶sche Textfelder und Ã¼berprÃ¼fe Werte" >> $MyDir\Log\Latest.log
+        Write-Output "$Datum Lösche Textfelder und überprüfe Werte" >> $MyDir\Log\Latest.log
 
     $Generation = Get-VM -ComputerName $Hostname $VMName | Select Generation
     if ($Generation.Generation -eq "2"){
@@ -2364,7 +2412,9 @@ function Set-Edit {
 
 
 
-
+    $balloon.BalloonTipText  = "Die VM $($VMName) auf dem Host $($Hostname) wurde Bearbeitet!"
+    $balloon.Visible  = $true 
+    $balloon.ShowBalloonTip(20)
 }
 
 function Get-Thumbnail{
@@ -2390,7 +2440,7 @@ function Get-Thumbnail{
     $xRes = 640
     $yRes = 480
             $Datum = Get-Date
-            Write-Output "$Datum Erzeuge ein Screenshot der gewÃ¤hlten VM und speicher ihn ab" >> $MyDir\Log\Latest.log
+            Write-Output "$Datum Erzeuge ein Screenshot der gewählten VM und speicher ihn ab" >> $MyDir\Log\Latest.log
 
     $VMManagementService = Get-WmiObject -class "Msvm_VirtualSystemManagementService" -namespace "root\virtualization\V2" -ComputerName $HyperVParent
     $Vm = Get-WmiObject -Namespace "root\virtualization\V2" -ComputerName $HyperVParent -Query "Select * From Msvm_ComputerSystem Where ElementName='$HyperVGuest'"
@@ -2424,22 +2474,29 @@ function Connect-VM{
     $VMName = $ComboBox1.Text
     $Hostname = $ComboBox4.Text
             $Datum = Get-Date
-            Write-Output "$Datum Stelle Verbindung mit VM her und Ã¶ffne VMConnect.exe" >> $MyDir\Log\Latest.log
+            Write-Output "$Datum Stelle Verbindung mit VM her und öffne VMConnect.exe" >> $MyDir\Log\Latest.log
     vmconnect.exe $Hostname $VMName /edit
             $Datum = Get-Date
             Write-Output "$Datum Fertig" >> $MyDir\Log\Latest.log
+            $balloon.BalloonTipText  = "Du wurdest mit der VM $($VMName) auf dem Host $($Hostname) verbunden!"
+            $balloon.Visible  = $true 
+            $balloon.ShowBalloonTip(20)
 }
 
 function Open-Manager{
         Write-Output "[Open-Manager]" >> $MyDir\Log\Latest.log
             $Datum = Get-Date
-            Write-Output "$Datum Ã¶ffne den Hyper-V Manager" >> $MyDir\Log\Latest.log
+            Write-Output "$Datum öffne den Hyper-V Manager" >> $MyDir\Log\Latest.log
     virtmgmt.msc
             $Datum = Get-Date
             Write-Output "$Datum Fertig" >> $MyDir\Log\Latest.log
+            $balloon.BalloonTipText  = "Der Hyper-V Manager wurde geöffnet!"
+            $balloon.Visible  = $true 
+            $balloon.ShowBalloonTip(20)
 }
 
 function Save-File([string] $initialDirectory ){
+    [System.Windows.Forms.MessageBox]::Show("Bitte als Dateiname den Dateinamen mitsamt Dateiendung angeben (Bsp: Log.log oder Log.txt)", "Hyper-V Manager V.2",1)
     [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") | Out-Null
     $OpenFileDialog = New-Object System.Windows.Forms.SaveFileDialog
     $OpenFileDialog.initialDirectory = $initialDirectory
@@ -2451,15 +2508,18 @@ function Save-File([string] $initialDirectory ){
 function Save-Log{
     $File=Save-File
     cp $MyDir\Log\Latest.log $File
+    $balloon.BalloonTipText  = "Der Log wurde gespeichert!"
+    $balloon.Visible  = $true 
+    $balloon.ShowBalloonTip(20)
 }
 
 function Send-Information{
-    $MailFrom = "hyperv-manager@minerswins.de"
-    $MailTo = "minerswin@minerswin.de"
-    $Username = "hyperv-manager@minerswins.de"
-    $Password = "pufisence"
-    $SmtpServer = "mx2f5c.netcup.net"
-    $SmtpPort = "587"
+    $MailFrom = $ConfigSMTPUsername
+    $MailTo = $ConfigMailSendTo
+    $Username = $ConfigSMTPUsername
+    $Password = $ConfigSMTPPassword
+    $SmtpServer = $ConfigSMTPServer
+    $SmtpPort = $ConfigSMTPPort
     $MessageSubject = "Hyper-V Manager Report von $($env:CLIENTNAME)"
     $Message = New-Object System.Net.Mail.MailMessage $MailFrom,$MailTo
     $Message.Subject = $MessageSubject
@@ -2471,6 +2531,9 @@ function Send-Information{
     $Smtp.EnableSsl = $true
     $Smtp.Credentials = New-Object System.Net.NetworkCredential($Username,$Password)
     $Smtp.Send($Message)
+    $balloon.BalloonTipText  = "Der Log wurde versand!"
+    $balloon.Visible  = $true 
+    $balloon.ShowBalloonTip(20)
 }
 
 function Reload-Hosts{
@@ -2500,6 +2563,9 @@ function Reload-Hosts{
     $RadioButton1.Checked = $true
     Load-ComboBox-Hosts
     ISO
+    $balloon.BalloonTipText  = "Reload!!"
+    $balloon.Visible  = $true 
+    $balloon.ShowBalloonTip(20)
 }
 
 function Go-Donate{
@@ -2539,7 +2605,7 @@ function Erstelle-VM{
     }
 
 
-    #  FÃ¼ge DVD Drive hinzu und binde es ein
+    #  Füge DVD Drive hinzu und binde es ein
     if ($ISO_der_VM -ne "") {Get-VM -ComputerName $Hostname $Name_Der_VM | Add-VMDvdDrive -Path $ISO_der_VM}
 
     $CDriveVHDPath=$VM_Root_Path+"\"+$Name_Der_VM+"\"+$Name_Der_VM+"-C.vhdx"
@@ -2557,7 +2623,9 @@ function Erstelle-VM{
 
 
 
-
+    $balloon.BalloonTipText  = "Die VM $($Name_Der_VM) auf dem Host $($Hostname) wurde Erstellt!"
+    $balloon.Visible  = $true 
+    $balloon.ShowBalloonTip(20)
 }
 
 function About{
@@ -2571,6 +2639,9 @@ function Grant-Permission{
     $Nutzer = $TextBox13.Text
     $TextBox13.Clear()
     Grant-VMConnectAccess -ComputerName $Hostname -VMName $VMName -UserName $Nutzer
+    $balloon.BalloonTipText  = "Der Nutzer $($Nutzer) hat auf die VM $($VMName) auf dem Host $($Hostname) Rechte bekommen!"
+    $balloon.Visible  = $true 
+    $balloon.ShowBalloonTip(20)
 }
 
 
@@ -2628,7 +2699,7 @@ function Send-Feedback{
     $LabelSender.Font                = 'Comic Sans MS,10'
 
     $LabelTitle                      = New-Object system.Windows.Forms.Label
-    $LabelTitle.text                 = "Hier kannst du dein Feedback und VerbesserungsvorschlÃ¤ge"
+    $LabelTitle.text                 = "Hier kannst du dein Feedback und Verbesserungsvorschläge"
     $LabelTitle.AutoSize             = $true
     $LabelTitle.width                = 25
     $LabelTitle.height               = 10
@@ -2697,12 +2768,12 @@ function Send-Feedback{
         $MailBetreff = $TextBoxBetreff.Text
         $MailText = $TextBoxText.Text
 
-        $MailFrom = "hyperv-manager@minerswins.de"
-        $MailTo = "minerswin@minerswin.de"
-        $Username = "hyperv-manager@minerswins.de"
-        $Password = "pufisence"
-        $SmtpServer = "mx2f5c.netcup.net"
-        $SmtpPort = "587"
+        $MailFrom = $ConfigSMTPUsername
+        $MailTo = $ConfigMailSendTo
+        $Username = $ConfigSMTPUsername
+        $Password = $ConfigSMTPPassword
+        $SmtpServer = $ConfigSMTPServer
+        $SmtpPort = $ConfigSMTPPort
         $MessageSubject = "Feedback von $($MailSender)"
         $Message = New-Object System.Net.Mail.MailMessage $MailFrom,$MailTo
         $Message.Subject = $MessageSubject

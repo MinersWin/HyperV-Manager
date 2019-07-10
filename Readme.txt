@@ -2,10 +2,10 @@
         Ich hab noch nie ein Programm derart in Powershell gefunden, also dachte Ich mir machste es selber.
     .DATEN
         Name: HyperV-Manager.ps1
-        Version: B.E.T.A. 1.9.10
+        Version: B.E.T.A. 1.9.11
         Author: Minerswin
         Creation-Date: 09-04-2019
-        Last-Update: 21.05.2019
+        Last-Update: 02.07.2019
         Mail: hyperv-manager@minerswin.de
     .CHANGELOG
         B.E.T.A. 1.9.0 - MinersWin - 10.04.2019 - Nun mit GUI + Auswahl des Hosts + Auswahl der VM
@@ -19,6 +19,9 @@
         B.E.T.A. 1.9.8 - MinersWin - 30.04.2019 - Möglichkeit des An/Ausschaltens von VMs + Möglichkeit zur Festlegung von Prozessorkernen, RAM und ISO Datei bei der Erstellung
         B.E.T.A. 1.9.9 - MinersWin - 20.05.2019 - Möglichkeit zur erstellung von Virtuellen Switches und verbesserung der LOG Datei
         B.E.T.A. 1.9.10 - MinersWin - 21.05.2019 - Fertigstellung der VM Edit Funktion + Autosenden des Feedbacks an den Creator.
+        B.E.T.A. 1.9.11 - MinersWin - 02.07.2019 - Entfernen des MailServers + Configupdate
+        B.E.T.A. 1.9.12 - MinersWin - 04.07.2019 - Integration von BallonTips, 
+        B.E.T.A. 1.9.13 - MinersWin - 10.07.2019 - Möglichkeit zur Änderung des Namens in der Config Datei sowie eintragen eigener Mail Server, Automatische erstellung der Config Datei, Erstellung einer Start.bat, Überarbeitung der ReadMe, Update auf GitHub, Überarbeitung der BaloonTips
 
     .BEISPIEL
         .\HyperV-Manager.ps1 
@@ -28,7 +31,7 @@
       - Wenn Template Vorhanden soll das Benutzt werden (spart Installation)
       - Erstellung eines Clients für die Azubis, mit welchem sie VMs beantragen können.
       - Automatische Installation der Verwaltungsdienste auf den Azubi-Computern
-      - Möglichkeit RAM,CPU,NETZWERK,FESTPLATTENGRüSSE usw. zu ändern
+      - Möglichkeit RAM,CPU,NETZWERK,FESTPLATTENGRĂSSE usw. zu ändern
       - Start-Animation
       - ...
 
@@ -46,4 +49,3 @@
     .FAQ
       - Ich habe einen Fehler gefunden, wo kann ich ihn Melden? - Dazu kann man einfach im Reiter Aktion auf Feedback gehen und im Feld das Feedback eingeben. Alternativ einfach eine E-Mail an "HyperV-Manager@MinersWin.de" schreiben.
       - Werden irgenwelche Daten gesammelt? - Die Log-Dateien werden mit dem Beenden des Programms gelöscht, sofern sie nicht über den Button Informationen Senden an den Ersteller Gesendet wurden.
-      
