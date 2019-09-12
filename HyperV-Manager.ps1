@@ -1663,7 +1663,6 @@ $TabControl1.Controls.Add($TabPage2)
 $TabControl1.Controls.Add($TabPage3)
 $TabControl1.Controls.Add($TabPage4)
 $TabControl1.Controls.Add($TabPage5)
-$TabControl1.Cursor = [System.Windows.Forms.Cursors]::WaitCursor
 $TabControl1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]28))
 $TabControl1.Name = [System.String]'TabControl1'
 $TabControl1.SelectedIndex = [System.Int32]0
