@@ -111,7 +111,6 @@ Function Invoke-BalloonTip {
         [Parameter(HelpMessage="The number of milliseconds to display the message.")]
         [int]$Duration=1000
     )
-    Add-Type -AssemblyName System.Windows.Forms
     If (-NOT $global:balloon) {
         $global:balloon = New-Object System.Windows.Forms.NotifyIcon
         [void](Register-ObjectEvent -InputObject $balloon -EventName MouseDoubleClick -SourceIdentifier IconClicked -Action {
@@ -133,6 +132,7 @@ Function Invoke-BalloonTip {
 }
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
 #Erstellung der GUI
+Add-Type -AssemblyName System.Windows.Forms
 $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.Button]$Button23 = $null
 [System.Windows.Forms.Label]$Label28 = $null
