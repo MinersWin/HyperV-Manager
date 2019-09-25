@@ -138,7 +138,6 @@ Function Invoke-BalloonTip {
 }
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
 #Erstellung der GUI
-Add-Type -AssemblyName System.Windows.Forms
 $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.Button]$Button23 = $null
 [System.Windows.Forms.Label]$Label28 = $null
@@ -269,7 +268,10 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.Label]$LabelOverview = $null
 [System.Windows.Forms.TabControl]$TabControl1 = $null
 [System.Windows.Forms.TabPage]$TabPage1 = $null
+[System.Windows.Forms.TextBox]$TextBox16 = $null
+[System.Windows.Forms.Panel]$Panel14 = $null
 [System.Windows.Forms.TabPage]$TabPage2 = $null
+[System.Windows.Forms.Panel]$Panel15 = $null
 [System.Windows.Forms.TabPage]$TabPage3 = $null
 [System.Windows.Forms.TabPage]$TabPage4 = $null
 [System.Windows.Forms.TabPage]$TabPage5 = $null
@@ -404,10 +406,13 @@ $Button13 = (New-Object -TypeName System.Windows.Forms.Button)
 $LabelOverview = (New-Object -TypeName System.Windows.Forms.Label)
 $TabControl1 = (New-Object -TypeName System.Windows.Forms.TabControl)
 $TabPage1 = (New-Object -TypeName System.Windows.Forms.TabPage)
+$Panel14 = (New-Object -TypeName System.Windows.Forms.Panel)
 $TabPage2 = (New-Object -TypeName System.Windows.Forms.TabPage)
 $TabPage3 = (New-Object -TypeName System.Windows.Forms.TabPage)
 $TabPage4 = (New-Object -TypeName System.Windows.Forms.TabPage)
 $TabPage5 = (New-Object -TypeName System.Windows.Forms.TabPage)
+$Panel15 = (New-Object -TypeName System.Windows.Forms.Panel)
+$TextBox16 = (New-Object -TypeName System.Windows.Forms.TextBox)
 $MenuStripOverview.SuspendLayout()
 $Panel10.SuspendLayout()
 $Panel8.SuspendLayout()
@@ -425,10 +430,12 @@ $Panel2.SuspendLayout()
 $Panel3.SuspendLayout()
 $TabControl1.SuspendLayout()
 $TabPage1.SuspendLayout()
+$Panel14.SuspendLayout()
 $TabPage2.SuspendLayout()
 $TabPage3.SuspendLayout()
 $TabPage4.SuspendLayout()
 $TabPage5.SuspendLayout()
+$Panel15.SuspendLayout()
 $FormOverview.SuspendLayout()
 #
 #Button23
@@ -525,7 +532,7 @@ $Label20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label20.Name = [System.String]'Label20'
 $Label20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]733,[System.Int32]16))
 $Label20.TabIndex = [System.Int32]22
-$Label20.Text = [System.String]'Kommerziellen Nutzen haben, mùssen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt'
+$Label20.Text = [System.String]'Kommerziellen Nutzen haben, m√ºssen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt'
 $Label20.UseCompatibleTextRendering = $true
 #
 #Label21
@@ -656,7 +663,7 @@ $Label19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label19.Name = [System.String]'Label19'
 $Label19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]594,[System.Int32]16))
 $Label19.TabIndex = [System.Int32]21
-$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien fùr eigene Projekte zu ùbernehmen, diese Projekte dùrfen jedoch keinen'
+$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien f√ºr eigene Projekte zu √ºbernehmen, diese Projekte d√ºrfen jedoch keinen'
 $Label19.UseCompatibleTextRendering = $true
 #
 #Label18
@@ -944,7 +951,7 @@ $Button5.UseVisualStyleBackColor = $true
 #
 #Button10
 #
-$Button10.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]386,[System.Int32]44))
+$Button10.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]413,[System.Int32]42))
 $Button10.Name = [System.String]'Button10'
 $Button10.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]50,[System.Int32]23))
 $Button10.TabIndex = [System.Int32]4
@@ -990,9 +997,9 @@ $TextBox14.TabIndex = [System.Int32]5
 #
 #Label38
 #
-$Label38.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]170))
+$Label38.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]195))
 $Label38.Name = [System.String]'Label38'
-$Label38.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]143,[System.Int32]23))
+$Label38.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]311,[System.Int32]23))
 $Label38.TabIndex = [System.Int32]33
 $Label38.Text = [System.String]'Imagepfad'
 $Label38.UseCompatibleTextRendering = $true
@@ -1093,7 +1100,7 @@ $Button25.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @(
 $Button25.Name = [System.String]'Button25'
 $Button25.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]138,[System.Int32]23))
 $Button25.TabIndex = [System.Int32]28
-$Button25.Text = [System.String]'ùffne Hyper-V Manager'
+$Button25.Text = [System.String]'√ñffne Hyper-V Manager'
 $Button25.UseCompatibleTextRendering = $true
 $Button25.UseVisualStyleBackColor = $true
 #
@@ -1157,7 +1164,7 @@ $Label1.UseCompatibleTextRendering = $true
 #
 $TextBox8.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]88,[System.Int32]44))
 $TextBox8.Name = [System.String]'TextBox8'
-$TextBox8.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]292,[System.Int32]21))
+$TextBox8.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]319,[System.Int32]21))
 $TextBox8.TabIndex = [System.Int32]3
 #
 #RichTextBox1
@@ -1321,24 +1328,22 @@ $Button11.UseVisualStyleBackColor = $true
 #Panel13
 #
 $Panel13.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
-$Panel13.Controls.Add($Label38)
 $Panel13.Controls.Add($Button29)
 $Panel13.Controls.Add($Button28)
 $Panel13.Controls.Add($Button27)
 $Panel13.Controls.Add($Button26)
 $Panel13.Controls.Add($Button25)
-$Panel13.Controls.Add($PictureBox1)
 $Panel13.Controls.Add($Button24)
 $Panel13.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]6,[System.Int32]3))
 $Panel13.Name = [System.String]'Panel13'
-$Panel13.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]471,[System.Int32]197))
+$Panel13.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]150,[System.Int32]223))
 $Panel13.TabIndex = [System.Int32]28
 #
 #PictureBox1
 #
-$PictureBox1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]153,[System.Int32]3))
+$PictureBox1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]0))
 $PictureBox1.Name = [System.String]'PictureBox1'
-$PictureBox1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]311,[System.Int32]192))
+$PictureBox1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]323,[System.Int32]192))
 $PictureBox1.SizeMode = [System.Windows.Forms.PictureBoxSizeMode]::StretchImage
 $PictureBox1.TabIndex = [System.Int32]26
 $PictureBox1.TabStop = $false
@@ -1408,7 +1413,7 @@ $OpenFileDialog1.FileName = [System.String]'OpenFileDialog1'
 $ComboBox3.FormattingEnabled = $true
 $ComboBox3.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]145,[System.Int32]14))
 $ComboBox3.Name = [System.String]'ComboBox3'
-$ComboBox3.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]291,[System.Int32]21))
+$ComboBox3.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]21))
 $ComboBox3.TabIndex = [System.Int32]1
 $ComboBox3.Text = [System.String]'Vorgeschlagen'
 #
@@ -1419,9 +1424,9 @@ $Panel4.Controls.Add($Button9)
 $Panel4.Controls.Add($Button8)
 $Panel4.Controls.Add($Label12)
 $Panel4.Controls.Add($Label11)
-$Panel4.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]479,[System.Int32]6))
+$Panel4.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]7,[System.Int32]309))
 $Panel4.Name = [System.String]'Panel4'
-$Panel4.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]442,[System.Int32]54))
+$Panel4.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]485,[System.Int32]54))
 $Panel4.TabIndex = [System.Int32]9
 #
 #Button9
@@ -1454,9 +1459,9 @@ $Panel5.Controls.Add($TextBox8)
 $Panel5.Controls.Add($Label14)
 $Panel5.Controls.Add($ComboBox3)
 $Panel5.Controls.Add($Label13)
-$Panel5.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]479,[System.Int32]66))
+$Panel5.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]495,[System.Int32]6))
 $Panel5.Name = [System.String]'Panel5'
-$Panel5.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]442,[System.Int32]100))
+$Panel5.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]470,[System.Int32]100))
 $Panel5.TabIndex = [System.Int32]10
 #
 #Label13
@@ -1476,7 +1481,7 @@ $Panel6.Controls.Add($Button14)
 $Panel6.Controls.Add($ComboBox4)
 $Panel6.Controls.Add($ComboBox1)
 $Panel6.Controls.Add($Button1)
-$Panel6.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]6,[System.Int32]48))
+$Panel6.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]45))
 $Panel6.Name = [System.String]'Panel6'
 $Panel6.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]473,[System.Int32]70))
 $Panel6.TabIndex = [System.Int32]14
@@ -1501,7 +1506,7 @@ $Panel7.Controls.Add($Label28)
 $Panel7.Controls.Add($TextBox10)
 $Panel7.Controls.Add($Label27)
 $Panel7.Controls.Add($Label26)
-$Panel7.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]479,[System.Int32]167))
+$Panel7.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]495,[System.Int32]107))
 $Panel7.Name = [System.String]'Panel7'
 $Panel7.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]470,[System.Int32]154))
 $Panel7.TabIndex = [System.Int32]17
@@ -1598,7 +1603,7 @@ $Panel1.Controls.Add($Label1)
 $Panel1.Controls.Add($TextBox1)
 $Panel1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]3))
 $Panel1.Name = [System.String]'Panel1'
-$Panel1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]415,[System.Int32]385))
+$Panel1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]413,[System.Int32]492))
 $Panel1.TabIndex = [System.Int32]6
 #
 #Panel2
@@ -1631,14 +1636,14 @@ $Panel3.Controls.Add($Button5)
 $Panel3.Controls.Add($TextBox6)
 $Panel3.Controls.Add($Button4)
 $Panel3.Controls.Add($Label8)
-$Panel3.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]6,[System.Int32]203))
+$Panel3.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]6,[System.Int32]232))
 $Panel3.Name = [System.String]'Panel3'
-$Panel3.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]471,[System.Int32]71))
+$Panel3.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]486,[System.Int32]71))
 $Panel3.TabIndex = [System.Int32]8
 #
 #Button13
 #
-$Button13.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]480,[System.Int32]3))
+$Button13.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]398,[System.Int32]14))
 $Button13.Name = [System.String]'Button13'
 $Button13.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]77,[System.Int32]25))
 $Button13.TabIndex = [System.Int32]11
@@ -1649,7 +1654,7 @@ $Button13.UseVisualStyleBackColor = $true
 #LabelOverview
 #
 $LabelOverview.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Times New Roman',[System.Single]14.25,[System.Drawing.FontStyle]::Bold,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$LabelOverview.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]6,[System.Int32]3))
+$LabelOverview.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]14))
 $LabelOverview.Name = [System.String]'LabelOverview'
 $LabelOverview.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]390,[System.Int32]23))
 $LabelOverview.TabIndex = [System.Int32]0
@@ -1663,6 +1668,7 @@ $TabControl1.Controls.Add($TabPage2)
 $TabControl1.Controls.Add($TabPage3)
 $TabControl1.Controls.Add($TabPage4)
 $TabControl1.Controls.Add($TabPage5)
+$TabControl1.Cursor = [System.Windows.Forms.Cursors]::Arrow
 $TabControl1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]28))
 $TabControl1.Name = [System.String]'TabControl1'
 $TabControl1.SelectedIndex = [System.Int32]0
@@ -1671,19 +1677,30 @@ $TabControl1.TabIndex = [System.Int32]29
 #
 #TabPage1
 #
-$TabPage1.Controls.Add($Panel6)
-$TabPage1.Controls.Add($LabelOverview)
-$TabPage1.Controls.Add($Button13)
+$TabPage1.Controls.Add($TextBox16)
+$TabPage1.Controls.Add($Panel14)
 $TabPage1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage1.Name = [System.String]'TabPage1'
 $TabPage1.Padding = (New-Object -TypeName System.Windows.Forms.Padding -ArgumentList @([System.Int32]3))
-$TabPage1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]445))
+$TabPage1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]498))
 $TabPage1.TabIndex = [System.Int32]0
 $TabPage1.Text = [System.String]'Hostname'
 $TabPage1.UseVisualStyleBackColor = $true
 #
+#Panel14
+#
+$Panel14.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$Panel14.Controls.Add($LabelOverview)
+$Panel14.Controls.Add($Panel6)
+$Panel14.Controls.Add($Button13)
+$Panel14.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]6))
+$Panel14.Name = [System.String]'Panel14'
+$Panel14.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]483,[System.Int32]123))
+$Panel14.TabIndex = [System.Int32]15
+#
 #TabPage2
 #
+$TabPage2.Controls.Add($Panel15)
 $TabPage2.Controls.Add($Panel13)
 $TabPage2.Controls.Add($Panel3)
 $TabPage2.Controls.Add($Panel4)
@@ -1692,7 +1709,7 @@ $TabPage2.Controls.Add($Panel7)
 $TabPage2.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage2.Name = [System.String]'TabPage2'
 $TabPage2.Padding = (New-Object -TypeName System.Windows.Forms.Padding -ArgumentList @([System.Int32]3))
-$TabPage2.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]445))
+$TabPage2.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]498))
 $TabPage2.TabIndex = [System.Int32]1
 $TabPage2.Text = [System.String]'VM Settings'
 $TabPage2.UseVisualStyleBackColor = $true
@@ -1702,7 +1719,7 @@ $TabPage2.UseVisualStyleBackColor = $true
 $TabPage3.Controls.Add($Panel1)
 $TabPage3.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage3.Name = [System.String]'TabPage3'
-$TabPage3.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]445))
+$TabPage3.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]498))
 $TabPage3.TabIndex = [System.Int32]2
 $TabPage3.Text = [System.String]'VM Erstellen'
 $TabPage3.UseVisualStyleBackColor = $true
@@ -1713,7 +1730,7 @@ $TabPage3.Visible = $false
 $TabPage4.Controls.Add($Panel9)
 $TabPage4.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage4.Name = [System.String]'TabPage4'
-$TabPage4.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]445))
+$TabPage4.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]498))
 $TabPage4.TabIndex = [System.Int32]3
 $TabPage4.Text = [System.String]'Virtueller Switch'
 $TabPage4.UseVisualStyleBackColor = $true
@@ -1731,6 +1748,23 @@ $TabPage5.TabIndex = [System.Int32]4
 $TabPage5.Text = [System.String]'User'
 $TabPage5.UseVisualStyleBackColor = $true
 $TabPage5.Visible = $false
+#
+#Panel15
+#
+$Panel15.Controls.Add($PictureBox1)
+$Panel15.Controls.Add($Label38)
+$Panel15.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]162,[System.Int32]3))
+$Panel15.Name = [System.String]'Panel15'
+$Panel15.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]330,[System.Int32]223))
+$Panel15.TabIndex = [System.Int32]34
+#
+#TextBox16
+#
+$TextBox16.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]954,[System.Int32]3))
+$TextBox16.Multiline = $true
+$TextBox16.Name = [System.String]'TextBox16'
+$TextBox16.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]378,[System.Int32]486))
+$TextBox16.TabIndex = [System.Int32]16
 #
 #FormOverview
 #
@@ -1767,10 +1801,13 @@ $Panel3.ResumeLayout($false)
 $Panel3.PerformLayout()
 $TabControl1.ResumeLayout($false)
 $TabPage1.ResumeLayout($false)
+$TabPage1.PerformLayout()
+$Panel14.ResumeLayout($false)
 $TabPage2.ResumeLayout($false)
 $TabPage3.ResumeLayout($false)
 $TabPage4.ResumeLayout($false)
 $TabPage5.ResumeLayout($false)
+$Panel15.ResumeLayout($false)
 $FormOverview.ResumeLayout($false)
 $FormOverview.PerformLayout()
 Add-Member -InputObject $FormOverview -Name base -Value $base -MemberType NoteProperty
@@ -1903,7 +1940,10 @@ Add-Member -InputObject $FormOverview -Name Button13 -Value $Button13 -MemberTyp
 Add-Member -InputObject $FormOverview -Name LabelOverview -Value $LabelOverview -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabControl1 -Value $TabControl1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage1 -Value $TabPage1 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name TextBox16 -Value $TextBox16 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Panel14 -Value $Panel14 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage2 -Value $TabPage2 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Panel15 -Value $Panel15 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage3 -Value $TabPage3 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage4 -Value $TabPage4 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage5 -Value $TabPage5 -MemberType NoteProperty
