@@ -740,7 +740,7 @@ $Label19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label19.Name = [System.String]'Label19'
 $Label19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]594,[System.Int32]16))
 $Label19.TabIndex = [System.Int32]21
-$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien f¸r eigene Projekte zu uebernehmen, diese Projekte d¸rfen jedoch keinen'
+$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien f¸r eigene Projekte zu ¸bernehmen, diese Projekte d¸rfen jedoch keinen'
 $Label19.UseCompatibleTextRendering = $true
 #
 #Label18
@@ -2409,7 +2409,7 @@ Add-Member -InputObject $FormOverview -Name Panel15 -Value $Panel15 -MemberType 
 Add-Member -InputObject $FormOverview -Name TabPage3 -Value $TabPage3 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage4 -Value $TabPage4 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage5 -Value $TabPage5 -MemberType NoteProperty
-#Hinzufùgen der Funktionen zu den Buttons
+#Hinzuf¸gen der Funktionen zu den Buttons
 $Button1.Add_Click({ Set-VM })
 $Button5.Add_Click({ Show-Snapshot })
 $Button4.Add_Click({ Create-Snapshot })
@@ -2445,8 +2445,11 @@ $Panel5.Enabled = $False #ISO Einlegen
 $Panel9.Enabled = $False #Virtuellen Switch erstellen
 $Panel1.Enabled = $False #VM Erstellen
 $Panel8.Enabled = $False #Info
+$Panel17.Enabled = $False
+$Panel16.Enabled = $False
 
-#Knùpfe Unsichtbar machen
+
+#Knˆpfe Unsichtbar machen
 $Button24.Enabled = $false
 $Button26.Enabled = $false
 
