@@ -474,7 +474,7 @@ $Label20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label20.Name = [System.String]'Label20'
 $Label20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]733,[System.Int32]16))
 $Label20.TabIndex = [System.Int32]22
-$Label20.Text = [System.String]'Kommerziellen Nutzen haben, muessen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt'
+$Label20.Text = [System.String]'Kommerziellen Nutzen haben, müssen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt'
 $Label20.UseCompatibleTextRendering = $true
 #
 #Label21
@@ -605,7 +605,7 @@ $Label19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label19.Name = [System.String]'Label19'
 $Label19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]594,[System.Int32]16))
 $Label19.TabIndex = [System.Int32]21
-$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien fuer eigene Projekte zu uebernehmen, diese Projekte duerfen jedoch keinen'
+$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien für eigene Projekte zu übernehmen, diese Projekte dürfen jedoch keinen'
 $Label19.UseCompatibleTextRendering = $true
 #
 #Label18
@@ -1043,7 +1043,7 @@ $Button25.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @(
 $Button25.Name = [System.String]'Button25'
 $Button25.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]138,[System.Int32]23))
 $Button25.TabIndex = [System.Int32]28
-$Button25.Text = [System.String]'Ã–ffne Hyper-V Manager'
+$Button25.Text = [System.String]'Öffne Hyper-V Manager'
 $Button25.UseCompatibleTextRendering = $true
 $Button25.UseVisualStyleBackColor = $true
 #
@@ -1895,7 +1895,7 @@ $TextBox18.Name = [System.String]'TextBox18'
 $TextBox18.ReadOnly = $true
 $TextBox18.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]450,[System.Int32]48))
 $TextBox18.TabIndex = [System.Int32]38
-$TextBox18.Text = [System.String]'Hier kann die VM geloescht werde, dies ist unwiederuflich, ALLE Daten werden geloescht.
+$TextBox18.Text = [System.String]'Hier kann die VM gelöscht werde, dies ist unwiederuflich, ALLE Daten werden gelöscht.
 Bitte vorher die VM Herunterfahren. Die Virtuellen Switches bleiben erhalten.
 '
 #
@@ -1906,7 +1906,7 @@ $Label40.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label40.Name = [System.String]'Label40'
 $Label40.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]133,[System.Int32]33))
 $Label40.TabIndex = [System.Int32]0
-$Label40.Text = [System.String]'VM Loeschen'
+$Label40.Text = [System.String]'VM Löschen'
 $Label40.UseCompatibleTextRendering = $true
 #
 #Panel15
