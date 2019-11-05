@@ -1,4 +1,16 @@
-    .MOTIVATION
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/60890a1330904eb98e6e9fb7c3c8b943)](https://www.codacy.com/manual/MinersWin/TGF-Tuning-Pack-4.0?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MinersWin/TGF-Tuning-Pack-4.0&amp;utm_campaign=Badge_Grade)
+    <a href="https://tuning-pack.de">
+        <img src="https://img.shields.io/circleci/project/github/badges/shields/master" alt="build status"></a>
+    <a href="https://tuning-pack.de">
+        <img src="https://img.shields.io/coveralls/github/badges/shields"
+            alt="coverage"></a>
+    <a href="https://tuning-pack.de">
+        <img src="https://img.shields.io/lgtm/alerts/g/badges/shields"
+            alt="Total alerts"/></a>
+    <a href="https://tuning-pack.de">
+        <img src="https://img.shields.io/github/commits-since/badges/shields/gh-pages?label=commits%20to%20be%20deployed"
+            alt="commits to be deployed"></a>
+.MOTIVATION
         Ich hab noch nie ein Programm derart in Powershell gefunden, also dachte Ich mir machste es selber.
     .DATEN
         Name: HyperV-Manager.ps1
