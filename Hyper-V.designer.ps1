@@ -814,67 +814,6 @@ $FeedbackToolStripMenuItem.Name = [System.String]'FeedbackToolStripMenuItem'
 $FeedbackToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]222,[System.Int32]22))
 $FeedbackToolStripMenuItem.Text = [System.String]'Feedback'
 #
-#UpdateToolStripMenuItem
-#
-$UpdateToolStripMenuItem.DropDownItems.AddRange([System.Windows.Forms.ToolStripItem[]]@($GitHubcomToolStripMenuItem,$HyperVManagerdeToolStripMenuItem,$HyperVManagerdeToolStripMenuItem1,$Root3MinersWindeToolStripMenuItem,$Root4MinersWindeToolStripMenuItem,$Mirror1MinersWindeToolStripMenuItem,$Mirror2MinersWindeToolStripMenuItem,$Mirror3MinersWindeToolStripMenuItem,$Mirror1MoritzManteldeToolStripMenuItem))
-$UpdateToolStripMenuItem.Name = [System.String]'UpdateToolStripMenuItem'
-$UpdateToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]222,[System.Int32]22))
-$UpdateToolStripMenuItem.Text = [System.String]'Update'
-#
-#GitHubcomToolStripMenuItem
-#
-$GitHubcomToolStripMenuItem.Name = [System.String]'GitHubcomToolStripMenuItem'
-$GitHubcomToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$GitHubcomToolStripMenuItem.Text = [System.String]'GitHub.com'
-#
-#HyperVManagerdeToolStripMenuItem
-#
-$HyperVManagerdeToolStripMenuItem.Name = [System.String]'HyperVManagerdeToolStripMenuItem'
-$HyperVManagerdeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$HyperVManagerdeToolStripMenuItem.Text = [System.String]'Hyper-V-Manager.de'
-#
-#HyperVManagerdeToolStripMenuItem1
-#
-$HyperVManagerdeToolStripMenuItem1.Name = [System.String]'HyperVManagerdeToolStripMenuItem1'
-$HyperVManagerdeToolStripMenuItem1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$HyperVManagerdeToolStripMenuItem1.Text = [System.String]'HyperV-Manager.de'
-#
-#Root3MinersWindeToolStripMenuItem
-#
-$Root3MinersWindeToolStripMenuItem.Name = [System.String]'Root3MinersWindeToolStripMenuItem'
-$Root3MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Root3MinersWindeToolStripMenuItem.Text = [System.String]'Root3.MinersWin.de'
-#
-#Root4MinersWindeToolStripMenuItem
-#
-$Root4MinersWindeToolStripMenuItem.Name = [System.String]'Root4MinersWindeToolStripMenuItem'
-$Root4MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Root4MinersWindeToolStripMenuItem.Text = [System.String]'Root4.MinersWin.de'
-#
-#Mirror1MinersWindeToolStripMenuItem
-#
-$Mirror1MinersWindeToolStripMenuItem.Name = [System.String]'Mirror1MinersWindeToolStripMenuItem'
-$Mirror1MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Mirror1MinersWindeToolStripMenuItem.Text = [System.String]'Mirror1.MinersWin.de'
-#
-#Mirror2MinersWindeToolStripMenuItem
-#
-$Mirror2MinersWindeToolStripMenuItem.Name = [System.String]'Mirror2MinersWindeToolStripMenuItem'
-$Mirror2MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Mirror2MinersWindeToolStripMenuItem.Text = [System.String]'Mirror2.MinersWin.de'
-#
-#Mirror3MinersWindeToolStripMenuItem
-#
-$Mirror3MinersWindeToolStripMenuItem.Name = [System.String]'Mirror3MinersWindeToolStripMenuItem'
-$Mirror3MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Mirror3MinersWindeToolStripMenuItem.Text = [System.String]'Mirror3.MinersWin.de'
-#
-#Mirror1MoritzManteldeToolStripMenuItem
-#
-$Mirror1MoritzManteldeToolStripMenuItem.Name = [System.String]'Mirror1MoritzManteldeToolStripMenuItem'
-$Mirror1MoritzManteldeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Mirror1MoritzManteldeToolStripMenuItem.Text = [System.String]'Mirror1.Moritz-Mantel.de'
-#
 #Label12
 #
 $Label12.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]9.75,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
