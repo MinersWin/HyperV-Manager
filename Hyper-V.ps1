@@ -299,7 +299,7 @@ $balloon.ShowBalloonTip(20)
 Test-Version
 
 
-
+<#
 #Prüfe auf Adminrechte
 function Test-IsAdmin {
     try {
@@ -324,7 +324,7 @@ if (-not(Test-IsAdmin)) {
 else {$LabelOverview.Text = $Hostname.ToString()
     Write-Output "$(Get-Date) Programm wurde mit Adminrechten gestartet" >> $MyDir\Log\Latest.log
 }
-
+#>
 
 
 function Load-ComboBox-VMs{ #VM Auswahl
