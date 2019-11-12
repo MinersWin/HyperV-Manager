@@ -56,6 +56,7 @@ Set-Location $MyDir
 #
 #__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 .\Script\CreateNewConfig.ps1
+Set-Location $MyDir
 
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
 #Einlesen der Einstellungen aus der Config Datei
@@ -238,14 +239,13 @@ if (Test-Path $MyDir\Log\Latest.log){
 
 Write-Output (("{0:yyyy-MM-dd-HH-mm-ss}" -f (get-date)).ToString()) >> $MyDir\Log\Latest.log
 Write-Output "" >> $MyDir\Log\Latest.log
-Write-Output "" >> $MyDir\Log\Latest.log
 Write-Output "                   _______  _______  _______                 " >> $MyDir\Log\Latest.log
 Write-Output "|\     /||\     /||  ____ ||  ____ \|  ____ |       |\     /|" >> $MyDir\Log\Latest.log
 Write-Output "| |   | || \   / || |    ||| |    \/| |    ||       | |   | |" >> $MyDir\Log\Latest.log
 Write-Output "| |___| | \ \_/ / | |____||| |__    | |____|| _____ | |   | |" >> $MyDir\Log\Latest.log
 Write-Output "|  ___  |  \   /  |  _____||  __|   |    ___||_____|| |   | |" >> $MyDir\Log\Latest.log
 Write-Output "| |   | |   | |   | |      | |      | |\ \           \ \_/ / " >> $MyDir\Log\Latest.log
-Write-Output "| |   | |   | |   | |      | |____/\| | \ \_          \   /   " >> $MyDir\Log\Latest.log
+Write-Output "| |   | |   | |   | |      | |____/\| | \ \_          \   /  " >> $MyDir\Log\Latest.log
 Write-Output "|/     \|   |_|   |/       |_______/|/   \__|          \_/   " >> $MyDir\Log\Latest.log
 Write-Output "                                                             " >> $MyDir\Log\Latest.log
 Write-Output " _________  _______  _        _______  _______  _______  _______ " >> $MyDir\Log\Latest.log
@@ -281,11 +281,18 @@ Write-Host "|/       \||/     \||/    |_||/     \||_______||_______/|/   \__/"
 
 Write-Host "Look behind this Window!"
 $FormOverview.text = $ConfigName
+$Icon = New-Object system.drawing.icon (".\Images\favicon.ico")
+$FormOverview.Icon = $Icon
+
+$LogContent = Get-Content .\Log\* -Raw
+$TextBox35.Text = $LogContent
 
 if ($ConfigLanguage -eq 'de-DE'){
     .\Script\UpdateGerman.ps1
+    $RichTextBox2.Text = Get-Content .\Config\Motd-Deutsch.txt -raw
 } elseif ($ConfigLanguage -eq 'en-EN') {
     .\Script\UpdateEnglisch.ps1
+    $RichTextBox2.Text = Get-Content .\Config\Motd-Englisch.txt
 } else {
     [System.Windows.Forms.MessageBox]::Show("Ungültige Sprache.....","Hyper-V Manager V.2 by MinersWin",1)
     break
@@ -969,6 +976,15 @@ function Grant-Permission{
     $balloon.ShowBalloonTip(20)
 }
 
+$Button38.Add_Click{(Forrest)}
+function Forrest{
+    if ($MaskedTextBox1.Text -eq 'MinersWin'){
+        $TabPage6.Enabled = $true
+    } else {
+    }
+}
+$MaskedTextBox1.PasswordChar = '?'
+$TabPage6.Enabled = $false
 function Einstellungen{
     $TextBox28.Text = $ConfigPathThumbnailPath
     $TextBox29.Text = $configPathLogPath
@@ -1002,14 +1018,14 @@ Einstellungen
 
 $Button33.Add_Click{Update-German}
 function Update-German{
-    .\Script\UpdateGerman.ps1
     $global:ConfigLanguage = 'de-DE'
+    .\Script\UpdateGerman.ps1
 }
 
 $Button34.Add_Click{Update-Eng}
 function Update-Eng{
-    .\Script\UpdateEnglisch.ps1
     $global:ConfigLanguage = 'en-EN'
+    .\Script\UpdateEnglisch.ps1
 }
 
 $Button35.Add_Click{Save-Config}
@@ -1140,7 +1156,7 @@ function Send-Feedback{
 
     $LabelTitle                      = New-Object system.Windows.Forms.Label
     $LabelTitle.text                 = "Hier kannst du dein Feedback und Verbesserungsvorschläge"
-    $LabelTitle.AutoSize             = $true
+l    $LabelTitle.AutoSize             = $true
     $LabelTitle.width                = 25
     $LabelTitle.height               = 10
     $LabelTitle.location             = New-Object System.Drawing.Point(19,31)
