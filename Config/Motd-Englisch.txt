@@ -1,0 +1,5 @@
+This is a very early alpha in which the Project is located. I`m not responsible for any Problems associated with the execution of the Program. 
+So far, the most functions are implemented. This is a hobby project! Everything can cause mistakes and create problems! Use at your own risk!
+Everything is based on PowerShell. The performance will improve. Bugs, suggestions for improvement and Feedback will be read gladly.
+There are parts of the program cut off or postponed, then I ask you to write me an email, including the OS version, PowerShell and .Net framework version and screen size and resolution.
+For this yo can simply Write me a Mail to HyperV-Manager@MinersWin.de .
