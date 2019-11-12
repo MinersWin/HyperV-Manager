@@ -1,14 +1,10 @@
 $Datum = Get-Date
 
-$Exists = Test-Path "$($MyDir)\Config\Config.psd1"
-if ($Exists){
-    Set-Location "$($MyDir)\Config\"
-    rm Config.psd1
+if (Test-Path "$($MyDir)\Config\Config.psd1"){
 } else {
-
-}
-
-@"
+  Set-Location "$($MyDir)\Config\"
+    rm Config.psd1
+    @"
 @{
     Name = 'Hyper-V Manager by MinersWin'
     Length = 4532304
@@ -58,4 +54,6 @@ if ($Exists){
     }
 }
 "@ | Out-File -FilePath $MyDir\Config\Config.psd1
+}
+
  
