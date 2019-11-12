@@ -51,6 +51,11 @@
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
 #Setzt $MyDir zum Pfad, in welchem das Skript ausgeführt wird.
 $MyDir = Split-Path $script:MyInvocation.MyCommand.Path
+Set-Location $MyDir
+
+#
+#__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+.\Script\CreateNewConfig.ps1
 
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
 #Einlesen der Einstellungen aus der Config Datei
@@ -185,6 +190,19 @@ $ComboBox1.Enabled = $false
 $RichTextBox1.Enabled = $false
 $RadioButton1.Checked = $true
 
+#
+#______________________________________________________________________________________________________________________________________________________________________________________________
+#Home Infos
+$Label65.Text = $ConfigName
+$Label67.Text = $ConfigDirectoryName
+$Label69.Text = $ConfigVersion
+$Label71.Text = $ConfigBuild
+$Label73.Text = $ConfigLastUpdate
+$Label75.Text = $ConfigCompanyName
+$Label77.Text = $ConfigLanguage
+$Label79.Text = "$Env:USERNAME"
+$Label81.Text = "$($env:UserDomain)"
+$Label83.Text = "$Env:LOGONSERVER"
 
 #
 #_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -262,6 +280,16 @@ Write-Host "|/       \||/     \||/    |_||/     \||_______||_______/|/   \__/"
   $balloon.ShowBalloonTip(20) 
 
 Write-Host "Look behind this Window!"
+$FormOverview.text = $ConfigName
+
+if ($ConfigLanguage -eq 'de-DE'){
+    .\Script\UpdateGerman.ps1
+} elseif ($ConfigLanguage -eq 'en-EN') {
+    .\Script\UpdateEnglisch.ps1
+} else {
+    [System.Windows.Forms.MessageBox]::Show("Ungültige Sprache.....","Hyper-V Manager V.2 by MinersWin",1)
+    break
+}
 
 #Fügt Domain\Name in die Rechtevergabe ein
 $TextBox13.Text = "$($env:UserDomain)\$($env:UserName)"
@@ -945,12 +973,14 @@ function Einstellungen{
     $TextBox28.Text = $ConfigPathThumbnailPath
     $TextBox29.Text = $configPathLogPath
     $TextBox22.Text = $ConfigUpdateScript
+    $TextBox30.Text = $ConfigDirectoryName
 
     if ($ConfigCheckForUpdates){$CheckBox16.Checked = $true}else{$CheckBox16.Checked = $false}
     if ($ConfigUpdateWarn){$CheckBox17.Checked = $true}else{$CheckBox17.Checked = $false}
     if ($ConfigUpdateDownload){$CheckBox18.Checked = $true}else{$CheckBox18.Checked = $false}
     if ($ConfigUpdateReplaceOldVersion){$CheckBox19.Checked = $true}else{$CheckBox19.Checked = $false}
     if ($ConfigUpdateSaveOldVersion){$CheckBox20.Checked = $true}else{$CheckBox20.Checked = $false}
+    if ($ConfigUpdateNewLanguages){$CheckBox21.Checked = $true}else{$CheckBox21.Checked = $false}
 
     $TextBox23.Text = $ConfigMailSendTo
     $TextBox24.Text = $ConfigSMTPUsername
@@ -958,6 +988,14 @@ function Einstellungen{
     $TextBox25.UseSystemPasswordChar = $true
     $TextBox26.Text = $ConfigSMTPServer
     $TextBox27.Text = $ConfigSMTPPort
+
+    $TextBox19.Text = $ConfigName
+    $TextBox20.Text = $ConfigVersion
+    $TextBox21.Text = $ConfigBuild
+    $TextBox31.Text = $ConfigLastUpdate
+    $TextBox32.Text = $ConfigLastUpdateSearch
+    $TextBox33.Text = $ConfigCompanyName
+    $TextBox34.Text = $ConfigDescription
 }
 
 Einstellungen
@@ -965,10 +1003,93 @@ Einstellungen
 $Button33.Add_Click{Update-German}
 function Update-German{
     .\Script\UpdateGerman.ps1
+    $global:ConfigLanguage = 'de-DE'
 }
 
+$Button34.Add_Click{Update-Eng}
+function Update-Eng{
+    .\Script\UpdateEnglisch.ps1
+    $global:ConfigLanguage = 'en-EN'
+}
 
+$Button35.Add_Click{Save-Config}
+function Save-config{
+    $ConfigPathThumbnailPath = $TextBox28.Text
+    $configPathLogPath = $TextBox29.Text
+    $ConfigUpdateScript = $TextBox22.Text
+    if ($CheckBox16.Checked){$ConfigCheckForUpdates = 'YES'}else{$ConfigCheckForUpdates = 'NO'}
+    if ($CheckBox17.Checked){$ConfigUpdateWarn = 'YES'}else{$ConfigUpdateWarn = 'NO'}
+    if ($CheckBox18.Checked){$ConfigUpdateDownload = 'YES'}else{$ConfigUpdateDownload = 'NO'}
+    if ($CheckBox19.Checked){$ConfigUpdateReplaceOldVersion = 'Yes'}else{$ConfigUpdateReplaceOldVersion = 'NO'}
+    if ($CheckBox20.Checked){$ConfigUpdateSaveOldVersion = 'YES'}else{$ConfigUpdateSaveOldVersion = 'NO'}
+    if ($CheckBox21.Checked){$ConfigUpdateNewLanguages = 'YES'}else{$ConfigUpdateNewLanguages = 'NO'}
 
+    $ConfigMailSendTo = $TextBox23.Text
+    $ConfigSMTPUsername = $TextBox24.Text
+    $ConfigSMTPPassword = $TextBox25.Text
+    $ConfigSMTPServer = $TextBox26.Text
+    $ConfigSMTPPort = $TextBox27.Text
+
+    $ConfigName = $TextBox19.Text
+    $ConfigVersion = $TextBox20.Text
+    $ConfigBuild = $TextBox21.Text
+    $ConfigLastUpdate = $TextBox31.Text
+    $ConfigLastUpdateSearch = $TextBox32.Text
+    $ConfigCompanyName = $TextBox33.Text
+    $ConfigDescription = $TextBox34.Text
+
+    rm .\config\Config.psd1
+    @"
+@{
+    Name = '$($ConfigName)'
+    Length = 4532304
+    DirectoryName = '$MyDir\'
+
+    VersionInfo = @{
+      ProductVersion = '$($ConfigVersion)' 
+      Build = '$($ConfigBuild)'
+      LastUpdate = '$($ConfigLastUpdate)'
+      LastUpdateSearch = '$(Get-Date)'
+      Author = 'Moritz Mantel'
+      CompanyName = '$($ConfigCompanyName)'
+      Description = '$($ConfigDescription)'
+    }
+    Update = @{
+      CheckForUpdates = '$($ConfigCheckForUpdates)'
+      NewestVersion = 'https://pastebin.com/raw/zBUriG1D'
+      Warn = '$($ConfigUpdateWarn)'
+      AutoDownload = '$($ConfigUpdateDownload)'
+      UpdateScript = '$($ConfigUpdateScript)'
+      ReplaceOldVersion = '$($ConfigUpdateReplaceOldVersion)'
+      SaveOldVersion = '$($ConfigUpdateSaveOldVersion)'
+      DownloadNewLanguages = '$($ConfigUpdateNewLanguages)'
+    }
+    Language = @{
+      #Avaiable Languages: de-DE en-EN
+      Language = '$($ConfigLanguage)'
+    }
+    Websites = @{
+      Donate1 = 'https://www.paypal.me/minerswin'
+      Donate2 = 'https://www.patreon.com/minerswin'
+      AboutSite = 'https://www.Hyper-V-Manager.de/About/'
+    }
+    Mail = @{
+      SendFeedbackTo = '$($ConfigMailSendTo)'
+      
+      #SMTP Server
+      Username = '$($ConfigSMTPUsername)'
+      Password = '$($ConfigSMTPPassword)'
+      SmtpServer = '$($ConfigSMTPServer)'
+      SmtpPort = '$($ConfigSMTPPort)'
+    }
+    Path = @{
+      SaveInTemp = 'YES'
+      ThumbnailPath = '$($ConfigPathThumbnailPath)'
+      LogPath = '$($configPathLogPath)'
+    }
+}
+"@ | Out-File -FilePath $MyDir\Config\Config.psd1
+}
 
 
 
