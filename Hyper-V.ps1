@@ -70,7 +70,7 @@ $ConfigCheckForUpdates = $Config.Update.CheckforUpdates -eq "YES"
 $ConfigNewestVersion = $Config.Update.NewestVersion
 $ConfigUpdateWarn = $Config.Update.Warn -eq "YES"
 $ConfigUpdateDownload = $Config.Update.AutoDownload -eq "YES"
-$ConfigUpdateScript = $Config.Update.UpdateScript -eq "YES"
+$ConfigUpdateScript = $Config.Update.UpdateScript
 $ConfigUpdateReplaceOldVersion = $Config.Update.ReplaceOldVersion -eq "YES"
 $ConfigUpdateSaveOldVersion = $Config.Update.SaveOldVersion -eq "YES"
 $ConfigUpdateNewLanguages = $Config.Update.DownloadNewLanguages -eq "YES"
@@ -941,9 +941,31 @@ function Grant-Permission{
     $balloon.ShowBalloonTip(20)
 }
 
+function Einstellungen{
+    $TextBox28.Text = $ConfigPathThumbnailPath
+    $TextBox29.Text = $configPathLogPath
+    $TextBox22.Text = $ConfigUpdateScript
 
+    if ($ConfigCheckForUpdates){$CheckBox16.Checked = $true}else{$CheckBox16.Checked = $false}
+    if ($ConfigUpdateWarn){$CheckBox17.Checked = $true}else{$CheckBox17.Checked = $false}
+    if ($ConfigUpdateDownload){$CheckBox18.Checked = $true}else{$CheckBox18.Checked = $false}
+    if ($ConfigUpdateReplaceOldVersion){$CheckBox19.Checked = $true}else{$CheckBox19.Checked = $false}
+    if ($ConfigUpdateSaveOldVersion){$CheckBox20.Checked = $true}else{$CheckBox20.Checked = $false}
 
+    $TextBox23.Text = $ConfigMailSendTo
+    $TextBox24.Text = $ConfigSMTPUsername
+    $TextBox25.Text = $ConfigSMTPPassword
+    $TextBox25.UseSystemPasswordChar = $true
+    $TextBox26.Text = $ConfigSMTPServer
+    $TextBox27.Text = $ConfigSMTPPort
+}
 
+Einstellungen
+
+$Button33.Add_Click{Update-German}
+function Update-German{
+    .\Script\UpdateGerman.ps1
+}
 
 
 

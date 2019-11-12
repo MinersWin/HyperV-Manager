@@ -30,11 +30,6 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.ToolStripMenuItem]$AboutToolStripMenuItem = $null
 [System.Windows.Forms.Label]$Label10 = $null
 [System.Windows.Forms.MenuStrip]$MenuStripOverview = $null
-[System.Windows.Forms.ToolStripMenuItem]$ResetToolStripMenuItem = $null
-[System.Windows.Forms.ToolStripMenuItem]$RestartToolStripMenuItem = $null
-[System.Windows.Forms.ToolStripMenuItem]$ResetHyperVManagerToolStripMenuItem = $null
-[System.Windows.Forms.ToolStripMenuItem]$OpenRootDirToolStripMenuItem = $null
-[System.Windows.Forms.ToolStripMenuItem]$ExitToolStripMenuItem = $null
 [System.Windows.Forms.ToolStripMenuItem]$AktionToolStripMenuItem = $null
 [System.Windows.Forms.ToolStripMenuItem]$MitAnderenHostVerbindenToolStripMenuItem = $null
 [System.Windows.Forms.ToolStripMenuItem]$ExportToolStripMenuItem = $null
@@ -50,7 +45,6 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.ToolStripMenuItem]$Mirror2MinersWindeToolStripMenuItem = $null
 [System.Windows.Forms.ToolStripMenuItem]$Mirror3MinersWindeToolStripMenuItem = $null
 [System.Windows.Forms.ToolStripMenuItem]$Mirror1MoritzManteldeToolStripMenuItem = $null
-[System.Windows.Forms.ToolStripMenuItem]$ToolStripMenuItem1 = $null
 [System.Windows.Forms.Label]$Label12 = $null
 [System.Windows.Forms.Label]$Label31 = $null
 [System.Windows.Forms.ToolStripMenuItem]$BeendenToolStripMenuItem = $null
@@ -145,6 +139,42 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.Button]$Button13 = $null
 [System.Windows.Forms.Label]$LabelOverview = $null
 [System.Windows.Forms.TabControl]$TabControl1 = $null
+[System.Windows.Forms.TabPage]$TabPage7 = $null
+[System.Windows.Forms.Panel]$Panel26 = $null
+[System.Windows.Forms.Label]$Label83 = $null
+[System.Windows.Forms.Label]$Label82 = $null
+[System.Windows.Forms.Label]$Label81 = $null
+[System.Windows.Forms.Label]$Label80 = $null
+[System.Windows.Forms.Label]$Label79 = $null
+[System.Windows.Forms.Label]$Label78 = $null
+[System.Windows.Forms.Label]$Label77 = $null
+[System.Windows.Forms.Label]$Label76 = $null
+[System.Windows.Forms.Label]$Label75 = $null
+[System.Windows.Forms.Label]$Label74 = $null
+[System.Windows.Forms.Label]$Label73 = $null
+[System.Windows.Forms.Label]$Label72 = $null
+[System.Windows.Forms.Label]$Label71 = $null
+[System.Windows.Forms.Label]$Label70 = $null
+[System.Windows.Forms.Label]$Label69 = $null
+[System.Windows.Forms.Label]$Label68 = $null
+[System.Windows.Forms.Label]$Label67 = $null
+[System.Windows.Forms.Label]$Label66 = $null
+[System.Windows.Forms.Label]$Label65 = $null
+[System.Windows.Forms.Label]$Label64 = $null
+[System.Windows.Forms.Panel]$Panel25 = $null
+[System.Windows.Forms.Button]$Button46 = $null
+[System.Windows.Forms.Button]$Button45 = $null
+[System.Windows.Forms.Button]$Button44 = $null
+[System.Windows.Forms.Button]$Button43 = $null
+[System.Windows.Forms.Button]$Button42 = $null
+[System.Windows.Forms.Button]$Button41 = $null
+[System.Windows.Forms.Button]$Button40 = $null
+[System.Windows.Forms.Button]$Button39 = $null
+[System.Windows.Forms.CheckBox]$CheckBox22 = $null
+[System.Windows.Forms.RichTextBox]$RichTextBox2 = $null
+[System.Windows.Forms.Button]$Button38 = $null
+[System.Windows.Forms.Label]$Label63 = $null
+[System.Windows.Forms.MaskedTextBox]$MaskedTextBox1 = $null
 [System.Windows.Forms.TabPage]$TabPage1 = $null
 [System.Windows.Forms.TextBox]$TextBox16 = $null
 [System.Windows.Forms.Panel]$Panel14 = $null
@@ -174,7 +204,13 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.TabPage]$TabPage4 = $null
 [System.Windows.Forms.TabPage]$TabPage5 = $null
 [System.Windows.Forms.TabPage]$TabPage6 = $null
+[System.Windows.Forms.VScrollBar]$VScrollBar1 = $null
+[System.Windows.Forms.Button]$Button37 = $null
+[System.Windows.Forms.Button]$Button36 = $null
+[System.Windows.Forms.Button]$Button35 = $null
 [System.Windows.Forms.Panel]$Panel24 = $null
+[System.Windows.Forms.TextBox]$TextBox30 = $null
+[System.Windows.Forms.Label]$Label58 = $null
 [System.Windows.Forms.TextBox]$TextBox29 = $null
 [System.Windows.Forms.Label]$Label57 = $null
 [System.Windows.Forms.TextBox]$TextBox28 = $null
@@ -183,6 +219,14 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.Label]$Label47 = $null
 [System.Windows.Forms.TextBox]$TextBox22 = $null
 [System.Windows.Forms.Panel]$Panel23 = $null
+[System.Windows.Forms.TextBox]$TextBox34 = $null
+[System.Windows.Forms.Label]$Label62 = $null
+[System.Windows.Forms.TextBox]$TextBox33 = $null
+[System.Windows.Forms.Label]$Label61 = $null
+[System.Windows.Forms.TextBox]$TextBox32 = $null
+[System.Windows.Forms.Label]$Label60 = $null
+[System.Windows.Forms.TextBox]$TextBox31 = $null
+[System.Windows.Forms.Label]$Label59 = $null
 [System.Windows.Forms.Label]$Label43 = $null
 [System.Windows.Forms.Label]$Label46 = $null
 [System.Windows.Forms.TextBox]$TextBox20 = $null
@@ -203,6 +247,7 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.Label]$Label48 = $null
 [System.Windows.Forms.Label]$Label49 = $null
 [System.Windows.Forms.Panel]$Panel21 = $null
+[System.Windows.Forms.CheckBox]$CheckBox21 = $null
 [System.Windows.Forms.Label]$Label54 = $null
 [System.Windows.Forms.CheckBox]$CheckBox20 = $null
 [System.Windows.Forms.CheckBox]$CheckBox19 = $null
@@ -219,6 +264,7 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.ToolStripMenuItem]$ResetHyperVManagerToolStripMenuItem = $null
 [System.Windows.Forms.ToolStripMenuItem]$OpenRootDirToolStripMenuItem = $null
 [System.Windows.Forms.ToolStripMenuItem]$ExitToolStripMenuItem = $null
+[System.Windows.Forms.ToolStripMenuItem]$ToolStripMenuItem2 = $null
 function InitializeComponent
 {
 $Button23 = (New-Object -TypeName System.Windows.Forms.Button)
@@ -252,7 +298,6 @@ $Label16 = (New-Object -TypeName System.Windows.Forms.Label)
 $AboutToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $Label10 = (New-Object -TypeName System.Windows.Forms.Label)
 $MenuStripOverview = (New-Object -TypeName System.Windows.Forms.MenuStrip)
-$DateiToolStripMenuItem2 = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $AktionToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $MitAnderenHostVerbindenToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $ExportToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
@@ -363,12 +408,12 @@ $Button13 = (New-Object -TypeName System.Windows.Forms.Button)
 $LabelOverview = (New-Object -TypeName System.Windows.Forms.Label)
 $TabControl1 = (New-Object -TypeName System.Windows.Forms.TabControl)
 $TabPage1 = (New-Object -TypeName System.Windows.Forms.TabPage)
-$Panel18 = (New-Object -TypeName System.Windows.Forms.Panel)
-$Panel19 = (New-Object -TypeName System.Windows.Forms.Panel)
-$Label41 = (New-Object -TypeName System.Windows.Forms.Label)
 $TextBox16 = (New-Object -TypeName System.Windows.Forms.TextBox)
 $Panel14 = (New-Object -TypeName System.Windows.Forms.Panel)
 $TabPage2 = (New-Object -TypeName System.Windows.Forms.TabPage)
+$Panel18 = (New-Object -TypeName System.Windows.Forms.Panel)
+$Panel19 = (New-Object -TypeName System.Windows.Forms.Panel)
+$Label41 = (New-Object -TypeName System.Windows.Forms.Label)
 $Panel17 = (New-Object -TypeName System.Windows.Forms.Panel)
 $Button32 = (New-Object -TypeName System.Windows.Forms.Button)
 $Button31 = (New-Object -TypeName System.Windows.Forms.Button)
@@ -390,63 +435,104 @@ $Panel15 = (New-Object -TypeName System.Windows.Forms.Panel)
 $TabPage3 = (New-Object -TypeName System.Windows.Forms.TabPage)
 $TabPage4 = (New-Object -TypeName System.Windows.Forms.TabPage)
 $TabPage5 = (New-Object -TypeName System.Windows.Forms.TabPage)
+$TabPage6 = (New-Object -TypeName System.Windows.Forms.TabPage)
+$Panel24 = (New-Object -TypeName System.Windows.Forms.Panel)
+$TextBox29 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label57 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox28 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label56 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label55 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label47 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox22 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Panel23 = (New-Object -TypeName System.Windows.Forms.Panel)
+$Label43 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label46 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox20 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$TextBox21 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label45 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label44 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox19 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Panel22 = (New-Object -TypeName System.Windows.Forms.Panel)
+$TextBox27 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label53 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox26 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label52 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox25 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label51 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox24 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label50 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox23 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label48 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label49 = (New-Object -TypeName System.Windows.Forms.Label)
+$Panel21 = (New-Object -TypeName System.Windows.Forms.Panel)
+$Label54 = (New-Object -TypeName System.Windows.Forms.Label)
+$CheckBox20 = (New-Object -TypeName System.Windows.Forms.CheckBox)
+$CheckBox19 = (New-Object -TypeName System.Windows.Forms.CheckBox)
+$CheckBox18 = (New-Object -TypeName System.Windows.Forms.CheckBox)
+$CheckBox17 = (New-Object -TypeName System.Windows.Forms.CheckBox)
+$CheckBox16 = (New-Object -TypeName System.Windows.Forms.CheckBox)
+$Panel20 = (New-Object -TypeName System.Windows.Forms.Panel)
+$Button34 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button33 = (New-Object -TypeName System.Windows.Forms.Button)
+$Label42 = (New-Object -TypeName System.Windows.Forms.Label)
 $ToolStripMenuItem1 = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$UpdateToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$ToolStripMenuItem2 = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$GitHubcomToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$HyperVManagerdeToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$HyperVManagerdeToolStripMenuItem1 = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$Root3MinersWindeToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$Root4MinersWindeToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$Mirror1MinersWindeToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$Mirror2MinersWindeToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$Mirror3MinersWindeToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$Mirror1MoritzManteldeToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $ResetToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $RestartToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $ResetHyperVManagerToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $OpenRootDirToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $ExitToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
-$TabPage6 = (New-Object -TypeName System.Windows.Forms.TabPage)
-$Panel20 = (New-Object -TypeName System.Windows.Forms.Panel)
-$Label42 = (New-Object -TypeName System.Windows.Forms.Label)
-$Button33 = (New-Object -TypeName System.Windows.Forms.Button)
-$Button34 = (New-Object -TypeName System.Windows.Forms.Button)
-$Panel21 = (New-Object -TypeName System.Windows.Forms.Panel)
-$Label43 = (New-Object -TypeName System.Windows.Forms.Label)
-$Label44 = (New-Object -TypeName System.Windows.Forms.Label)
-$TextBox19 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Label45 = (New-Object -TypeName System.Windows.Forms.Label)
-$TextBox20 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Label46 = (New-Object -TypeName System.Windows.Forms.Label)
-$TextBox21 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Label47 = (New-Object -TypeName System.Windows.Forms.Label)
-$TextBox22 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Label48 = (New-Object -TypeName System.Windows.Forms.Label)
-$CheckBox16 = (New-Object -TypeName System.Windows.Forms.CheckBox)
-$CheckBox17 = (New-Object -TypeName System.Windows.Forms.CheckBox)
-$CheckBox18 = (New-Object -TypeName System.Windows.Forms.CheckBox)
-$CheckBox19 = (New-Object -TypeName System.Windows.Forms.CheckBox)
-$CheckBox20 = (New-Object -TypeName System.Windows.Forms.CheckBox)
-$Label49 = (New-Object -TypeName System.Windows.Forms.Label)
-$Panel22 = (New-Object -TypeName System.Windows.Forms.Panel)
-$TextBox23 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Label50 = (New-Object -TypeName System.Windows.Forms.Label)
-$TextBox24 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Label51 = (New-Object -TypeName System.Windows.Forms.Label)
-$TextBox25 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Label52 = (New-Object -TypeName System.Windows.Forms.Label)
-$TextBox26 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Label53 = (New-Object -TypeName System.Windows.Forms.Label)
-$TextBox27 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Label54 = (New-Object -TypeName System.Windows.Forms.Label)
-$Panel23 = (New-Object -TypeName System.Windows.Forms.Panel)
-$Panel24 = (New-Object -TypeName System.Windows.Forms.Panel)
-$Label55 = (New-Object -TypeName System.Windows.Forms.Label)
-$Label56 = (New-Object -TypeName System.Windows.Forms.Label)
-$TextBox28 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Label57 = (New-Object -TypeName System.Windows.Forms.Label)
-$TextBox29 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$ToolStripMenuItem2 = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
+$Label58 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox30 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Button35 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button36 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button37 = (New-Object -TypeName System.Windows.Forms.Button)
+$Label59 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox31 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label60 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox32 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label61 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox33 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Label62 = (New-Object -TypeName System.Windows.Forms.Label)
+$TextBox34 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$VScrollBar1 = (New-Object -TypeName System.Windows.Forms.VScrollBar)
+$CheckBox21 = (New-Object -TypeName System.Windows.Forms.CheckBox)
+$TabPage7 = (New-Object -TypeName System.Windows.Forms.TabPage)
+$MaskedTextBox1 = (New-Object -TypeName System.Windows.Forms.MaskedTextBox)
+$Label63 = (New-Object -TypeName System.Windows.Forms.Label)
+$Button38 = (New-Object -TypeName System.Windows.Forms.Button)
+$RichTextBox2 = (New-Object -TypeName System.Windows.Forms.RichTextBox)
+$CheckBox22 = (New-Object -TypeName System.Windows.Forms.CheckBox)
+$Button39 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button40 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button41 = (New-Object -TypeName System.Windows.Forms.Button)
+$Panel25 = (New-Object -TypeName System.Windows.Forms.Panel)
+$Button42 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button43 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button44 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button45 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button46 = (New-Object -TypeName System.Windows.Forms.Button)
+$Panel26 = (New-Object -TypeName System.Windows.Forms.Panel)
+$Label64 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label65 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label66 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label67 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label68 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label69 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label70 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label71 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label72 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label73 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label74 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label75 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label76 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label77 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label78 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label79 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label80 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label81 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label82 = (New-Object -TypeName System.Windows.Forms.Label)
+$Label83 = (New-Object -TypeName System.Windows.Forms.Label)
 $MenuStripOverview.SuspendLayout()
 $Panel10.SuspendLayout()
 $Panel8.SuspendLayout()
@@ -464,10 +550,10 @@ $Panel2.SuspendLayout()
 $Panel3.SuspendLayout()
 $TabControl1.SuspendLayout()
 $TabPage1.SuspendLayout()
-$Panel18.SuspendLayout()
-$Panel19.SuspendLayout()
 $Panel14.SuspendLayout()
 $TabPage2.SuspendLayout()
+$Panel18.SuspendLayout()
+$Panel19.SuspendLayout()
 $Panel17.SuspendLayout()
 $Panel16.SuspendLayout()
 $Panel15.SuspendLayout()
@@ -475,11 +561,14 @@ $TabPage3.SuspendLayout()
 $TabPage4.SuspendLayout()
 $TabPage5.SuspendLayout()
 $TabPage6.SuspendLayout()
-$Panel20.SuspendLayout()
-$Panel21.SuspendLayout()
-$Panel22.SuspendLayout()
-$Panel23.SuspendLayout()
 $Panel24.SuspendLayout()
+$Panel23.SuspendLayout()
+$Panel22.SuspendLayout()
+$Panel21.SuspendLayout()
+$Panel20.SuspendLayout()
+$TabPage7.SuspendLayout()
+$Panel25.SuspendLayout()
+$Panel26.SuspendLayout()
 $FormOverview.SuspendLayout()
 #
 #Button23
@@ -576,7 +665,7 @@ $Label20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label20.Name = [System.String]'Label20'
 $Label20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]733,[System.Int32]16))
 $Label20.TabIndex = [System.Int32]22
-$Label20.Text = [System.String]'Kommerziellen Nutzen haben, müssen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt'
+$Label20.Text = [System.String]'Kommerziellen Nutzen haben, mï¿½ssen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt'
 $Label20.UseCompatibleTextRendering = $true
 #
 #Label21
@@ -707,7 +796,7 @@ $Label19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label19.Name = [System.String]'Label19'
 $Label19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]594,[System.Int32]16))
 $Label19.TabIndex = [System.Int32]21
-$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien für eigene Projekte zu übernehmen, diese Projekte dürfen jedoch keinen'
+$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien fï¿½r eigene Projekte zu ï¿½bernehmen, diese Projekte dï¿½rfen jedoch keinen'
 $Label19.UseCompatibleTextRendering = $true
 #
 #Label18
@@ -767,21 +856,13 @@ $Label10.UseCompatibleTextRendering = $true
 #
 #MenuStripOverview
 #
-$MenuStripOverview.Items.AddRange([System.Windows.Forms.ToolStripItem[]]@($DateiToolStripMenuItem2,$AktionToolStripMenuItem,$AboutToolStripMenuItem))
+$MenuStripOverview.Items.AddRange([System.Windows.Forms.ToolStripItem[]]@($AktionToolStripMenuItem,$AboutToolStripMenuItem))
 $MenuStripOverview.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]0,[System.Int32]0))
 $MenuStripOverview.Name = [System.String]'MenuStripOverview'
-$MenuStripOverview.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1363,[System.Int32]24))
+$MenuStripOverview.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1366,[System.Int32]24))
 $MenuStripOverview.TabIndex = [System.Int32]2
 $MenuStripOverview.Text = [System.String]'MenuStripOverview'
 $MenuStripOverview.add_ItemClicked($MenuStripOverview_ItemClicked)
-#
-#DateiToolStripMenuItem2
-#
-$DateiToolStripMenuItem2.DropDownItems.AddRange([System.Windows.Forms.ToolStripItem[]]@($ResetToolStripMenuItem,$OpenRootDirToolStripMenuItem,$ExitToolStripMenuItem))
-$DateiToolStripMenuItem2.Name = [System.String]'DateiToolStripMenuItem2'
-$DateiToolStripMenuItem2.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]46,[System.Int32]20))
-$DateiToolStripMenuItem2.Text = [System.String]'Datei'
-#
 #
 #AktionToolStripMenuItem
 #
@@ -813,6 +894,67 @@ $DonateToolStripMenuItem.Text = [System.String]'Donate'
 $FeedbackToolStripMenuItem.Name = [System.String]'FeedbackToolStripMenuItem'
 $FeedbackToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]222,[System.Int32]22))
 $FeedbackToolStripMenuItem.Text = [System.String]'Feedback'
+#
+#UpdateToolStripMenuItem
+#
+$UpdateToolStripMenuItem.DropDownItems.AddRange([System.Windows.Forms.ToolStripItem[]]@($GitHubcomToolStripMenuItem,$HyperVManagerdeToolStripMenuItem,$HyperVManagerdeToolStripMenuItem1,$Root3MinersWindeToolStripMenuItem,$Root4MinersWindeToolStripMenuItem,$Mirror1MinersWindeToolStripMenuItem,$Mirror2MinersWindeToolStripMenuItem,$Mirror3MinersWindeToolStripMenuItem,$Mirror1MoritzManteldeToolStripMenuItem))
+$UpdateToolStripMenuItem.Name = [System.String]'UpdateToolStripMenuItem'
+$UpdateToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]222,[System.Int32]22))
+$UpdateToolStripMenuItem.Text = [System.String]'Update'
+#
+#GitHubcomToolStripMenuItem
+#
+$GitHubcomToolStripMenuItem.Name = [System.String]'GitHubcomToolStripMenuItem'
+$GitHubcomToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
+$GitHubcomToolStripMenuItem.Text = [System.String]'GitHub.com'
+#
+#HyperVManagerdeToolStripMenuItem
+#
+$HyperVManagerdeToolStripMenuItem.Name = [System.String]'HyperVManagerdeToolStripMenuItem'
+$HyperVManagerdeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
+$HyperVManagerdeToolStripMenuItem.Text = [System.String]'Hyper-V-Manager.de'
+#
+#HyperVManagerdeToolStripMenuItem1
+#
+$HyperVManagerdeToolStripMenuItem1.Name = [System.String]'HyperVManagerdeToolStripMenuItem1'
+$HyperVManagerdeToolStripMenuItem1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
+$HyperVManagerdeToolStripMenuItem1.Text = [System.String]'HyperV-Manager.de'
+#
+#Root3MinersWindeToolStripMenuItem
+#
+$Root3MinersWindeToolStripMenuItem.Name = [System.String]'Root3MinersWindeToolStripMenuItem'
+$Root3MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
+$Root3MinersWindeToolStripMenuItem.Text = [System.String]'Root3.MinersWin.de'
+#
+#Root4MinersWindeToolStripMenuItem
+#
+$Root4MinersWindeToolStripMenuItem.Name = [System.String]'Root4MinersWindeToolStripMenuItem'
+$Root4MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
+$Root4MinersWindeToolStripMenuItem.Text = [System.String]'Root4.MinersWin.de'
+#
+#Mirror1MinersWindeToolStripMenuItem
+#
+$Mirror1MinersWindeToolStripMenuItem.Name = [System.String]'Mirror1MinersWindeToolStripMenuItem'
+$Mirror1MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
+$Mirror1MinersWindeToolStripMenuItem.Text = [System.String]'Mirror1.MinersWin.de'
+#
+#Mirror2MinersWindeToolStripMenuItem
+#
+$Mirror2MinersWindeToolStripMenuItem.Name = [System.String]'Mirror2MinersWindeToolStripMenuItem'
+$Mirror2MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
+$Mirror2MinersWindeToolStripMenuItem.Text = [System.String]'Mirror2.MinersWin.de'
+#
+#Mirror3MinersWindeToolStripMenuItem
+#
+$Mirror3MinersWindeToolStripMenuItem.Name = [System.String]'Mirror3MinersWindeToolStripMenuItem'
+$Mirror3MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
+$Mirror3MinersWindeToolStripMenuItem.Text = [System.String]'Mirror3.MinersWin.de'
+#
+#Mirror1MoritzManteldeToolStripMenuItem
+#
+$Mirror1MoritzManteldeToolStripMenuItem.Name = [System.String]'Mirror1MoritzManteldeToolStripMenuItem'
+$Mirror1MoritzManteldeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
+$Mirror1MoritzManteldeToolStripMenuItem.Text = [System.String]'Mirror1.Moritz-Mantel.de'
 #
 #Label12
 #
@@ -1146,7 +1288,7 @@ $Button25.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @(
 $Button25.Name = [System.String]'Button25'
 $Button25.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]138,[System.Int32]23))
 $Button25.TabIndex = [System.Int32]28
-$Button25.Text = [System.String]'Öffne Hyper-V Manager'
+$Button25.Text = [System.String]'ï¿½ffne Hyper-V Manager'
 $Button25.UseCompatibleTextRendering = $true
 $Button25.UseVisualStyleBackColor = $true
 #
@@ -1736,6 +1878,7 @@ $LabelOverview.UseCompatibleTextRendering = $true
 #
 #TabControl1
 #
+$TabControl1.Controls.Add($TabPage7)
 $TabControl1.Controls.Add($TabPage1)
 $TabControl1.Controls.Add($TabPage2)
 $TabControl1.Controls.Add($TabPage3)
@@ -1743,10 +1886,10 @@ $TabControl1.Controls.Add($TabPage4)
 $TabControl1.Controls.Add($TabPage5)
 $TabControl1.Controls.Add($TabPage6)
 $TabControl1.Cursor = [System.Windows.Forms.Cursors]::Arrow
-$TabControl1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]28))
+$TabControl1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]0,[System.Int32]27))
 $TabControl1.Name = [System.String]'TabControl1'
 $TabControl1.SelectedIndex = [System.Int32]0
-$TabControl1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1346,[System.Int32]524))
+$TabControl1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1363,[System.Int32]525))
 $TabControl1.TabIndex = [System.Int32]29
 #
 #TabPage1
@@ -1756,40 +1899,10 @@ $TabPage1.Controls.Add($Panel14)
 $TabPage1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage1.Name = [System.String]'TabPage1'
 $TabPage1.Padding = (New-Object -TypeName System.Windows.Forms.Padding -ArgumentList @([System.Int32]3))
-$TabPage1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]498))
+$TabPage1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1355,[System.Int32]499))
 $TabPage1.TabIndex = [System.Int32]0
 $TabPage1.Text = [System.String]'Hostname'
 $TabPage1.UseVisualStyleBackColor = $true
-#
-#Panel18
-#
-$Panel18.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
-$Panel18.Controls.Add($Panel19)
-$Panel18.Controls.Add($Label41)
-$Panel18.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]3))
-$Panel18.Name = [System.String]'Panel18'
-$Panel18.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]483,[System.Int32]63))
-$Panel18.TabIndex = [System.Int32]18
-#
-#Panel19
-#
-$Panel19.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
-$Panel19.Controls.Add($ComboBox1)
-$Panel19.Controls.Add($Button1)
-$Panel19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]26))
-$Panel19.Name = [System.String]'Panel19'
-$Panel19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]472,[System.Int32]33))
-$Panel19.TabIndex = [System.Int32]18
-#
-#Label41
-#
-$Label41.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Times New Roman',[System.Single]14.25,[System.Drawing.FontStyle]::Bold,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$Label41.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]0,[System.Int32]0))
-$Label41.Name = [System.String]'Label41'
-$Label41.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
-$Label41.TabIndex = [System.Int32]17
-$Label41.Text = [System.String]'VM'
-$Label41.UseCompatibleTextRendering = $true
 #
 #TextBox16
 #
@@ -1824,10 +1937,40 @@ $TabPage2.Controls.Add($Panel7)
 $TabPage2.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage2.Name = [System.String]'TabPage2'
 $TabPage2.Padding = (New-Object -TypeName System.Windows.Forms.Padding -ArgumentList @([System.Int32]3))
-$TabPage2.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]498))
+$TabPage2.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1355,[System.Int32]499))
 $TabPage2.TabIndex = [System.Int32]1
 $TabPage2.Text = [System.String]'VM Settings'
 $TabPage2.UseVisualStyleBackColor = $true
+#
+#Panel18
+#
+$Panel18.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
+$Panel18.Controls.Add($Panel19)
+$Panel18.Controls.Add($Label41)
+$Panel18.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]3))
+$Panel18.Name = [System.String]'Panel18'
+$Panel18.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]483,[System.Int32]63))
+$Panel18.TabIndex = [System.Int32]18
+#
+#Panel19
+#
+$Panel19.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
+$Panel19.Controls.Add($ComboBox1)
+$Panel19.Controls.Add($Button1)
+$Panel19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]26))
+$Panel19.Name = [System.String]'Panel19'
+$Panel19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]472,[System.Int32]33))
+$Panel19.TabIndex = [System.Int32]18
+#
+#Label41
+#
+$Label41.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Times New Roman',[System.Single]14.25,[System.Drawing.FontStyle]::Bold,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
+$Label41.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]0,[System.Int32]0))
+$Label41.Name = [System.String]'Label41'
+$Label41.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
+$Label41.TabIndex = [System.Int32]17
+$Label41.Text = [System.String]'VM'
+$Label41.UseCompatibleTextRendering = $true
 #
 #Panel17
 #
@@ -1999,7 +2142,7 @@ $TextBox18.Name = [System.String]'TextBox18'
 $TextBox18.ReadOnly = $true
 $TextBox18.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]450,[System.Int32]48))
 $TextBox18.TabIndex = [System.Int32]38
-$TextBox18.Text = [System.String]'Hier kann die VM gelöscht werde, dies ist unwiederuflich, ALLE Daten werden gelöscht.
+$TextBox18.Text = [System.String]'Hier kann die VM gelï¿½scht werde, dies ist unwiederuflich, ALLE Daten werden gelï¿½scht.
 Bitte vorher die VM Herunterfahren. Die Virtuellen Switches bleiben erhalten.
 '
 #
@@ -2010,7 +2153,7 @@ $Label40.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label40.Name = [System.String]'Label40'
 $Label40.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]133,[System.Int32]33))
 $Label40.TabIndex = [System.Int32]0
-$Label40.Text = [System.String]'VM Löschen'
+$Label40.Text = [System.String]'VM Lï¿½schen'
 $Label40.UseCompatibleTextRendering = $true
 #
 #Panel15
@@ -2027,7 +2170,7 @@ $Panel15.TabIndex = [System.Int32]34
 $TabPage3.Controls.Add($Panel1)
 $TabPage3.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage3.Name = [System.String]'TabPage3'
-$TabPage3.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]498))
+$TabPage3.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1355,[System.Int32]499))
 $TabPage3.TabIndex = [System.Int32]2
 $TabPage3.Text = [System.String]'VM Erstellen'
 $TabPage3.UseVisualStyleBackColor = $true
@@ -2038,7 +2181,7 @@ $TabPage3.Visible = $false
 $TabPage4.Controls.Add($Panel9)
 $TabPage4.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage4.Name = [System.String]'TabPage4'
-$TabPage4.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]498))
+$TabPage4.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1355,[System.Int32]499))
 $TabPage4.TabIndex = [System.Int32]3
 $TabPage4.Text = [System.String]'Virtueller Switch'
 $TabPage4.UseVisualStyleBackColor = $true
@@ -2051,77 +2194,433 @@ $TabPage5.Controls.Add($Panel12)
 $TabPage5.Controls.Add($Panel11)
 $TabPage5.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage5.Name = [System.String]'TabPage5'
-$TabPage5.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]498))
+$TabPage5.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1355,[System.Int32]499))
 $TabPage5.TabIndex = [System.Int32]4
 $TabPage5.Text = [System.String]'User'
 $TabPage5.UseVisualStyleBackColor = $true
 $TabPage5.Visible = $false
 #
+#TabPage6
+#
+$TabPage6.Controls.Add($VScrollBar1)
+$TabPage6.Controls.Add($Button37)
+$TabPage6.Controls.Add($Button36)
+$TabPage6.Controls.Add($Button35)
+$TabPage6.Controls.Add($Panel24)
+$TabPage6.Controls.Add($Panel23)
+$TabPage6.Controls.Add($Panel22)
+$TabPage6.Controls.Add($Panel21)
+$TabPage6.Controls.Add($Panel20)
+$TabPage6.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
+$TabPage6.Name = [System.String]'TabPage6'
+$TabPage6.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1355,[System.Int32]499))
+$TabPage6.TabIndex = [System.Int32]5
+$TabPage6.Text = [System.String]'Einstellungen'
+$TabPage6.UseVisualStyleBackColor = $true
+$TabPage6.Visible = $false
+$TabPage6.add_Click($TabPage6_Click)
+#
+#Panel24
+#
+$Panel24.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
+$Panel24.Controls.Add($TextBox30)
+$Panel24.Controls.Add($Label58)
+$Panel24.Controls.Add($TextBox29)
+$Panel24.Controls.Add($Label57)
+$Panel24.Controls.Add($TextBox28)
+$Panel24.Controls.Add($Label56)
+$Panel24.Controls.Add($Label55)
+$Panel24.Controls.Add($Label47)
+$Panel24.Controls.Add($TextBox22)
+$Panel24.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]79))
+$Panel24.Name = [System.String]'Panel24'
+$Panel24.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]293,[System.Int32]255))
+$Panel24.TabIndex = [System.Int32]18
+#
+#TextBox29
+#
+$TextBox29.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]169))
+$TextBox29.Name = [System.String]'TextBox29'
+$TextBox29.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]287,[System.Int32]21))
+$TextBox29.TabIndex = [System.Int32]4
+#
+#Label57
+#
+$Label57.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label57.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]143))
+$Label57.Name = [System.String]'Label57'
+$Label57.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
+$Label57.TabIndex = [System.Int32]3
+$Label57.Text = [System.String]'Logs'
+$Label57.UseCompatibleTextRendering = $true
+#
+#TextBox28
+#
+$TextBox28.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]115))
+$TextBox28.Name = [System.String]'TextBox28'
+$TextBox28.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]287,[System.Int32]21))
+$TextBox28.TabIndex = [System.Int32]2
+#
+#Label56
+#
+$Label56.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label56.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]89))
+$Label56.Name = [System.String]'Label56'
+$Label56.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
+$Label56.TabIndex = [System.Int32]1
+$Label56.Text = [System.String]'Tumbnails'
+$Label56.UseCompatibleTextRendering = $true
+#
+#Label55
+#
+$Label55.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]14.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
+$Label55.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]4))
+$Label55.Name = [System.String]'Label55'
+$Label55.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]34))
+$Label55.TabIndex = [System.Int32]0
+$Label55.Text = [System.String]'Pfade'
+$Label55.UseCompatibleTextRendering = $true
+#
+#Label47
+#
+$Label47.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label47.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]191))
+$Label47.Name = [System.String]'Label47'
+$Label47.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]24))
+$Label47.TabIndex = [System.Int32]7
+$Label47.Text = [System.String]'Updatescript'
+$Label47.UseCompatibleTextRendering = $true
+#
+#TextBox22
+#
+$TextBox22.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]218))
+$TextBox22.Name = [System.String]'TextBox22'
+$TextBox22.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]287,[System.Int32]21))
+$TextBox22.TabIndex = [System.Int32]8
+#
+#Panel23
+#
+$Panel23.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
+$Panel23.Controls.Add($TextBox34)
+$Panel23.Controls.Add($Label62)
+$Panel23.Controls.Add($TextBox33)
+$Panel23.Controls.Add($Label61)
+$Panel23.Controls.Add($TextBox32)
+$Panel23.Controls.Add($Label60)
+$Panel23.Controls.Add($TextBox31)
+$Panel23.Controls.Add($Label59)
+$Panel23.Controls.Add($Label43)
+$Panel23.Controls.Add($Label46)
+$Panel23.Controls.Add($TextBox20)
+$Panel23.Controls.Add($TextBox21)
+$Panel23.Controls.Add($Label45)
+$Panel23.Controls.Add($Label44)
+$Panel23.Controls.Add($TextBox19)
+$Panel23.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]900,[System.Int32]3))
+$Panel23.Name = [System.String]'Panel23'
+$Panel23.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]293,[System.Int32]392))
+$Panel23.TabIndex = [System.Int32]17
+#
+#Label43
+#
+$Label43.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]14.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
+$Label43.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]2))
+$Label43.Name = [System.String]'Label43'
+$Label43.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]162,[System.Int32]30))
+$Label43.TabIndex = [System.Int32]0
+$Label43.Text = [System.String]'Konfiguration'
+$Label43.UseCompatibleTextRendering = $true
+#
+#Label46
+#
+$Label46.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
+$Label46.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]132))
+$Label46.Name = [System.String]'Label46'
+$Label46.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
+$Label46.TabIndex = [System.Int32]5
+$Label46.Text = [System.String]'Build'
+$Label46.UseCompatibleTextRendering = $true
+#
+#TextBox20
+#
+$TextBox20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]108))
+$TextBox20.Name = [System.String]'TextBox20'
+$TextBox20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
+$TextBox20.TabIndex = [System.Int32]4
+#
+#TextBox21
+#
+$TextBox21.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]158))
+$TextBox21.Name = [System.String]'TextBox21'
+$TextBox21.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
+$TextBox21.TabIndex = [System.Int32]6
+#
+#Label45
+#
+$Label45.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
+$Label45.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]82))
+$Label45.Name = [System.String]'Label45'
+$Label45.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]81,[System.Int32]23))
+$Label45.TabIndex = [System.Int32]3
+$Label45.Text = [System.String]'Version'
+$Label45.UseCompatibleTextRendering = $true
+#
+#Label44
+#
+$Label44.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
+$Label44.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]32))
+$Label44.Name = [System.String]'Label44'
+$Label44.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
+$Label44.TabIndex = [System.Int32]1
+$Label44.Text = [System.String]'Name'
+$Label44.UseCompatibleTextRendering = $true
+#
+#TextBox19
+#
+$TextBox19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]58))
+$TextBox19.Name = [System.String]'TextBox19'
+$TextBox19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
+$TextBox19.TabIndex = [System.Int32]2
+#
+#Panel22
+#
+$Panel22.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
+$Panel22.Controls.Add($TextBox27)
+$Panel22.Controls.Add($Label53)
+$Panel22.Controls.Add($TextBox26)
+$Panel22.Controls.Add($Label52)
+$Panel22.Controls.Add($TextBox25)
+$Panel22.Controls.Add($Label51)
+$Panel22.Controls.Add($TextBox24)
+$Panel22.Controls.Add($Label50)
+$Panel22.Controls.Add($TextBox23)
+$Panel22.Controls.Add($Label48)
+$Panel22.Controls.Add($Label49)
+$Panel22.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]601,[System.Int32]3))
+$Panel22.Name = [System.String]'Panel22'
+$Panel22.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]293,[System.Int32]307))
+$Panel22.TabIndex = [System.Int32]16
+#
+#TextBox27
+#
+$TextBox27.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]272))
+$TextBox27.Name = [System.String]'TextBox27'
+$TextBox27.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]21))
+$TextBox27.TabIndex = [System.Int32]24
+#
+#Label53
+#
+$Label53.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label53.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]243))
+$Label53.Name = [System.String]'Label53'
+$Label53.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]23))
+$Label53.TabIndex = [System.Int32]23
+$Label53.Text = [System.String]'SMTP Port'
+$Label53.UseCompatibleTextRendering = $true
+#
+#TextBox26
+#
+$TextBox26.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]215))
+$TextBox26.Name = [System.String]'TextBox26'
+$TextBox26.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]21))
+$TextBox26.TabIndex = [System.Int32]22
+#
+#Label52
+#
+$Label52.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label52.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]189))
+$Label52.Name = [System.String]'Label52'
+$Label52.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
+$Label52.TabIndex = [System.Int32]21
+$Label52.Text = [System.String]'SMTP Host'
+$Label52.UseCompatibleTextRendering = $true
+#
+#TextBox25
+#
+$TextBox25.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]165))
+$TextBox25.Name = [System.String]'TextBox25'
+$TextBox25.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]21))
+$TextBox25.TabIndex = [System.Int32]20
+#
+#Label51
+#
+$Label51.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label51.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]139))
+$Label51.Name = [System.String]'Label51'
+$Label51.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]23))
+$Label51.TabIndex = [System.Int32]19
+$Label51.Text = [System.String]'SMTP Passwort'
+$Label51.UseCompatibleTextRendering = $true
+#
+#TextBox24
+#
+$TextBox24.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]115))
+$TextBox24.Name = [System.String]'TextBox24'
+$TextBox24.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]21))
+$TextBox24.TabIndex = [System.Int32]18
+#
+#Label50
+#
+$Label50.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label50.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]89))
+$Label50.Name = [System.String]'Label50'
+$Label50.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]23))
+$Label50.TabIndex = [System.Int32]17
+$Label50.Text = [System.String]'SMTP Username'
+$Label50.UseCompatibleTextRendering = $true
+#
+#TextBox23
+#
+$TextBox23.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]65))
+$TextBox23.Name = [System.String]'TextBox23'
+$TextBox23.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]21))
+$TextBox23.TabIndex = [System.Int32]16
+#
+#Label48
+#
+$Label48.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]14.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
+$Label48.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]9))
+$Label48.Name = [System.String]'Label48'
+$Label48.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]123,[System.Int32]30))
+$Label48.TabIndex = [System.Int32]9
+$Label48.Text = [System.String]'Mail'
+$Label48.UseCompatibleTextRendering = $true
+#
+#Label49
+#
+$Label49.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label49.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]39))
+$Label49.Name = [System.String]'Label49'
+$Label49.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]23))
+$Label49.TabIndex = [System.Int32]15
+$Label49.Text = [System.String]'Empfï¿½ngeradresse'
+$Label49.UseCompatibleTextRendering = $true
+#
+#Panel21
+#
+$Panel21.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
+$Panel21.Controls.Add($CheckBox21)
+$Panel21.Controls.Add($Label54)
+$Panel21.Controls.Add($CheckBox20)
+$Panel21.Controls.Add($CheckBox19)
+$Panel21.Controls.Add($CheckBox18)
+$Panel21.Controls.Add($CheckBox17)
+$Panel21.Controls.Add($CheckBox16)
+$Panel21.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]302,[System.Int32]3))
+$Panel21.Name = [System.String]'Panel21'
+$Panel21.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]293,[System.Int32]214))
+$Panel21.TabIndex = [System.Int32]1
+#
+#Label54
+#
+$Label54.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]14.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
+$Label54.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]2))
+$Label54.Name = [System.String]'Label54'
+$Label54.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]29))
+$Label54.TabIndex = [System.Int32]15
+$Label54.Text = [System.String]'Update'
+$Label54.UseCompatibleTextRendering = $true
+#
+#CheckBox20
+#
+$CheckBox20.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$CheckBox20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]153))
+$CheckBox20.Name = [System.String]'CheckBox20'
+$CheckBox20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]25))
+$CheckBox20.TabIndex = [System.Int32]14
+$CheckBox20.Text = [System.String]'Backup automatisch erstellen'
+$CheckBox20.UseCompatibleTextRendering = $true
+$CheckBox20.UseVisualStyleBackColor = $true
+#
+#CheckBox19
+#
+$CheckBox19.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$CheckBox19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]123))
+$CheckBox19.Name = [System.String]'CheckBox19'
+$CheckBox19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]24))
+$CheckBox19.TabIndex = [System.Int32]13
+$CheckBox19.Text = [System.String]'Alte Version ersetzen'
+$CheckBox19.UseCompatibleTextRendering = $true
+$CheckBox19.UseVisualStyleBackColor = $true
+#
+#CheckBox18
+#
+$CheckBox18.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$CheckBox18.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]93))
+$CheckBox18.Name = [System.String]'CheckBox18'
+$CheckBox18.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]24))
+$CheckBox18.TabIndex = [System.Int32]12
+$CheckBox18.Text = [System.String]'AutoDownload'
+$CheckBox18.UseCompatibleTextRendering = $true
+$CheckBox18.UseVisualStyleBackColor = $true
+#
+#CheckBox17
+#
+$CheckBox17.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$CheckBox17.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]63))
+$CheckBox17.Name = [System.String]'CheckBox17'
+$CheckBox17.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]24))
+$CheckBox17.TabIndex = [System.Int32]11
+$CheckBox17.Text = [System.String]'Warn'
+$CheckBox17.UseCompatibleTextRendering = $true
+$CheckBox17.UseVisualStyleBackColor = $true
+#
+#CheckBox16
+#
+$CheckBox16.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$CheckBox16.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]33))
+$CheckBox16.Name = [System.String]'CheckBox16'
+$CheckBox16.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]24))
+$CheckBox16.TabIndex = [System.Int32]10
+$CheckBox16.Text = [System.String]'Nach Updates Suchen'
+$CheckBox16.UseCompatibleTextRendering = $true
+$CheckBox16.UseVisualStyleBackColor = $true
+#
+#Panel20
+#
+$Panel20.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
+$Panel20.Controls.Add($Button34)
+$Panel20.Controls.Add($Button33)
+$Panel20.Controls.Add($Label42)
+$Panel20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]3))
+$Panel20.Name = [System.String]'Panel20'
+$Panel20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]293,[System.Int32]70))
+$Panel20.TabIndex = [System.Int32]0
+#
+#Button34
+#
+$Button34.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]125,[System.Int32]32))
+$Button34.Name = [System.String]'Button34'
+$Button34.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]116,[System.Int32]23))
+$Button34.TabIndex = [System.Int32]2
+$Button34.Text = [System.String]'Englisch'
+$Button34.UseCompatibleTextRendering = $true
+$Button34.UseVisualStyleBackColor = $true
+#
+#Button33
+#
+$Button33.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]32))
+$Button33.Name = [System.String]'Button33'
+$Button33.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]116,[System.Int32]23))
+$Button33.TabIndex = [System.Int32]1
+$Button33.Text = [System.String]'Deutsch'
+$Button33.UseCompatibleTextRendering = $true
+$Button33.UseVisualStyleBackColor = $true
+#
+#Label42
+#
+$Label42.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]14.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
+$Label42.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]0))
+$Label42.Name = [System.String]'Label42'
+$Label42.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]29))
+$Label42.TabIndex = [System.Int32]0
+$Label42.Text = [System.String]'Sprache'
+$Label42.UseCompatibleTextRendering = $true
+#
 #ToolStripMenuItem1
 #
 $ToolStripMenuItem1.Name = [System.String]'ToolStripMenuItem1'
 $ToolStripMenuItem1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]222,[System.Int32]22))
-#
-#UpdateToolStripMenuItem
-#
-$UpdateToolStripMenuItem.DropDownItems.AddRange([System.Windows.Forms.ToolStripItem[]]@($GitHubcomToolStripMenuItem,$HyperVManagerdeToolStripMenuItem,$HyperVManagerdeToolStripMenuItem1,$Root3MinersWindeToolStripMenuItem,$Root4MinersWindeToolStripMenuItem,$Mirror1MinersWindeToolStripMenuItem,$Mirror2MinersWindeToolStripMenuItem,$Mirror3MinersWindeToolStripMenuItem,$Mirror1MoritzManteldeToolStripMenuItem))
-$UpdateToolStripMenuItem.Name = [System.String]'UpdateToolStripMenuItem'
-$UpdateToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]222,[System.Int32]22))
-$UpdateToolStripMenuItem.Text = [System.String]'Update'
-#
-#GitHubcomToolStripMenuItem
-#
-$GitHubcomToolStripMenuItem.Name = [System.String]'GitHubcomToolStripMenuItem'
-$GitHubcomToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$GitHubcomToolStripMenuItem.Text = [System.String]'GitHub.com'
-#
-#HyperVManagerdeToolStripMenuItem
-#
-$HyperVManagerdeToolStripMenuItem.Name = [System.String]'HyperVManagerdeToolStripMenuItem'
-$HyperVManagerdeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$HyperVManagerdeToolStripMenuItem.Text = [System.String]'Hyper-V-Manager.de'
-#
-#HyperVManagerdeToolStripMenuItem1
-#
-$HyperVManagerdeToolStripMenuItem1.Name = [System.String]'HyperVManagerdeToolStripMenuItem1'
-$HyperVManagerdeToolStripMenuItem1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$HyperVManagerdeToolStripMenuItem1.Text = [System.String]'HyperV-Manager.de'
-#
-#Root3MinersWindeToolStripMenuItem
-#
-$Root3MinersWindeToolStripMenuItem.Name = [System.String]'Root3MinersWindeToolStripMenuItem'
-$Root3MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Root3MinersWindeToolStripMenuItem.Text = [System.String]'Root3.MinersWin.de'
-#
-#Root4MinersWindeToolStripMenuItem
-#
-$Root4MinersWindeToolStripMenuItem.Name = [System.String]'Root4MinersWindeToolStripMenuItem'
-$Root4MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Root4MinersWindeToolStripMenuItem.Text = [System.String]'Root4.MinersWin.de'
-#
-#Mirror1MinersWindeToolStripMenuItem
-#
-$Mirror1MinersWindeToolStripMenuItem.Name = [System.String]'Mirror1MinersWindeToolStripMenuItem'
-$Mirror1MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Mirror1MinersWindeToolStripMenuItem.Text = [System.String]'Mirror1.MinersWin.de'
-#
-#Mirror2MinersWindeToolStripMenuItem
-#
-$Mirror2MinersWindeToolStripMenuItem.Name = [System.String]'Mirror2MinersWindeToolStripMenuItem'
-$Mirror2MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Mirror2MinersWindeToolStripMenuItem.Text = [System.String]'Mirror2.MinersWin.de'
-#
-#Mirror3MinersWindeToolStripMenuItem
-#
-$Mirror3MinersWindeToolStripMenuItem.Name = [System.String]'Mirror3MinersWindeToolStripMenuItem'
-$Mirror3MinersWindeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Mirror3MinersWindeToolStripMenuItem.Text = [System.String]'Mirror3.MinersWin.de'
-#
-#Mirror1MoritzManteldeToolStripMenuItem
-#
-$Mirror1MoritzManteldeToolStripMenuItem.Name = [System.String]'Mirror1MoritzManteldeToolStripMenuItem'
-$Mirror1MoritzManteldeToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]208,[System.Int32]22))
-$Mirror1MoritzManteldeToolStripMenuItem.Text = [System.String]'Mirror1.Moritz-Mantel.de'
 #
 #ResetToolStripMenuItem
 #
@@ -2154,410 +2653,516 @@ $ExitToolStripMenuItem.Name = [System.String]'ExitToolStripMenuItem'
 $ExitToolStripMenuItem.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]152,[System.Int32]22))
 $ExitToolStripMenuItem.Text = [System.String]'Exit'
 #
-#TabPage6
-#
-$TabPage6.Controls.Add($Panel24)
-$TabPage6.Controls.Add($Panel23)
-$TabPage6.Controls.Add($Panel22)
-$TabPage6.Controls.Add($Panel21)
-$TabPage6.Controls.Add($Panel20)
-$TabPage6.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
-$TabPage6.Name = [System.String]'TabPage6'
-$TabPage6.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1338,[System.Int32]498))
-$TabPage6.TabIndex = [System.Int32]5
-$TabPage6.Text = [System.String]'Einstellungen'
-$TabPage6.UseVisualStyleBackColor = $true
-$TabPage6.Visible = $false
-#
-#Panel20
-#
-$Panel20.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
-$Panel20.Controls.Add($Button34)
-$Panel20.Controls.Add($Button33)
-$Panel20.Controls.Add($Label42)
-$Panel20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]3))
-$Panel20.Name = [System.String]'Panel20'
-$Panel20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]293,[System.Int32]70))
-$Panel20.TabIndex = [System.Int32]0
-#
-#Label42
-#
-$Label42.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]14.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$Label42.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]0))
-$Label42.Name = [System.String]'Label42'
-$Label42.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]29))
-$Label42.TabIndex = [System.Int32]0
-$Label42.Text = [System.String]'Sprache'
-$Label42.UseCompatibleTextRendering = $true
-#
-#Button33
-#
-$Button33.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]32))
-$Button33.Name = [System.String]'Button33'
-$Button33.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]116,[System.Int32]23))
-$Button33.TabIndex = [System.Int32]1
-$Button33.Text = [System.String]'Deutsch'
-$Button33.UseCompatibleTextRendering = $true
-$Button33.UseVisualStyleBackColor = $true
-#
-#Button34
-#
-$Button34.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]125,[System.Int32]32))
-$Button34.Name = [System.String]'Button34'
-$Button34.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]116,[System.Int32]23))
-$Button34.TabIndex = [System.Int32]2
-$Button34.Text = [System.String]'Englisch'
-$Button34.UseCompatibleTextRendering = $true
-$Button34.UseVisualStyleBackColor = $true
-#
-#Panel21
-#
-$Panel21.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
-$Panel21.Controls.Add($Label54)
-$Panel21.Controls.Add($CheckBox20)
-$Panel21.Controls.Add($CheckBox19)
-$Panel21.Controls.Add($CheckBox18)
-$Panel21.Controls.Add($CheckBox17)
-$Panel21.Controls.Add($CheckBox16)
-$Panel21.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]302,[System.Int32]3))
-$Panel21.Name = [System.String]'Panel21'
-$Panel21.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]293,[System.Int32]188))
-$Panel21.TabIndex = [System.Int32]1
-#
-#Label43
-#
-$Label43.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]14.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$Label43.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]2))
-$Label43.Name = [System.String]'Label43'
-$Label43.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]162,[System.Int32]30))
-$Label43.TabIndex = [System.Int32]0
-$Label43.Text = [System.String]'Konfiguration'
-$Label43.UseCompatibleTextRendering = $true
-#
-#Label44
-#
-$Label44.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$Label44.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]32))
-$Label44.Name = [System.String]'Label44'
-$Label44.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
-$Label44.TabIndex = [System.Int32]1
-$Label44.Text = [System.String]'Name'
-$Label44.UseCompatibleTextRendering = $true
-#
-#TextBox19
-#
-$TextBox19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]58))
-$TextBox19.Name = [System.String]'TextBox19'
-$TextBox19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
-$TextBox19.TabIndex = [System.Int32]2
-#
-#Label45
-#
-$Label45.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$Label45.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]82))
-$Label45.Name = [System.String]'Label45'
-$Label45.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]81,[System.Int32]23))
-$Label45.TabIndex = [System.Int32]3
-$Label45.Text = [System.String]'Version'
-$Label45.UseCompatibleTextRendering = $true
-#
-#TextBox20
-#
-$TextBox20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]108))
-$TextBox20.Name = [System.String]'TextBox20'
-$TextBox20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
-$TextBox20.TabIndex = [System.Int32]4
-#
-#Label46
-#
-$Label46.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$Label46.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]132))
-$Label46.Name = [System.String]'Label46'
-$Label46.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
-$Label46.TabIndex = [System.Int32]5
-$Label46.Text = [System.String]'Build'
-$Label46.UseCompatibleTextRendering = $true
-#
-#TextBox21
-#
-$TextBox21.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]158))
-$TextBox21.Name = [System.String]'TextBox21'
-$TextBox21.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
-$TextBox21.TabIndex = [System.Int32]6
-#
-#Label47
-#
-$Label47.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$Label47.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]139))
-$Label47.Name = [System.String]'Label47'
-$Label47.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]24))
-$Label47.TabIndex = [System.Int32]7
-$Label47.Text = [System.String]'Updatescript'
-$Label47.UseCompatibleTextRendering = $true
-#
-#TextBox22
-#
-$TextBox22.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]166))
-$TextBox22.Name = [System.String]'TextBox22'
-$TextBox22.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
-$TextBox22.TabIndex = [System.Int32]8
-#
-#Label48
-#
-$Label48.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]14.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$Label48.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]9))
-$Label48.Name = [System.String]'Label48'
-$Label48.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]123,[System.Int32]30))
-$Label48.TabIndex = [System.Int32]9
-$Label48.Text = [System.String]'Mail'
-$Label48.UseCompatibleTextRendering = $true
-#
-#CheckBox16
-#
-$CheckBox16.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$CheckBox16.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]33))
-$CheckBox16.Name = [System.String]'CheckBox16'
-$CheckBox16.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]24))
-$CheckBox16.TabIndex = [System.Int32]10
-$CheckBox16.Text = [System.String]'Nach Updates Suchen'
-$CheckBox16.UseCompatibleTextRendering = $true
-$CheckBox16.UseVisualStyleBackColor = $true
-#
-#CheckBox17
-#
-$CheckBox17.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$CheckBox17.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]63))
-$CheckBox17.Name = [System.String]'CheckBox17'
-$CheckBox17.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]24))
-$CheckBox17.TabIndex = [System.Int32]11
-$CheckBox17.Text = [System.String]'Warn'
-$CheckBox17.UseCompatibleTextRendering = $true
-$CheckBox17.UseVisualStyleBackColor = $true
-#
-#CheckBox18
-#
-$CheckBox18.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$CheckBox18.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]93))
-$CheckBox18.Name = [System.String]'CheckBox18'
-$CheckBox18.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]24))
-$CheckBox18.TabIndex = [System.Int32]12
-$CheckBox18.Text = [System.String]'AutoDownload'
-$CheckBox18.UseCompatibleTextRendering = $true
-$CheckBox18.UseVisualStyleBackColor = $true
-#
-#CheckBox19
-#
-$CheckBox19.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$CheckBox19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]123))
-$CheckBox19.Name = [System.String]'CheckBox19'
-$CheckBox19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]24))
-$CheckBox19.TabIndex = [System.Int32]13
-$CheckBox19.Text = [System.String]'Alte Version ersetzen'
-$CheckBox19.UseCompatibleTextRendering = $true
-$CheckBox19.UseVisualStyleBackColor = $true
-#
-#CheckBox20
-#
-$CheckBox20.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$CheckBox20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]153))
-$CheckBox20.Name = [System.String]'CheckBox20'
-$CheckBox20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]25))
-$CheckBox20.TabIndex = [System.Int32]14
-$CheckBox20.Text = [System.String]'Backup automatisch erstellen'
-$CheckBox20.UseCompatibleTextRendering = $true
-$CheckBox20.UseVisualStyleBackColor = $true
-#
-#Label49
-#
-$Label49.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$Label49.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]39))
-$Label49.Name = [System.String]'Label49'
-$Label49.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]23))
-$Label49.TabIndex = [System.Int32]15
-$Label49.Text = [System.String]'Empfängeradresse'
-$Label49.UseCompatibleTextRendering = $true
-#
-#Panel22
-#
-$Panel22.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
-$Panel22.Controls.Add($TextBox27)
-$Panel22.Controls.Add($Label53)
-$Panel22.Controls.Add($TextBox26)
-$Panel22.Controls.Add($Label52)
-$Panel22.Controls.Add($TextBox25)
-$Panel22.Controls.Add($Label51)
-$Panel22.Controls.Add($TextBox24)
-$Panel22.Controls.Add($Label50)
-$Panel22.Controls.Add($TextBox23)
-$Panel22.Controls.Add($Label48)
-$Panel22.Controls.Add($Label49)
-$Panel22.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]601,[System.Int32]3))
-$Panel22.Name = [System.String]'Panel22'
-$Panel22.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]293,[System.Int32]307))
-$Panel22.TabIndex = [System.Int32]16
-#
-#TextBox23
-#
-$TextBox23.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]65))
-$TextBox23.Name = [System.String]'TextBox23'
-$TextBox23.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]21))
-$TextBox23.TabIndex = [System.Int32]16
-#
-#Label50
-#
-$Label50.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$Label50.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]89))
-$Label50.Name = [System.String]'Label50'
-$Label50.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]23))
-$Label50.TabIndex = [System.Int32]17
-$Label50.Text = [System.String]'SMTP Username'
-$Label50.UseCompatibleTextRendering = $true
-#
-#TextBox24
-#
-$TextBox24.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]115))
-$TextBox24.Name = [System.String]'TextBox24'
-$TextBox24.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]21))
-$TextBox24.TabIndex = [System.Int32]18
-#
-#Label51
-#
-$Label51.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$Label51.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]139))
-$Label51.Name = [System.String]'Label51'
-$Label51.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]23))
-$Label51.TabIndex = [System.Int32]19
-$Label51.Text = [System.String]'SMTP Passwort'
-$Label51.UseCompatibleTextRendering = $true
-#
-#TextBox25
-#
-$TextBox25.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]165))
-$TextBox25.Name = [System.String]'TextBox25'
-$TextBox25.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]21))
-$TextBox25.TabIndex = [System.Int32]20
-#
-#Label52
-#
-$Label52.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$Label52.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]189))
-$Label52.Name = [System.String]'Label52'
-$Label52.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
-$Label52.TabIndex = [System.Int32]21
-$Label52.Text = [System.String]'SMTP Host'
-$Label52.UseCompatibleTextRendering = $true
-#
-#TextBox26
-#
-$TextBox26.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]215))
-$TextBox26.Name = [System.String]'TextBox26'
-$TextBox26.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]21))
-$TextBox26.TabIndex = [System.Int32]22
-#
-#Label53
-#
-$Label53.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$Label53.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]243))
-$Label53.Name = [System.String]'Label53'
-$Label53.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]23))
-$Label53.TabIndex = [System.Int32]23
-$Label53.Text = [System.String]'SMTP Port'
-$Label53.UseCompatibleTextRendering = $true
-#
-#TextBox27
-#
-$TextBox27.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]272))
-$TextBox27.Name = [System.String]'TextBox27'
-$TextBox27.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]21))
-$TextBox27.TabIndex = [System.Int32]24
-#
-#Label54
-#
-$Label54.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]14.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$Label54.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]2))
-$Label54.Name = [System.String]'Label54'
-$Label54.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]29))
-$Label54.TabIndex = [System.Int32]15
-$Label54.Text = [System.String]'Update'
-$Label54.UseCompatibleTextRendering = $true
-#
-#Panel23
-#
-$Panel23.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
-$Panel23.Controls.Add($Label43)
-$Panel23.Controls.Add($Label46)
-$Panel23.Controls.Add($TextBox20)
-$Panel23.Controls.Add($TextBox21)
-$Panel23.Controls.Add($Label45)
-$Panel23.Controls.Add($Label44)
-$Panel23.Controls.Add($TextBox19)
-$Panel23.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]900,[System.Int32]3))
-$Panel23.Name = [System.String]'Panel23'
-$Panel23.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]293,[System.Int32]200))
-$Panel23.TabIndex = [System.Int32]17
-#
-#Panel24
-#
-$Panel24.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
-$Panel24.Controls.Add($TextBox29)
-$Panel24.Controls.Add($Label57)
-$Panel24.Controls.Add($TextBox28)
-$Panel24.Controls.Add($Label56)
-$Panel24.Controls.Add($Label55)
-$Panel24.Controls.Add($Label47)
-$Panel24.Controls.Add($TextBox22)
-$Panel24.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]79))
-$Panel24.Name = [System.String]'Panel24'
-$Panel24.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]293,[System.Int32]219))
-$Panel24.TabIndex = [System.Int32]18
-#
-#Label55
-#
-$Label55.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]14.25,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$Label55.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]4))
-$Label55.Name = [System.String]'Label55'
-$Label55.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]34))
-$Label55.TabIndex = [System.Int32]0
-$Label55.Text = [System.String]'Pfade'
-$Label55.UseCompatibleTextRendering = $true
-#
-#Label56
-#
-$Label56.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$Label56.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]37))
-$Label56.Name = [System.String]'Label56'
-$Label56.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
-$Label56.TabIndex = [System.Int32]1
-$Label56.Text = [System.String]'Tumbnails'
-$Label56.UseCompatibleTextRendering = $true
-#
-#TextBox28
-#
-$TextBox28.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]63))
-$TextBox28.Name = [System.String]'TextBox28'
-$TextBox28.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]287,[System.Int32]21))
-$TextBox28.TabIndex = [System.Int32]2
-#
-#Label57
-#
-$Label57.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
-$Label57.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]91))
-$Label57.Name = [System.String]'Label57'
-$Label57.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
-$Label57.TabIndex = [System.Int32]3
-$Label57.Text = [System.String]'Logs'
-$Label57.UseCompatibleTextRendering = $true
-#
-#TextBox29
-#
-$TextBox29.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]117))
-$TextBox29.Name = [System.String]'TextBox29'
-$TextBox29.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]287,[System.Int32]21))
-$TextBox29.TabIndex = [System.Int32]4
+#ToolStripMenuItem2
+#
+$ToolStripMenuItem2.Name = [System.String]'ToolStripMenuItem2'
+$ToolStripMenuItem2.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]222,[System.Int32]22))
+#
+#Label58
+#
+$Label58.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label58.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]39))
+$Label58.Name = [System.String]'Label58'
+$Label58.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]130,[System.Int32]23))
+$Label58.TabIndex = [System.Int32]7
+$Label58.Text = [System.String]'Root Directory'
+$Label58.UseCompatibleTextRendering = $true
+#
+#TextBox30
+#
+$TextBox30.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]65))
+$TextBox30.Name = [System.String]'TextBox30'
+$TextBox30.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]287,[System.Int32]21))
+$TextBox30.TabIndex = [System.Int32]9
+#
+#Button35
+#
+$Button35.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1275,[System.Int32]473))
+$Button35.Name = [System.String]'Button35'
+$Button35.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]75,[System.Int32]23))
+$Button35.TabIndex = [System.Int32]19
+$Button35.Text = [System.String]'Speichern'
+$Button35.UseCompatibleTextRendering = $true
+$Button35.UseVisualStyleBackColor = $true
+#
+#Button36
+#
+$Button36.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1275,[System.Int32]444))
+$Button36.Name = [System.String]'Button36'
+$Button36.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]75,[System.Int32]23))
+$Button36.TabIndex = [System.Int32]20
+$Button36.Text = [System.String]'Reset Config'
+$Button36.UseCompatibleTextRendering = $true
+$Button36.UseVisualStyleBackColor = $true
+#
+#Button37
+#
+$Button37.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1275,[System.Int32]415))
+$Button37.Name = [System.String]'Button37'
+$Button37.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]75,[System.Int32]23))
+$Button37.TabIndex = [System.Int32]21
+$Button37.Text = [System.String]'Ã–ffne Config'
+$Button37.UseCompatibleTextRendering = $true
+$Button37.UseVisualStyleBackColor = $true
+#
+#Label59
+#
+$Label59.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label59.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]182))
+$Label59.Name = [System.String]'Label59'
+$Label59.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]23))
+$Label59.TabIndex = [System.Int32]7
+$Label59.Text = [System.String]'Letztes Update'
+$Label59.UseCompatibleTextRendering = $true
+#
+#TextBox31
+#
+$TextBox31.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]208))
+$TextBox31.Name = [System.String]'TextBox31'
+$TextBox31.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
+$TextBox31.TabIndex = [System.Int32]8
+#
+#Label60
+#
+$Label60.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label60.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]232))
+$Label60.Name = [System.String]'Label60'
+$Label60.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]23))
+$Label60.TabIndex = [System.Int32]9
+$Label60.Text = [System.String]'Letzte Updatesuche'
+$Label60.UseCompatibleTextRendering = $true
+#
+#TextBox32
+#
+$TextBox32.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]258))
+$TextBox32.Name = [System.String]'TextBox32'
+$TextBox32.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
+$TextBox32.TabIndex = [System.Int32]10
+#
+#Label61
+#
+$Label61.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label61.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]282))
+$Label61.Name = [System.String]'Label61'
+$Label61.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
+$Label61.TabIndex = [System.Int32]11
+$Label61.Text = [System.String]'Firmenname'
+$Label61.UseCompatibleTextRendering = $true
+#
+#TextBox33
+#
+$TextBox33.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]308))
+$TextBox33.Name = [System.String]'TextBox33'
+$TextBox33.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
+$TextBox33.TabIndex = [System.Int32]12
+#
+#Label62
+#
+$Label62.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label62.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]332))
+$Label62.Name = [System.String]'Label62'
+$Label62.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]23))
+$Label62.TabIndex = [System.Int32]13
+$Label62.Text = [System.String]'Beschreibung'
+$Label62.UseCompatibleTextRendering = $true
+#
+#TextBox34
+#
+$TextBox34.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]360))
+$TextBox34.Name = [System.String]'TextBox34'
+$TextBox34.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]273,[System.Int32]21))
+$TextBox34.TabIndex = [System.Int32]14
+#
+#VScrollBar1
+#
+$VScrollBar1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1196,[System.Int32]0))
+$VScrollBar1.Name = [System.String]'VScrollBar1'
+$VScrollBar1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]17,[System.Int32]80))
+$VScrollBar1.TabIndex = [System.Int32]22
+#
+#CheckBox21
+#
+$CheckBox21.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$CheckBox21.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]184))
+$CheckBox21.Name = [System.String]'CheckBox21'
+$CheckBox21.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]288,[System.Int32]24))
+$CheckBox21.TabIndex = [System.Int32]16
+$CheckBox21.Text = [System.String]'Sprachdaten Updaten'
+$CheckBox21.UseCompatibleTextRendering = $true
+$CheckBox21.UseVisualStyleBackColor = $true
+#
+#TabPage7
+#
+$TabPage7.Controls.Add($Panel26)
+$TabPage7.Controls.Add($Panel25)
+$TabPage7.Controls.Add($Button41)
+$TabPage7.Controls.Add($Button40)
+$TabPage7.Controls.Add($Button39)
+$TabPage7.Controls.Add($CheckBox22)
+$TabPage7.Controls.Add($RichTextBox2)
+$TabPage7.Controls.Add($Button38)
+$TabPage7.Controls.Add($Label63)
+$TabPage7.Controls.Add($MaskedTextBox1)
+$TabPage7.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
+$TabPage7.Name = [System.String]'TabPage7'
+$TabPage7.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1355,[System.Int32]499))
+$TabPage7.TabIndex = [System.Int32]6
+$TabPage7.Text = [System.String]'Home'
+$TabPage7.UseVisualStyleBackColor = $true
+$TabPage7.Visible = $false
+#
+#MaskedTextBox1
+#
+$MaskedTextBox1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1199,[System.Int32]446))
+$MaskedTextBox1.Name = [System.String]'MaskedTextBox1'
+$MaskedTextBox1.PasswordChar = [System.Char]'â˜º'
+$MaskedTextBox1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]153,[System.Int32]21))
+$MaskedTextBox1.TabIndex = [System.Int32]0
+$MaskedTextBox1.Text = [System.String]'sss'
+#
+#Label63
+#
+$Label63.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
+$Label63.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1199,[System.Int32]420))
+$Label63.Name = [System.String]'Label63'
+$Label63.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]153,[System.Int32]23))
+$Label63.TabIndex = [System.Int32]1
+$Label63.Text = [System.String]'Security Password'
+$Label63.UseCompatibleTextRendering = $true
+#
+#Button38
+#
+$Button38.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1199,[System.Int32]473))
+$Button38.Name = [System.String]'Button38'
+$Button38.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]151,[System.Int32]23))
+$Button38.TabIndex = [System.Int32]2
+$Button38.Text = [System.String]'Enable Admin Mode'
+$Button38.UseCompatibleTextRendering = $true
+$Button38.UseVisualStyleBackColor = $true
+#
+#RichTextBox2
+#
+$RichTextBox2.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]3))
+$RichTextBox2.Name = [System.String]'RichTextBox2'
+$RichTextBox2.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]791,[System.Int32]222))
+$RichTextBox2.TabIndex = [System.Int32]3
+$RichTextBox2.Text = [System.String]''
+#
+#CheckBox22
+#
+$CheckBox22.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]690,[System.Int32]231))
+$CheckBox22.Name = [System.String]'CheckBox22'
+$CheckBox22.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]104,[System.Int32]24))
+$CheckBox22.TabIndex = [System.Int32]4
+$CheckBox22.Text = [System.String]'Verstanden!'
+$CheckBox22.UseCompatibleTextRendering = $true
+$CheckBox22.UseVisualStyleBackColor = $true
+#
+#Button39
+#
+$Button39.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]690,[System.Int32]256))
+$Button39.Name = [System.String]'Button39'
+$Button39.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]104,[System.Int32]23))
+$Button39.TabIndex = [System.Int32]5
+$Button39.Text = [System.String]'Akzeptieren'
+$Button39.UseCompatibleTextRendering = $true
+$Button39.UseVisualStyleBackColor = $true
+#
+#Button40
+#
+$Button40.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1199,[System.Int32]3))
+$Button40.Name = [System.String]'Button40'
+$Button40.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]151,[System.Int32]23))
+$Button40.TabIndex = [System.Int32]6
+$Button40.Text = [System.String]'Nach Updates Suchen'
+$Button40.UseCompatibleTextRendering = $true
+$Button40.UseVisualStyleBackColor = $true
+#
+#Button41
+#
+$Button41.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1199,[System.Int32]32))
+$Button41.Name = [System.String]'Button41'
+$Button41.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]153,[System.Int32]23))
+$Button41.TabIndex = [System.Int32]7
+$Button41.Text = [System.String]'Sprachpakete herunterladen'
+$Button41.UseCompatibleTextRendering = $true
+$Button41.UseVisualStyleBackColor = $true
+#
+#Panel25
+#
+$Panel25.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$Panel25.Controls.Add($Button46)
+$Panel25.Controls.Add($Button45)
+$Panel25.Controls.Add($Button44)
+$Panel25.Controls.Add($Button43)
+$Panel25.Controls.Add($Button42)
+$Panel25.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1199,[System.Int32]61))
+$Panel25.Name = [System.String]'Panel25'
+$Panel25.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]153,[System.Int32]147))
+$Panel25.TabIndex = [System.Int32]8
+#
+#Button42
+#
+$Button42.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]3))
+$Button42.Name = [System.String]'Button42'
+$Button42.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]148,[System.Int32]23))
+$Button42.TabIndex = [System.Int32]0
+$Button42.Text = [System.String]'Root Directory'
+$Button42.UseCompatibleTextRendering = $true
+$Button42.UseVisualStyleBackColor = $true
+#
+#Button43
+#
+$Button43.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]32))
+$Button43.Name = [System.String]'Button43'
+$Button43.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]148,[System.Int32]23))
+$Button43.TabIndex = [System.Int32]1
+$Button43.Text = [System.String]'Thumbnail Directory'
+$Button43.UseCompatibleTextRendering = $true
+$Button43.UseVisualStyleBackColor = $true
+#
+#Button44
+#
+$Button44.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]61))
+$Button44.Name = [System.String]'Button44'
+$Button44.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]148,[System.Int32]23))
+$Button44.TabIndex = [System.Int32]2
+$Button44.Text = [System.String]'Log Directory'
+$Button44.UseCompatibleTextRendering = $true
+$Button44.UseVisualStyleBackColor = $true
+#
+#Button45
+#
+$Button45.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]90))
+$Button45.Name = [System.String]'Button45'
+$Button45.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]148,[System.Int32]23))
+$Button45.TabIndex = [System.Int32]3
+$Button45.Text = [System.String]'Backup Directory'
+$Button45.UseCompatibleTextRendering = $true
+$Button45.UseVisualStyleBackColor = $true
+#
+#Button46
+#
+$Button46.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]119))
+$Button46.Name = [System.String]'Button46'
+$Button46.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]148,[System.Int32]23))
+$Button46.TabIndex = [System.Int32]4
+$Button46.Text = [System.String]'Update Direcorty'
+$Button46.UseCompatibleTextRendering = $true
+$Button46.UseVisualStyleBackColor = $true
+#
+#Panel26
+#
+$Panel26.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$Panel26.Controls.Add($Label83)
+$Panel26.Controls.Add($Label82)
+$Panel26.Controls.Add($Label81)
+$Panel26.Controls.Add($Label80)
+$Panel26.Controls.Add($Label79)
+$Panel26.Controls.Add($Label78)
+$Panel26.Controls.Add($Label77)
+$Panel26.Controls.Add($Label76)
+$Panel26.Controls.Add($Label75)
+$Panel26.Controls.Add($Label74)
+$Panel26.Controls.Add($Label73)
+$Panel26.Controls.Add($Label72)
+$Panel26.Controls.Add($Label71)
+$Panel26.Controls.Add($Label70)
+$Panel26.Controls.Add($Label69)
+$Panel26.Controls.Add($Label68)
+$Panel26.Controls.Add($Label67)
+$Panel26.Controls.Add($Label66)
+$Panel26.Controls.Add($Label65)
+$Panel26.Controls.Add($Label64)
+$Panel26.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]8,[System.Int32]231))
+$Panel26.Name = [System.String]'Panel26'
+$Panel26.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]416,[System.Int32]265))
+$Panel26.TabIndex = [System.Int32]9
+$Panel26.add_Paint($Panel26_Paint)
+#
+#Label64
+#
+$Label64.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]6))
+$Label64.Name = [System.String]'Label64'
+$Label64.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]53,[System.Int32]23))
+$Label64.TabIndex = [System.Int32]0
+$Label64.Text = [System.String]'Name:'
+$Label64.UseCompatibleTextRendering = $true
+#
+#Label65
+#
+$Label65.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]95,[System.Int32]6))
+$Label65.Name = [System.String]'Label65'
+$Label65.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]23))
+$Label65.TabIndex = [System.Int32]1
+$Label65.Text = [System.String]'Label65'
+$Label65.UseCompatibleTextRendering = $true
+#
+#Label66
+#
+$Label66.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]29))
+$Label66.Name = [System.String]'Label66'
+$Label66.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]53,[System.Int32]23))
+$Label66.TabIndex = [System.Int32]2
+$Label66.Text = [System.String]'Directory:'
+$Label66.UseCompatibleTextRendering = $true
+#
+#Label67
+#
+$Label67.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]95,[System.Int32]29))
+$Label67.Name = [System.String]'Label67'
+$Label67.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]23))
+$Label67.TabIndex = [System.Int32]3
+$Label67.Text = [System.String]'Label67'
+$Label67.UseCompatibleTextRendering = $true
+#
+#Label68
+#
+$Label68.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]52))
+$Label68.Name = [System.String]'Label68'
+$Label68.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]53,[System.Int32]23))
+$Label68.TabIndex = [System.Int32]10
+$Label68.Text = [System.String]'Version:'
+$Label68.UseCompatibleTextRendering = $true
+#
+#Label69
+#
+$Label69.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]95,[System.Int32]52))
+$Label69.Name = [System.String]'Label69'
+$Label69.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]21))
+$Label69.TabIndex = [System.Int32]11
+$Label69.Text = [System.String]'Label69'
+$Label69.UseCompatibleTextRendering = $true
+#
+#Label70
+#
+$Label70.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]75))
+$Label70.Name = [System.String]'Label70'
+$Label70.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]53,[System.Int32]23))
+$Label70.TabIndex = [System.Int32]12
+$Label70.Text = [System.String]'Build:'
+$Label70.UseCompatibleTextRendering = $true
+#
+#Label71
+#
+$Label71.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]95,[System.Int32]75))
+$Label71.Name = [System.String]'Label71'
+$Label71.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]23))
+$Label71.TabIndex = [System.Int32]13
+$Label71.Text = [System.String]'Label71'
+$Label71.UseCompatibleTextRendering = $true
+#
+#Label72
+#
+$Label72.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]98))
+$Label72.Name = [System.String]'Label72'
+$Label72.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]86,[System.Int32]23))
+$Label72.TabIndex = [System.Int32]14
+$Label72.Text = [System.String]'Last Update:'
+$Label72.UseCompatibleTextRendering = $true
+#
+#Label73
+#
+$Label73.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]95,[System.Int32]98))
+$Label73.Name = [System.String]'Label73'
+$Label73.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]23))
+$Label73.TabIndex = [System.Int32]15
+$Label73.Text = [System.String]'Label73'
+$Label73.UseCompatibleTextRendering = $true
+#
+#Label74
+#
+$Label74.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]121))
+$Label74.Name = [System.String]'Label74'
+$Label74.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
+$Label74.TabIndex = [System.Int32]16
+$Label74.Text = [System.String]'Company Name:'
+$Label74.UseCompatibleTextRendering = $true
+#
+#Label75
+#
+$Label75.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]95,[System.Int32]121))
+$Label75.Name = [System.String]'Label75'
+$Label75.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]23))
+$Label75.TabIndex = [System.Int32]17
+$Label75.Text = [System.String]'Label75'
+$Label75.UseCompatibleTextRendering = $true
+#
+#Label76
+#
+$Label76.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]144))
+$Label76.Name = [System.String]'Label76'
+$Label76.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]70,[System.Int32]23))
+$Label76.TabIndex = [System.Int32]18
+$Label76.Text = [System.String]'Language:'
+$Label76.UseCompatibleTextRendering = $true
+#
+#Label77
+#
+$Label77.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]95,[System.Int32]144))
+$Label77.Name = [System.String]'Label77'
+$Label77.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]23))
+$Label77.TabIndex = [System.Int32]19
+$Label77.Text = [System.String]'Label77'
+$Label77.UseCompatibleTextRendering = $true
+#
+#Label78
+#
+$Label78.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]167))
+$Label78.Name = [System.String]'Label78'
+$Label78.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]86,[System.Int32]23))
+$Label78.TabIndex = [System.Int32]20
+$Label78.Text = [System.String]'User:'
+$Label78.UseCompatibleTextRendering = $true
+#
+#Label79
+#
+$Label79.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]95,[System.Int32]167))
+$Label79.Name = [System.String]'Label79'
+$Label79.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]23))
+$Label79.TabIndex = [System.Int32]21
+$Label79.Text = [System.String]'Label79'
+$Label79.UseCompatibleTextRendering = $true
+#
+#Label80
+#
+$Label80.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]190))
+$Label80.Name = [System.String]'Label80'
+$Label80.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]73,[System.Int32]23))
+$Label80.TabIndex = [System.Int32]22
+$Label80.Text = [System.String]'Domain:'
+$Label80.UseCompatibleTextRendering = $true
+#
+#Label81
+#
+$Label81.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]95,[System.Int32]190))
+$Label81.Name = [System.String]'Label81'
+$Label81.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]23))
+$Label81.TabIndex = [System.Int32]23
+$Label81.Text = [System.String]'Label81'
+$Label81.UseCompatibleTextRendering = $true
+#
+#Label82
+#
+$Label82.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]213))
+$Label82.Name = [System.String]'Label82'
+$Label82.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]73,[System.Int32]23))
+$Label82.TabIndex = [System.Int32]24
+$Label82.Text = [System.String]'Hostname:'
+$Label82.UseCompatibleTextRendering = $true
+#
+#Label83
+#
+$Label83.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]95,[System.Int32]213))
+$Label83.Name = [System.String]'Label83'
+$Label83.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]318,[System.Int32]23))
+$Label83.TabIndex = [System.Int32]25
+$Label83.Text = [System.String]'Label83'
+$Label83.UseCompatibleTextRendering = $true
 #
 #FormOverview
 #
-$FormOverview.ClientSize = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1363,[System.Int32]795))
+$FormOverview.ClientSize = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1366,[System.Int32]795))
 $FormOverview.Controls.Add($TabControl1)
 $FormOverview.Controls.Add($RichTextBox1)
 $FormOverview.Controls.Add($Panel8)
@@ -2591,10 +3196,10 @@ $Panel3.PerformLayout()
 $TabControl1.ResumeLayout($false)
 $TabPage1.ResumeLayout($false)
 $TabPage1.PerformLayout()
-$Panel18.ResumeLayout($false)
-$Panel19.ResumeLayout($false)
 $Panel14.ResumeLayout($false)
 $TabPage2.ResumeLayout($false)
+$Panel18.ResumeLayout($false)
+$Panel19.ResumeLayout($false)
 $Panel17.ResumeLayout($false)
 $Panel16.ResumeLayout($false)
 $Panel16.PerformLayout()
@@ -2603,14 +3208,18 @@ $TabPage3.ResumeLayout($false)
 $TabPage4.ResumeLayout($false)
 $TabPage5.ResumeLayout($false)
 $TabPage6.ResumeLayout($false)
-$Panel20.ResumeLayout($false)
-$Panel21.ResumeLayout($false)
-$Panel22.ResumeLayout($false)
-$Panel22.PerformLayout()
-$Panel23.ResumeLayout($false)
-$Panel23.PerformLayout()
 $Panel24.ResumeLayout($false)
 $Panel24.PerformLayout()
+$Panel23.ResumeLayout($false)
+$Panel23.PerformLayout()
+$Panel22.ResumeLayout($false)
+$Panel22.PerformLayout()
+$Panel21.ResumeLayout($false)
+$Panel20.ResumeLayout($false)
+$TabPage7.ResumeLayout($false)
+$TabPage7.PerformLayout()
+$Panel25.ResumeLayout($false)
+$Panel26.ResumeLayout($false)
 $FormOverview.ResumeLayout($false)
 $FormOverview.PerformLayout()
 Add-Member -InputObject $FormOverview -Name base -Value $base -MemberType NoteProperty
@@ -2645,11 +3254,6 @@ Add-Member -InputObject $FormOverview -Name Label16 -Value $Label16 -MemberType 
 Add-Member -InputObject $FormOverview -Name AboutToolStripMenuItem -Value $AboutToolStripMenuItem -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label10 -Value $Label10 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name MenuStripOverview -Value $MenuStripOverview -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name ResetToolStripMenuItem -Value $ResetToolStripMenuItem -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name RestartToolStripMenuItem -Value $RestartToolStripMenuItem -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name ResetHyperVManagerToolStripMenuItem -Value $ResetHyperVManagerToolStripMenuItem -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name OpenRootDirToolStripMenuItem -Value $OpenRootDirToolStripMenuItem -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name ExitToolStripMenuItem -Value $ExitToolStripMenuItem -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name AktionToolStripMenuItem -Value $AktionToolStripMenuItem -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name MitAnderenHostVerbindenToolStripMenuItem -Value $MitAnderenHostVerbindenToolStripMenuItem -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name ExportToolStripMenuItem -Value $ExportToolStripMenuItem -MemberType NoteProperty
@@ -2665,7 +3269,6 @@ Add-Member -InputObject $FormOverview -Name Mirror1MinersWindeToolStripMenuItem 
 Add-Member -InputObject $FormOverview -Name Mirror2MinersWindeToolStripMenuItem -Value $Mirror2MinersWindeToolStripMenuItem -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Mirror3MinersWindeToolStripMenuItem -Value $Mirror3MinersWindeToolStripMenuItem -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Mirror1MoritzManteldeToolStripMenuItem -Value $Mirror1MoritzManteldeToolStripMenuItem -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name ToolStripMenuItem1 -Value $ToolStripMenuItem1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label12 -Value $Label12 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label31 -Value $Label31 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name BeendenToolStripMenuItem -Value $BeendenToolStripMenuItem -MemberType NoteProperty
@@ -2760,6 +3363,42 @@ Add-Member -InputObject $FormOverview -Name Panel3 -Value $Panel3 -MemberType No
 Add-Member -InputObject $FormOverview -Name Button13 -Value $Button13 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name LabelOverview -Value $LabelOverview -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabControl1 -Value $TabControl1 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name TabPage7 -Value $TabPage7 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Panel26 -Value $Panel26 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label83 -Value $Label83 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label82 -Value $Label82 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label81 -Value $Label81 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label80 -Value $Label80 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label79 -Value $Label79 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label78 -Value $Label78 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label77 -Value $Label77 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label76 -Value $Label76 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label75 -Value $Label75 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label74 -Value $Label74 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label73 -Value $Label73 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label72 -Value $Label72 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label71 -Value $Label71 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label70 -Value $Label70 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label69 -Value $Label69 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label68 -Value $Label68 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label67 -Value $Label67 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label66 -Value $Label66 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label65 -Value $Label65 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label64 -Value $Label64 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Panel25 -Value $Panel25 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button46 -Value $Button46 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button45 -Value $Button45 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button44 -Value $Button44 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button43 -Value $Button43 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button42 -Value $Button42 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button41 -Value $Button41 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button40 -Value $Button40 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button39 -Value $Button39 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name CheckBox22 -Value $CheckBox22 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name RichTextBox2 -Value $RichTextBox2 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button38 -Value $Button38 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label63 -Value $Label63 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name MaskedTextBox1 -Value $MaskedTextBox1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage1 -Value $TabPage1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TextBox16 -Value $TextBox16 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Panel14 -Value $Panel14 -MemberType NoteProperty
@@ -2789,7 +3428,13 @@ Add-Member -InputObject $FormOverview -Name TabPage3 -Value $TabPage3 -MemberTyp
 Add-Member -InputObject $FormOverview -Name TabPage4 -Value $TabPage4 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage5 -Value $TabPage5 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage6 -Value $TabPage6 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name VScrollBar1 -Value $VScrollBar1 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button37 -Value $Button37 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button36 -Value $Button36 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button35 -Value $Button35 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Panel24 -Value $Panel24 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name TextBox30 -Value $TextBox30 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label58 -Value $Label58 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TextBox29 -Value $TextBox29 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label57 -Value $Label57 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TextBox28 -Value $TextBox28 -MemberType NoteProperty
@@ -2798,6 +3443,14 @@ Add-Member -InputObject $FormOverview -Name Label55 -Value $Label55 -MemberType 
 Add-Member -InputObject $FormOverview -Name Label47 -Value $Label47 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TextBox22 -Value $TextBox22 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Panel23 -Value $Panel23 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name TextBox34 -Value $TextBox34 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label62 -Value $Label62 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name TextBox33 -Value $TextBox33 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label61 -Value $Label61 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name TextBox32 -Value $TextBox32 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label60 -Value $Label60 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name TextBox31 -Value $TextBox31 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Label59 -Value $Label59 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label43 -Value $Label43 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label46 -Value $Label46 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TextBox20 -Value $TextBox20 -MemberType NoteProperty
@@ -2818,6 +3471,7 @@ Add-Member -InputObject $FormOverview -Name TextBox23 -Value $TextBox23 -MemberT
 Add-Member -InputObject $FormOverview -Name Label48 -Value $Label48 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label49 -Value $Label49 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Panel21 -Value $Panel21 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name CheckBox21 -Value $CheckBox21 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label54 -Value $Label54 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name CheckBox20 -Value $CheckBox20 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name CheckBox19 -Value $CheckBox19 -MemberType NoteProperty
@@ -2834,5 +3488,6 @@ Add-Member -InputObject $FormOverview -Name RestartToolStripMenuItem -Value $Res
 Add-Member -InputObject $FormOverview -Name ResetHyperVManagerToolStripMenuItem -Value $ResetHyperVManagerToolStripMenuItem -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name OpenRootDirToolStripMenuItem -Value $OpenRootDirToolStripMenuItem -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name ExitToolStripMenuItem -Value $ExitToolStripMenuItem -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name ToolStripMenuItem2 -Value $ToolStripMenuItem2 -MemberType NoteProperty
 }
 . InitializeComponent
