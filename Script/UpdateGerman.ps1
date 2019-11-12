@@ -4,6 +4,7 @@
 #
 # Hostname
 #
+$TabPage1.Text = "Hostname"
 $LabelOverview.Text = "Servername"
 $Button13.Text = "Neu laden"
 $Button14.Text = "Weiter"
@@ -12,6 +13,7 @@ $RichTextBox1.Text = "Bitte einen Host auswählen"
 #
 # VM settings
 #
+$TabPage2.Text = "VM Einstellungen"
 $Label41.Text = "Virtuelle Maschine"
 $Button1.Text = "Weiter"
 $Button24.Text = "Mit VM Verbinden"
@@ -55,6 +57,7 @@ $Label39.Text = "Integrationsdienste:"
 #
 # VM Erstellen
 #
+$TabPage3.Text = "VM Erstellen"
 $Label1.Text = "VM Erstellen"
 $Label2.Text = "Name der VM"
 $Label3.Text = "RAM in GB"
@@ -72,6 +75,7 @@ $Button6.Text = "Erstellen"
 #
 # Virtueller Switch
 #
+$TabPage4.Text = "Virtueller Switch"
 $Label21.Text = "Virtuellen Switch erstellen"
 $Label22.Text = "Adapter"
 $Label24.Text = "Allow Management OS"
@@ -82,6 +86,7 @@ $Button17.Text = "Erstellen"
 #
 # User
 #
+$TabPage5.Text = "Benutzer"
 $Label33.Text = "Rechte vergeben"
 $Label34.Text = "Verbindungskript"
 $Label35.Text = "Ordner"
@@ -94,6 +99,7 @@ $Button23.Text = "Weiter"
 #
 # Einstellungen
 #
+$TabPage6.Text = "Einstellungen"
 $Label42.Text = "Sprache"
 $Button33.Text = "Deutsch"
 $Button34.Text = "Englisch"
