@@ -12,7 +12,7 @@
             alt="commits to be deployed"></a>
 # PowerShell Hyper-V Manager V.2
 
-Allows you to manage your Hyper-V clusters and VMs with just one tool.
+Allows you to manage your Hyper-V clusters and VMs in a easy to understang GUI.
 
 ## Getting Started
 
