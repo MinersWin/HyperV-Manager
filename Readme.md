@@ -1,4 +1,4 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/60890a1330904eb98e6e9fb7c3c8b943)](https://www.codacy.com/manual/MinersWin/TGF-Tuning-Pack-4.0?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MinersWin/TGF-Tuning-Pack-4.0&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/855159d071d643d4920dfbeb7d42ea8a)](https://www.codacy.com/manual/MinersWin/HyperV-Manager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MinersWin/HyperV-Manager&amp;utm_campaign=Badge_Grade)
     <a href="https://tuning-pack.de">
         <img src="https://img.shields.io/circleci/project/github/badges/shields/master" alt="build status"></a>
     <a href="https://tuning-pack.de">
