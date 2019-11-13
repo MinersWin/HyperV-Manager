@@ -2217,7 +2217,7 @@ $Label63.UseCompatibleTextRendering = $true
 #
 $MaskedTextBox1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1199,[System.Int32]446))
 $MaskedTextBox1.Name = [System.String]'MaskedTextBox1'
-$MaskedTextBox1.PasswordChar = [System.Char]'☺'
+$MaskedTextBox1.PasswordChar = [System.Char]''
 $MaskedTextBox1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]153,[System.Int32]21))
 $MaskedTextBox1.TabIndex = [System.Int32]0
 $MaskedTextBox1.Text = [System.String]'sss'
