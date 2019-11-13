@@ -1,8 +1,8 @@
 $Datum = Get-Date
-
-if (Test-Path "$($MyDir)\Config\Config.psd1"){
+$MyDir = Split-Path $script:MyInvocation.MyCommand.Path
+if (Test-Path "$($MyDir)\Config.psd1"){
 } else {
-  Set-Location "$($MyDir)\Config\"
+  Set-Location "$($MyDir)"
     rm Config.psd1
     @"
 @{
