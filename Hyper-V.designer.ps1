@@ -5,10 +5,8 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.Label]$Label26 = $null
 [System.Windows.Forms.Button]$Button7 = $null
 [System.Windows.Forms.Label]$Label24 = $null
-[System.Windows.Forms.Label]$Label25 = $null
 [System.Windows.Forms.LinkLabel]$LinkLabel1 = $null
 [System.Windows.Forms.Label]$Label23 = $null
-[System.Windows.Forms.Label]$Label20 = $null
 [System.Windows.Forms.Label]$Label21 = $null
 [System.Windows.Forms.Button]$Button16 = $null
 [System.Windows.Forms.Label]$Label8 = $null
@@ -21,8 +19,6 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.Button]$Button1 = $null
 [System.Windows.Forms.Button]$Button2 = $null
 [System.Windows.Forms.Label]$Label3 = $null
-[System.Windows.Forms.Label]$Label19 = $null
-[System.Windows.Forms.Label]$Label18 = $null
 [System.Windows.Forms.FolderBrowserDialog]$FolderBrowserDialog1 = $null
 [System.Windows.Forms.Label]$Label15 = $null
 [System.Windows.Forms.Label]$Label14 = $null
@@ -274,10 +270,8 @@ $Label29 = (New-Object -TypeName System.Windows.Forms.Label)
 $Label26 = (New-Object -TypeName System.Windows.Forms.Label)
 $Button7 = (New-Object -TypeName System.Windows.Forms.Button)
 $Label24 = (New-Object -TypeName System.Windows.Forms.Label)
-$Label25 = (New-Object -TypeName System.Windows.Forms.Label)
 $LinkLabel1 = (New-Object -TypeName System.Windows.Forms.LinkLabel)
 $Label23 = (New-Object -TypeName System.Windows.Forms.Label)
-$Label20 = (New-Object -TypeName System.Windows.Forms.Label)
 $Label21 = (New-Object -TypeName System.Windows.Forms.Label)
 $Button16 = (New-Object -TypeName System.Windows.Forms.Button)
 $Label8 = (New-Object -TypeName System.Windows.Forms.Label)
@@ -290,8 +284,6 @@ $Label2 = (New-Object -TypeName System.Windows.Forms.Label)
 $Button1 = (New-Object -TypeName System.Windows.Forms.Button)
 $Button2 = (New-Object -TypeName System.Windows.Forms.Button)
 $Label3 = (New-Object -TypeName System.Windows.Forms.Label)
-$Label19 = (New-Object -TypeName System.Windows.Forms.Label)
-$Label18 = (New-Object -TypeName System.Windows.Forms.Label)
 $FolderBrowserDialog1 = (New-Object -TypeName System.Windows.Forms.FolderBrowserDialog)
 $Label15 = (New-Object -TypeName System.Windows.Forms.Label)
 $Label14 = (New-Object -TypeName System.Windows.Forms.Label)
@@ -633,15 +625,6 @@ $Label24.TabIndex = [System.Int32]7
 $Label24.Text = [System.String]'Allow Management OS'
 $Label24.UseCompatibleTextRendering = $true
 #
-#Label25
-#
-$Label25.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1263,[System.Int32]15))
-$Label25.Name = [System.String]'Label25'
-$Label25.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]49,[System.Int32]16))
-$Label25.TabIndex = [System.Int32]22
-$Label25.Text = [System.String]'werden.'
-$Label25.UseCompatibleTextRendering = $true
-#
 #LinkLabel1
 #
 $LinkLabel1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1249,[System.Int32]38))
@@ -660,15 +643,6 @@ $Label23.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([Syste
 $Label23.TabIndex = [System.Int32]5
 $Label23.Text = [System.String]'Adapter'
 $Label23.UseCompatibleTextRendering = $true
-#
-#Label20
-#
-$Label20.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]579,[System.Int32]15))
-$Label20.Name = [System.String]'Label20'
-$Label20.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]733,[System.Int32]16))
-$Label20.TabIndex = [System.Int32]22
-$Label20.Text = [System.String]'Kommerziellen Nutzen haben, m�ssen unter gleichen Bedingungen weitergegeben werden und Minerswin muss als Urheber mitgenannt'
-$Label20.UseCompatibleTextRendering = $true
 #
 #Label21
 #
@@ -792,32 +766,13 @@ $Label3.TabIndex = [System.Int32]3
 $Label3.Text = [System.String]'RAM  in GB'
 $Label3.UseCompatibleTextRendering = $true
 #
-#Label19
-#
-$Label19.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]-2,[System.Int32]15))
-$Label19.Name = [System.String]'Label19'
-$Label19.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]594,[System.Int32]16))
-$Label19.TabIndex = [System.Int32]21
-$Label19.Text = [System.String]'Es ist Erlaubt Teile des Codes bzw. Dateien f�r eigene Projekte zu �bernehmen, diese Projekte d�rfen jedoch keinen'
-$Label19.UseCompatibleTextRendering = $true
-#
-#Label18
-#
-$Label18.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]-2,[System.Int32]0))
-$Label18.Name = [System.String]'Label18'
-$Label18.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]501,[System.Int32]15))
-$Label18.TabIndex = [System.Int32]20
-$Label18.Text = [System.String]'Es ist Verboten diese Dateien Weiterzuverkaufen, als Eigenwerk auszugeben oder zu Lizenzieren.'
-$Label18.UseCompatibleTextRendering = $true
-$Label18.add_Click($Label18_Click)
-#
 #Label15
 #
-$Label15.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]-2,[System.Int32]31))
+$Label15.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]5,[System.Int32]0))
 $Label15.Name = [System.String]'Label15'
-$Label15.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]458,[System.Int32]14))
+$Label15.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1349,[System.Int32]45))
 $Label15.TabIndex = [System.Int32]13
-$Label15.Text = [System.String]'Das Projekt unterliegt der Creative Commons Lizenz 4.0 mit "by", "nc" und "sa" Modulen, '
+$Label15.Text = [System.String]'Label15'
 $Label15.UseCompatibleTextRendering = $true
 $Label15.add_Click($Label15_Click)
 #
@@ -833,12 +788,13 @@ $Label14.UseCompatibleTextRendering = $true
 #
 #Label16
 #
-$Label16.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]447,[System.Int32]31))
+$Label16.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1237,[System.Int32]3))
 $Label16.Name = [System.String]'Label16'
-$Label16.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]781,[System.Int32]14))
+$Label16.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]122,[System.Int32]21))
 $Label16.TabIndex = [System.Int32]14
-$Label16.Text = [System.String]'d.h. Der Name des Urhebers muss genannt werden, Kommerzielle Nutzung ist Verboten, die Weitergabe muss unter den Selben bedingungen geschehen. '
+$Label16.Text = [System.String]'Label16'
 $Label16.UseCompatibleTextRendering = $true
+$Label16.add_Click($Label16_Click)
 #
 #AboutToolStripMenuItem
 #
@@ -1084,11 +1040,6 @@ $Label33.add_Click($Label33_Click)
 #
 $Panel8.BackColor = [System.Drawing.SystemColors]::ActiveBorder
 $Panel8.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
-$Panel8.Controls.Add($Label25)
-$Panel8.Controls.Add($Label20)
-$Panel8.Controls.Add($Label18)
-$Panel8.Controls.Add($Label19)
-$Panel8.Controls.Add($Label16)
 $Panel8.Controls.Add($Label15)
 $Panel8.Controls.Add($LinkLabel1)
 $Panel8.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]0,[System.Int32]739))
@@ -1173,16 +1124,16 @@ $TextBox10.Text = [System.String]'2'
 #
 #TextBox15
 #
-$TextBox15.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]133,[System.Int32]52))
+$TextBox15.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]511,[System.Int32]426))
 $TextBox15.Name = [System.String]'TextBox15'
 $TextBox15.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]377,[System.Int32]21))
 $TextBox15.TabIndex = [System.Int32]7
 #
 #TextBox14
 #
-$TextBox14.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]133,[System.Int32]28))
+$TextBox14.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]51))
 $TextBox14.Name = [System.String]'TextBox14'
-$TextBox14.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]377,[System.Int32]21))
+$TextBox14.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]456,[System.Int32]21))
 $TextBox14.TabIndex = [System.Int32]5
 #
 #Label38
@@ -1207,7 +1158,7 @@ $Button6.UseVisualStyleBackColor = $true
 #Label36
 #
 $Label36.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]9.75,[System.Drawing.FontStyle]::Regular,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$Label36.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]7,[System.Int32]52))
+$Label36.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]511,[System.Int32]450))
 $Label36.Name = [System.String]'Label36'
 $Label36.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]120,[System.Int32]23))
 $Label36.TabIndex = [System.Int32]8
@@ -1221,7 +1172,7 @@ $Label35.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([
 $Label35.Name = [System.String]'Label35'
 $Label35.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]120,[System.Int32]23))
 $Label35.TabIndex = [System.Int32]6
-$Label35.Text = [System.String]'Ordner'
+$Label35.Text = [System.String]'Pfad'
 $Label35.UseCompatibleTextRendering = $true
 #
 #Label34
@@ -1400,7 +1351,7 @@ $ComboBox6.TabIndex = [System.Int32]27
 #
 #Button22
 #
-$Button22.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]515,[System.Int32]50))
+$Button22.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]395,[System.Int32]26))
 $Button22.Name = [System.String]'Button22'
 $Button22.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]64,[System.Int32]23))
 $Button22.TabIndex = [System.Int32]9
@@ -1484,20 +1435,18 @@ $Button17.UseVisualStyleBackColor = $true
 #
 $Panel11.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
 $Panel11.Controls.Add($Button22)
-$Panel11.Controls.Add($Label36)
-$Panel11.Controls.Add($TextBox15)
 $Panel11.Controls.Add($Label35)
 $Panel11.Controls.Add($TextBox14)
 $Panel11.Controls.Add($Label34)
 $Panel11.Controls.Add($Button21)
 $Panel11.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]480,[System.Int32]3))
 $Panel11.Name = [System.String]'Panel11'
-$Panel11.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]586,[System.Int32]81))
+$Panel11.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]471,[System.Int32]81))
 $Panel11.TabIndex = [System.Int32]23
 #
 #Button21
 #
-$Button21.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]516,[System.Int32]28))
+$Button21.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]326,[System.Int32]26))
 $Button21.Name = [System.String]'Button21'
 $Button21.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]63,[System.Int32]23))
 $Button21.TabIndex = [System.Int32]3
@@ -2571,7 +2520,9 @@ $TabPage4.Visible = $false
 #TabPage5
 #
 $TabPage5.Controls.Add($Panel10)
+$TabPage5.Controls.Add($Label36)
 $TabPage5.Controls.Add($Panel12)
+$TabPage5.Controls.Add($TextBox15)
 $TabPage5.Controls.Add($Panel11)
 $TabPage5.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage5.Name = [System.String]'TabPage5'
@@ -2933,7 +2884,7 @@ $TextBox26.TabIndex = [System.Int32]22
 $Label52.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Comic Sans MS',[System.Single]11.25))
 $Label52.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]189))
 $Label52.Name = [System.String]'Label52'
-$Label52.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]100,[System.Int32]23))
+$Label52.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]241,[System.Int32]23))
 $Label52.TabIndex = [System.Int32]21
 $Label52.Text = [System.String]'SMTP Host'
 $Label52.UseCompatibleTextRendering = $true
@@ -3175,6 +3126,7 @@ $ToolStripMenuItem2.Size = (New-Object -TypeName System.Drawing.Size -ArgumentLi
 #FormOverview
 #
 $FormOverview.ClientSize = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1366,[System.Int32]795))
+$FormOverview.Controls.Add($Label16)
 $FormOverview.Controls.Add($TabControl1)
 $FormOverview.Controls.Add($RichTextBox1)
 $FormOverview.Controls.Add($Panel8)
@@ -3223,6 +3175,7 @@ $Panel15.ResumeLayout($false)
 $TabPage3.ResumeLayout($false)
 $TabPage4.ResumeLayout($false)
 $TabPage5.ResumeLayout($false)
+$TabPage5.PerformLayout()
 $TabPage6.ResumeLayout($false)
 $Panel24.ResumeLayout($false)
 $Panel24.PerformLayout()
@@ -3241,10 +3194,8 @@ Add-Member -InputObject $FormOverview -Name Label29 -Value $Label29 -MemberType 
 Add-Member -InputObject $FormOverview -Name Label26 -Value $Label26 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Button7 -Value $Button7 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label24 -Value $Label24 -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name Label25 -Value $Label25 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name LinkLabel1 -Value $LinkLabel1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label23 -Value $Label23 -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name Label20 -Value $Label20 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label21 -Value $Label21 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Button16 -Value $Button16 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label8 -Value $Label8 -MemberType NoteProperty
@@ -3257,8 +3208,6 @@ Add-Member -InputObject $FormOverview -Name Label2 -Value $Label2 -MemberType No
 Add-Member -InputObject $FormOverview -Name Button1 -Value $Button1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Button2 -Value $Button2 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label3 -Value $Label3 -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name Label19 -Value $Label19 -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name Label18 -Value $Label18 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name FolderBrowserDialog1 -Value $FolderBrowserDialog1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label15 -Value $Label15 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label14 -Value $Label14 -MemberType NoteProperty

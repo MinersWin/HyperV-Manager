@@ -130,3 +130,35 @@ $Label59.Text = "Aktuellste Version"
 $Label60.Text = "Letzte Updatesuche"
 $Label61.Text = "Firmenname"
 $Label62.Text = "Beschreibung"
+
+#
+# Home
+# 
+$RichTextBox2.Text = "Hier sollte die Motd stehen"
+$Label64.Text = "Name"
+$Label66.Text = "Ordner"
+$Label68.Text = "Version"
+$Label70.Text = "Build"
+$Label72.Text = "Letztes Update"
+$Label74.Text = "Firmenname"
+$Label76.Text = "Sprache"
+$Label78.Text = "Benutzer"
+$Label80.Text = "Domäne"
+$Label82.Text = "Hostname"
+$Label84.Text = "Aktuelle Version"
+$CheckBox22.Text = "Verstanden!"
+$Button39.Text = "Akzeptieren"
+$Button40.Text = "Updates suchen"
+$Button41.Text = "Sprachpakete herunterladen"
+$Button42.Text = "Hauptverzeichnis"
+$Button43.Text = "Vorschaubilder"
+$button44.Text = "Logs"
+$Button45.Text = "Backups"
+$button46.Text = "Updates"
+$Label63.Text = "Sicherheitspasswort"
+$Button38.Text = "Weiter"
+
+#
+# YAY
+#
+$Label15.Text = "Es ist Verboten diese Dateien Weiterzuverkaufen, als Eigenwerk auszugeben oder zu Lizenzieren.`nEs ist Erlaubt Teile des Codes bzw. Dateien für eigene Projekte zu übernehmen, diese Projekte dürfen jedoch keinen Kommerziellen Nutzen haben, müssen unter gleichen Bedingungen weitergegeben werden und MinersWin muss als Urheber mitgenannt werden.`nDas Projekt unterliegt der Creative Commons Lizenz 4.0 mit 'by', 'nc' und 'sa' Modulen, d.h., Der Name des Urhebers muss genannt werden, Kommerzielle Nutzung ist Verboten, die Weitergabe muss unter den selben bedingungen geschehen."

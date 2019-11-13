@@ -50,5 +50,5 @@ $Datum = Get-Date
       LogPath = '$($MyDir)\Log\'
     }
 }
-"@ | Out-File -FilePath $MyDir\Config\Config.psd1
+"@ | Out-File -FilePath $MyDir\Config.psd1
  

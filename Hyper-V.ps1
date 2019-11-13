@@ -204,6 +204,7 @@ $Label77.Text = $ConfigLanguage
 $Label79.Text = "$Env:USERNAME"
 $Label81.Text = "$($env:UserDomain)"
 $Label83.Text = "$Env:LOGONSERVER"
+$Label16.Text = $ConfigVersion + "    " + $ConfigBuild
 
 #
 #_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -218,7 +219,8 @@ Get-Member -InputObject  $Global:balloon
     Remove-Variable  -Name balloon  -Scope Global
   }) 
   $path = (Get-Process -id $pid).Path
-  $balloon.Icon  = [System.Drawing.Icon]::ExtractAssociatedIcon($path) 
+  $balloon.Icon  = New-Object system.drawing.icon (".\Images\favicon.ico")
+  #$balloon.Icon  = [System.Drawing.Icon]::ExtractAssociatedIcon($path) 
   $balloon.BalloonTipIcon  = [System.Windows.Forms.ToolTipIcon]::Warning
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
 #Einlesen der Einstellungen aus der Config Datei
@@ -299,69 +301,11 @@ if ($ConfigLanguage -eq 'de-DE'){
 }
 
 #Fügt Domain\Name in die Rechtevergabe ein
-$TextBox13.Text = "$($env:UserDomain)\$($env:UserName)"
+$TextBox13.Text = "$($env:UserName)"
 Write-Host "$($env:UserDomain)\$($env:UserName)"
 
 #Überprüft die Version
-function Test-Version{
-    #Lädt den Inhalt der Pastebin Seite mit der neusten Version
-    $Update = Invoke-WebRequest https://pastebin.com/raw/zBUriG1D
-
-    $Update.Content
-    if ($Update.Content -gt "1.9.12"){
-        #Wenn Version älter ist, als die aktuellte Gib Meldung aus
-        Write-Host "Update Erforderlich: https://pastebin.com/TvfCY9KQ"
-        Write-Output "$(Get-Date) Es ist ein Update erforderlich." >> $MyDir\Log\Latest.log
-    [System.Windows.Forms.MessageBox]::Show("Update ist Erforderlich, Bitte Update das Skript um die neusten Funktionen und Support zu erhalten. Alte Versionen werden nicht mehr Supportet. Aktuellste Version: https://pastebin.com/TvfCY9KQ","MinersWin Hyper-V Manager V.2",1)
-    } elseif ($Update.Content -lt "1.9.12") {
-        #Wenn Version neuer ist als aktuellste Gib Fehler aus
-        Write-Output "$(Get-Date) Fehler bei der Updateüberprüfung, Aktuelle Version ist älter als die Online zur verfügung stehende." >> $MyDir\Log\Latest.log
-        Write-Host "Fehler"
-    [System.Windows.Forms.MessageBox]::Show("Fehler beim Abruf der aktuellsten Version","MinersWin Hyper-V Manager V.2",1)
-    } else {
-        #Wenn Version die Aktuellste ist Gib Hinweis aus und fahre fort
-        Write-Host "Alles in Ordnung"
-        Write-Host "Aktuellste Version Installiert"
-    }
-}
-#Gib Version und Build im log aus
-Write-Output "$(Get-Date) Version 1.9.17 wird ausgeführt. Build: 30.09.2019" >> $MyDir\Log\Latest.log
-$balloon.BalloonTipText  = 'Version 1.9.17 wird genutzt. Build: 30.09.2019'
-$balloon.BalloonTipTitle  = "Achtung  $Env:USERNAME" 
-$balloon.Visible  = $true 
-$balloon.ShowBalloonTip(20) 
-#Führe Versionstest aus
-Test-Version
-
-
-<#
-#Prüfe auf Adminrechte
-function Test-IsAdmin {
-    try {
-        Write-Output "$(Get-Date) Suche nach Adminrechten" >> $MyDir\Log\Latest.log
-        $identity = [Security.Principal.WindowsIdentity]::GetCurrent()
-        $principal = New-Object Security.Principal.WindowsPrincipal -ArgumentList $identity
-        return $principal.IsInRole( [Security.Principal.WindowsBuiltInRole]::Administrator )
-    } catch {
-        Write-Output "$(Get-Date) Fehler beim überprüfen der Adminrechten" >> $MyDir\Log\Latest.log
-        throw "Fehler beim erstellen der Benutzerrechte. Error: '{0}'." -f $_
-    }
-  }
- #
-  #Überprüft Admin rechte
-if (-not(Test-IsAdmin)) {
-    Write-Output "$(Get-Date) Programm wurde ohne Adminrechte gestartet" >> $MyDir\Log\Latest.log
-    $LabelOverview.text = "Keine Adminrechte!"
-    $RichTextBox1.Text = "Bitte starte das Programm mit Admintrechten neu!"
-    [System.Windows.Forms.MessageBox]::Show("Bitte Starte das Programm mit Adminrechten neu!","MinersWin Hyperv Manager",1)
-    #exit
-}
-else {$LabelOverview.Text = $Hostname.ToString()
-    Write-Output "$(Get-Date) Programm wurde mit Adminrechten gestartet" >> $MyDir\Log\Latest.log
-}
-#>
-
-
+$Button40.Add_Click{(.\Check-Update.ps1)}
 function Load-ComboBox-VMs{ #VM Auswahl
             Write-Output "" >> $MyDir\Log\Latest.log
             Write-Output "$(Get-Date) [Lade VMs]" >> $MyDir\Log\Latest.log
@@ -1108,8 +1052,29 @@ function Save-config{
 }
 
 
+$Button20.Add_Click{(Grant-UserPermission)}
+function Grant-UserPermission{
+    Add-ADGroupMember -Identity Remoteverwaltungsbenutzer -Members $TextBox13
+}
 
+#
+#Connect Script
+#
+$Button21.Add_Click{(Browse-Connect)}
+function Browse-Connect{
+$TextBox35.Text = Get-FileName5 -initialDirectory $TextBox35.Text
+}
+Function Get-FileName5($initialDirectory)
+{   
+  [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") |
+  Out-Null
 
+  $OpenFileDialog5 = New-Object System.Windows.Forms.OpenFileDialog
+  $OpenFileDialog5.initialDirectory = "C:\"
+  $OpenFileDialog5.filter = "BAT (*.BAT)| *.BAT"
+  $OpenFileDialog5.ShowDialog() | Out-Null
+  $OpenFileDialog5.filename
+} 
 
 
 
@@ -1156,7 +1121,7 @@ function Send-Feedback{
 
     $LabelTitle                      = New-Object system.Windows.Forms.Label
     $LabelTitle.text                 = "Hier kannst du dein Feedback und Verbesserungsvorschläge"
-l    $LabelTitle.AutoSize             = $true
+    $LabelTitle.AutoSize             = $true
     $LabelTitle.width                = 25
     $LabelTitle.height               = 10
     $LabelTitle.location             = New-Object System.Drawing.Point(19,31)
