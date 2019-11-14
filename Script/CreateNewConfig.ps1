@@ -1,9 +1,8 @@
 $Datum = Get-Date
 $MyDir = Split-Path $script:MyInvocation.MyCommand.Path
-if (Test-Path "$($MyDir)\..\Config/Config.psd1"){
+if (Test-Path "$($MyDir)\..\Config\Config.psd1"){
 } else {
   Set-Location "$($MyDir)\..\Config\"
-    rm Config.psd1
     @"
 @{
     Name = 'Hyper-V Manager by MinersWin'
@@ -53,7 +52,7 @@ if (Test-Path "$($MyDir)\..\Config/Config.psd1"){
       LogPath = '$($MyDir)\Log\'
     }
 }
-"@ | Out-File -FilePath $MyDir\Config\Config.psd1
+"@ | Out-File -FilePath $MyDir\..\Config\Config.psd1
 }
 
  

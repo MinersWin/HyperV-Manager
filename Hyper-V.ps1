@@ -56,6 +56,7 @@ Set-Location $MyDir
 #
 #__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 .\Script\CreateNewConfig.ps1
+$MyDir = Split-Path $script:MyInvocation.MyCommand.Path
 Set-Location $MyDir
 
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
@@ -204,7 +205,6 @@ $Label77.Text = $ConfigLanguage
 $Label79.Text = "$Env:USERNAME"
 $Label81.Text = "$($env:UserDomain)"
 $Label83.Text = "$Env:LOGONSERVER"
-$Label16.Text = $ConfigVersion + "    " + $ConfigBuild
 
 #
 #_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -219,8 +219,7 @@ Get-Member -InputObject  $Global:balloon
     Remove-Variable  -Name balloon  -Scope Global
   }) 
   $path = (Get-Process -id $pid).Path
-  $balloon.Icon  = New-Object system.drawing.icon (".\Images\favicon.ico")
-  #$balloon.Icon  = [System.Drawing.Icon]::ExtractAssociatedIcon($path) 
+  $balloon.Icon  = [System.Drawing.Icon]::ExtractAssociatedIcon($path) 
   $balloon.BalloonTipIcon  = [System.Windows.Forms.ToolTipIcon]::Warning
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
 #Einlesen der Einstellungen aus der Config Datei
@@ -301,11 +300,41 @@ if ($ConfigLanguage -eq 'de-DE'){
 }
 
 #Fügt Domain\Name in die Rechtevergabe ein
-$TextBox13.Text = "$($env:UserName)"
+$TextBox13.Text = "$($env:UserDomain)\$($env:UserName)"
 Write-Host "$($env:UserDomain)\$($env:UserName)"
 
 #Überprüft die Version
 $Button40.Add_Click{(.\Check-Update.ps1)}
+
+
+<#
+#Prüfe auf Adminrechte
+function Test-IsAdmin {
+    try {
+        Write-Output "$(Get-Date) Suche nach Adminrechten" >> $MyDir\Log\Latest.log
+        $identity = [Security.Principal.WindowsIdentity]::GetCurrent()
+        $principal = New-Object Security.Principal.WindowsPrincipal -ArgumentList $identity
+        return $principal.IsInRole( [Security.Principal.WindowsBuiltInRole]::Administrator )
+    } catch {
+        Write-Output "$(Get-Date) Fehler beim überprüfen der Adminrechten" >> $MyDir\Log\Latest.log
+        throw "Fehler beim erstellen der Benutzerrechte. Error: '{0}'." -f $_
+    }
+  }
+ #
+  #Überprüft Admin rechte
+if (-not(Test-IsAdmin)) {
+    Write-Output "$(Get-Date) Programm wurde ohne Adminrechte gestartet" >> $MyDir\Log\Latest.log
+    $LabelOverview.text = "Keine Adminrechte!"
+    $RichTextBox1.Text = "Bitte starte das Programm mit Admintrechten neu!"
+    [System.Windows.Forms.MessageBox]::Show("Bitte Starte das Programm mit Adminrechten neu!","MinersWin Hyperv Manager",1)
+    #exit
+}
+else {$LabelOverview.Text = $Hostname.ToString()
+    Write-Output "$(Get-Date) Programm wurde mit Adminrechten gestartet" >> $MyDir\Log\Latest.log
+}
+#>
+
+
 function Load-ComboBox-VMs{ #VM Auswahl
             Write-Output "" >> $MyDir\Log\Latest.log
             Write-Output "$(Get-Date) [Lade VMs]" >> $MyDir\Log\Latest.log
@@ -1052,29 +1081,8 @@ function Save-config{
 }
 
 
-$Button20.Add_Click{(Grant-UserPermission)}
-function Grant-UserPermission{
-    Add-ADGroupMember -Identity Remoteverwaltungsbenutzer -Members $TextBox13
-}
 
-#
-#Connect Script
-#
-$Button21.Add_Click{(Browse-Connect)}
-function Browse-Connect{
-$TextBox35.Text = Get-FileName5 -initialDirectory $TextBox35.Text
-}
-Function Get-FileName5($initialDirectory)
-{   
-  [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") |
-  Out-Null
 
-  $OpenFileDialog5 = New-Object System.Windows.Forms.OpenFileDialog
-  $OpenFileDialog5.initialDirectory = "C:\"
-  $OpenFileDialog5.filter = "BAT (*.BAT)| *.BAT"
-  $OpenFileDialog5.ShowDialog() | Out-Null
-  $OpenFileDialog5.filename
-} 
 
 
 
@@ -1121,7 +1129,7 @@ function Send-Feedback{
 
     $LabelTitle                      = New-Object system.Windows.Forms.Label
     $LabelTitle.text                 = "Hier kannst du dein Feedback und Verbesserungsvorschläge"
-    $LabelTitle.AutoSize             = $true
+l    $LabelTitle.AutoSize             = $true
     $LabelTitle.width                = 25
     $LabelTitle.height               = 10
     $LabelTitle.location             = New-Object System.Drawing.Point(19,31)
