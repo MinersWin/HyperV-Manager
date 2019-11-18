@@ -1,5 +1,5 @@
-Dies ist eine sehr frÃ¼he Alpha, in der sich das Projekt befindet. Ich bin nicht verantwortlich fÃ¼r Probleme im Zusammenhang mit der AusfÃ¼hrung des Programms entstehen.
+Dies ist eine sehr frühe Alpha, in der sich das Projekt befindet. Ich bin nicht verantwortlich für Probleme im Zusammenhang mit der Ausführung des Programms entstehen.
 Bisher sind die meisten Funktionen implementiert. Dies ist ein Hobbyprojekt! Alles kann Fehler verursachen und Probleme verursachen! Benutzung auf eigene Gefahr!
-Alles basiert auf PowerShell. Die Leistung wird verbessert. Bugs, VerbesserungsvorschlÃ¤ge und Feedback werden gerne gelesen.
-Wenn Teile des Programms abgeschnitten oder verschoben wurden, bitte ich Sie, mir eine E-Mail mit der Betriebssystemversion, der PowerShell- und der .Net-Framework-Version sowie der BildschirmgrÃ¶ÃŸe und -auflÃ¶sung zu schreiben.
-Dazu kÃ¶nnen Sie mir einfach eine Mail an HyperV-Manager@MinersWin.de schreiben.
+Alles basiert auf PowerShell. Die Leistung wird verbessert. Bugs, Verbesserungsvorschläge und Feedback werden gerne gelesen.
+Wenn Teile des Programms abgeschnitten oder verschoben wurden, bitte ich Sie, mir eine E-Mail mit der Betriebssystemversion, der PowerShell- und der .Net-Framework-Version sowie der Bildschirmgröße und -auflösung zu schreiben.
+Dazu können Sie mir einfach eine Mail an HyperV-Manager@MinersWin.de schreiben.

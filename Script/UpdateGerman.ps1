@@ -131,6 +131,10 @@ $Label60.Text = "Letzte Updatesuche"
 $Label61.Text = "Firmenname"
 $Label62.Text = "Beschreibung"
 
+$Button37.Text = "Öffne Config"
+$Button36.Text = "Zurücksetzen"
+$Button35.Text = "Speichern"
+
 #
 # Home
 # 

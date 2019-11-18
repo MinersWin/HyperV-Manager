@@ -130,6 +130,10 @@ $Label59.Text = "Latest Version"
 $Label60.Text = "Latest Updatecheck"
 $Label61.Text = "Company Name"
 $Label62.Text = "Description"
+
+$Button37.Text = "Open Config"
+$Button36.Text = "Reset Config"
+$Button35.Text = "Save"
 #
 # Home
 # 
