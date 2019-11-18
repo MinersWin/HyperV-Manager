@@ -19,9 +19,9 @@ Allows you to manage your Hyper-V clusters and VMs in a easy to understang GUI.
 Here's how you can do it: Click on ```Clone or Download```, then on ```Download Zip```. Unpack the Zip on your desktop and double-click on ```HyperV-Manager```.
 * Security Password: MinersWin
 
-### Prerequisites
+### Requirements
 
-What things you need to install the software and how to install them
+What things you need to install the software.
 
 ```
 PowerShell Core 5.0 (pre-installed in Windows 7 or higher)
@@ -51,4 +51,4 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 * Microsoft Hyper-V, codenamed Viridian, formerly known as Windows Server Virtualization, is a native hypervisor; it can create virtual machines on x86-64 systems running Windows.      Starting with Windows 8, Hyper-V superseded Windows Virtual PC as the hardware virtualization component of the client editions of Windows NT. A server computer running Hyper-V can    be configured to expose individual virtual machines to one or more networks.
 * If you have problems with this tool, please do not turn to Microsoft, but create an issue.
-* We do not cooperate with Microsoft in any way.
+* I do not cooperate with Microsoft in any way.
