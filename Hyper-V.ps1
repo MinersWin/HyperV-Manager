@@ -48,6 +48,7 @@
       - Werden irgenwelche Daten gesammelt? - Die Log-Dateien werden mit dem Beenden des Programms gelöscht, sofern sie nicht über den Button Informationen Senden an den Ersteller Gesendet wurden.
 #>
 
+
 #___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________#
 #Setzt $MyDir zum Pfad, in welchem das Skript ausgeführt wird.
 $MyDir = Split-Path $script:MyInvocation.MyCommand.Path
@@ -205,6 +206,7 @@ $Label77.Text = $ConfigLanguage
 $Label79.Text = "$Env:USERNAME"
 $Label81.Text = "$($env:UserDomain)"
 $Label83.Text = "$Env:LOGONSERVER"
+$Label16.Text = $ConfigVersion + "    " + $ConfigBuild
 
 #
 #_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
@@ -520,14 +522,14 @@ function ISOS{
 
 
 function Set-ISO{
-    $ISOgewählt = $ComboBox3.SelectedItem
+    $ISOgewaehlt = $ComboBox3.SelectedItem
     $eigeneiso = $TextBox8.Text.ToString()
-    if ($ISOgewählt -eq "ISO Liste" -and $eigeneiso -eq ""){
+    if ($ISOgewaehlt -eq "ISO Liste" -and $eigeneiso -eq ""){
         [System.Windows.Forms.MessageBox]::Show("Bitte eine ISO auswählen","MinersWin HyperV Manager",1)
-    } elseif ($ISOgewählt -ne "ISO Liste" -and $eigeneiso -ne ""){
+    } elseif ($ISOgewaehlt -ne "ISO Liste" -and $eigeneiso -ne ""){
         $isopfad = $eigeneiso
-    } elseif ($ISOgewählt -ne "ISO Liste"){
-        switch ($ISOgewählt){
+    } elseif ($ISOgewaehlt -ne "ISO Liste"){
+        switch ($ISOgewaehlt){
             "Windows 10 Pro" {$isopfad = "\\its-hyperv\E\Windows 10.iso"}
             "Windows 8.1" {$isopfad = "\\its-hyperv\E\Windows 8.1.iso"}
             "Windows 8" {$isopfad = "\\its-hyperv\E\Windows 8 Pro.iso"}
@@ -625,7 +627,7 @@ function Get-Switch{
 function Fill-Edit{
     Write-Output "[Fill-Edit]" >> $MyDir\Log\Latest.log
         $Datum = Get-Date
-        Write-Output "$Datum Fülle Textfelder aus" >> $MyDir\Log\Latest.log
+        Write-Output "$Datum F˜lle Textfelder aus" >> $MyDir\Log\Latest.log
     $VMName = $ComboBox1.Text
     $Hostname = $ComboBox4.Text
     $CPU = Get-VM -ComputerName $Hostname -Name $VMName | Select ProcessorCount
@@ -698,7 +700,13 @@ function Set-Edit {
     #Setzen der neuen Einstellungen     
 
     #CPU Count setzen
-    Set-VMProcessor -ComputerName $Hostname $VMName -Count $CPUCount
+    $CPUCountbefore = Get-VM -ComputerName $Hostname $VMName | Get-VMProcessor
+    if ($CPUCountbefore -eq $CPUCount){
+        Write-Output "CPU Count was not changed"
+    } else {
+        Write-Output "Change CPU Count from $($CPUCountbefore) to $($CPUCount)"
+        Set-VMProcessor -ComputerName $Hostname $VMName -Count $CPUCount
+    }
 
     #Memory setzen
     Set-VMMemory -ComputerName $Hostname $VMName -StartupBytes $RAM
@@ -910,7 +918,7 @@ function Erstelle-VM{
     }
 
 
-    #  Füge DVD Drive hinzu und binde es ein
+    #  F˜ge DVD Drive hinzu und binde es ein
     if ($ISO_der_VM -ne "") {Get-VM -ComputerName $Hostname $Name_Der_VM | Add-VMDvdDrive -Path $ISO_der_VM}
 
     $CDriveVHDPath=$VM_Root_Path+"\"+$Name_Der_VM+"\"+$Name_Der_VM+"-C.vhdx"
@@ -1080,8 +1088,27 @@ function Save-config{
 "@ | Out-File -FilePath $MyDir\Config\Config.psd1
 }
 
-
-
+$Button20.Add_Click{(Grant-UserPermission)}
+function Grant-UserPermission{
+    Add-ADGroupMember -Identity Remoteverwaltungsbenutzer -Members $TextBox13
+}
+#
+#Connect Script
+#
+$Button21.Add_Click{(Browse-Connect)}
+function Browse-Connect{
+$TextBox35.Text = Get-FileName5 -initialDirectory $TextBox35.Text
+}
+Function Get-FileName5($initialDirectory)
+{   
+  [System.Reflection.Assembly]::LoadWithPartialName("System.windows.forms") |
+  Out-Null
+  $OpenFileDialog5 = New-Object System.Windows.Forms.OpenFileDialog
+  $OpenFileDialog5.initialDirectory = "C:\"
+  $OpenFileDialog5.filter = "BAT (*.BAT)| *.BAT"
+  $OpenFileDialog5.ShowDialog() | Out-Null
+  $OpenFileDialog5.filename
+} 
 
 
 
