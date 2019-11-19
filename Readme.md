@@ -17,7 +17,7 @@ Allows you to manage your Hyper-V clusters and VMs in a easy to understang GUI.
 ## Getting Started
 
 Here's how you can do it: Click on ```Clone or Download```, then on ```Download Zip```. Unpack the Zip on your desktop and double-click on ```HyperV-Manager```.
-    * Security Password: ```MinersWin```
+* Security Password: ```MinersWin```
 
 ### Requirements
 
@@ -32,14 +32,14 @@ Hyper-V Management Tools
 
 ## Built With
 
-    * [PowerShell](https://github.com/PowerShell/PowerShell) - The Programming Language used
-    * [ISESteroids](http://www.powertheshell.com/isesteroids/) - The Compiling Tool used
-    * [Visual Studio Code](https://code.visualstudio.com) - The Code Editor used
-    * [PowerShell Pro Tools](https://ironmansoftware.com/powershell-pro-tools/) - Used to generate GUI and some other Features
+* [PowerShell](https://github.com/PowerShell/PowerShell) - The Programming Language used
+* [ISESteroids](http://www.powertheshell.com/isesteroids/) - The Compiling Tool used
+* [Visual Studio Code](https://code.visualstudio.com) - The Code Editor used
+* [PowerShell Pro Tools](https://ironmansoftware.com/powershell-pro-tools/) - Used to generate GUI and some other Features
 
 ## Authors
 
-    * **Moritz Mantel** - *Initial work* - [MinersWin](https://github.com/MinersWin)
+* **Moritz Mantel** - *Initial work* - [MinersWin](https://github.com/MinersWin)
 
 See also the list of [contributors](https://github.com/MinersWin/HyperV-Manager/contributors) who participated in this project.
 
@@ -49,6 +49,6 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 
 ## Hyper-V
 
-    * Microsoft Hyper-V, codenamed Viridian, formerly known as Windows Server Virtualization, is a native hypervisor; it can create virtual machines on x86-64 systems running Windows.      Starting with Windows 8, Hyper-V superseded Windows Virtual PC as the hardware virtualization component of the client editions of Windows NT. A server computer running Hyper-V can    be configured to expose individual virtual machines to one or more networks.
-    * If you have problems with this tool, please do not turn to Microsoft, but create an issue.
-    * I do not cooperate with Microsoft in any way.
+* Microsoft Hyper-V, codenamed Viridian, formerly known as Windows Server Virtualization, is a native hypervisor; it can create virtual machines on x86-64 systems running Windows.      Starting with Windows 8, Hyper-V superseded Windows Virtual PC as the hardware virtualization component of the client editions of Windows NT. A server computer running Hyper-V can    be configured to expose individual virtual machines to one or more networks.
+* If you have problems with this tool, please do not turn to Microsoft, but create an issue.
+* I do not cooperate with Microsoft in any way.
