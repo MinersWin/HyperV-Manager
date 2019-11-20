@@ -164,7 +164,7 @@ $AboutToolStripMenuItem.Add_Click({ About })
 $Button6.Add_Click{( Erstelle-VM )}
 $button2.Add_Click{( Get-BootISOFileName_2 )}
 $PictureBox1.Add_Click{( Connect-VM )}
-$Label38.Add_Click{( Invoke-Expression "$($MyDir)\Thumbnails\" <#Öffnet Ordner beim Klick#> )}
+$Label38.Add_Click{( start explorer.exe "$($MyDir)\Thumbnails\" <#Öffnet Ordner beim Klick#> )}
 $Button20.Add_Click{( Grant-Permission )}
 $Button47.Add_Click{( $FormOverview.Close() )}
 $Button48.Add_Click{ start powershell '.\Hyper-V.ps1'; $FormOverview.Close() }
