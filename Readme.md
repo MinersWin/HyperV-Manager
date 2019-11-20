@@ -11,11 +11,11 @@
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/minerswin/HyperV-Manager?style=for-the-badge&logo=github)](https://github.com/MinersWin/HyperV-Manager/commits/master)
 [![Maintenance](https://img.shields.io/maintenance/yes/2020?style=for-the-badge&logo=visual-studio-code)]((https://www.hyper-v-manager.de/status/))
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/855159d071d643d4920dfbeb7d42ea8a)](https://www.codacy.com/manual/MinersWin/HyperV-Manager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MinersWin/HyperV-Manager&amp;utm_campaign=Badge_Grade)
-[![GitHub followers](https://img.shields.io/github/followers/minerswin?style=social)](https://github.com/MinersWin)
-[![GitHub forks](https://img.shields.io/github/forks/minerswin/HyperV-Manager?style=social)](https://github.com/minerswin/hyperv-manager/)
-[![GitHub stars](https://img.shields.io/github/stars/minerswin/HyperV-Manager?style=social)](https://github.com/minerswin/hyperv-manager/)
-[![GitHub watchers](https://img.shields.io/github/watchers/minerswin/HyperV-Manager?style=social)](https://github.com/minerswin/hyperv-manager/)
-[![Twitter Follow](https://img.shields.io/twitter/follow/minerswins?style=social)](https://twitter.com/minerswins)
+[![GitHub followers](https://img.shields.io/github/followers/minerswin?style=for-the-badge)](https://github.com/MinersWin)
+[![GitHub forks](https://img.shields.io/github/forks/minerswin/HyperV-Manager?style=for-the-badge)](https://github.com/minerswin/hyperv-manager/)
+[![GitHub stars](https://img.shields.io/github/stars/minerswin/HyperV-Manager?style=for-the-badge)](https://github.com/minerswin/hyperv-manager/)
+[![GitHub watchers](https://img.shields.io/github/watchers/minerswin/HyperV-Manager?style=for-the-badge)](https://github.com/minerswin/hyperv-manager/)
+[![Twitter Follow](https://img.shields.io/twitter/follow/minerswins?style=for-the-badge)](https://twitter.com/minerswins)
 # PowerShell Hyper-V Manager V.2
 
 Allows you to manage your Hyper-V clusters and VMs in a easy to understang GUI.
