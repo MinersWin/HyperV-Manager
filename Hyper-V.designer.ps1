@@ -137,6 +137,7 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.TabControl]$TabControl1 = $null
 [System.Windows.Forms.TabPage]$TabPage7 = $null
 [System.Windows.Forms.TextBox]$TextBox35 = $null
+[System.Windows.Forms.Panel]$Panel14 = $null
 [System.Windows.Forms.Panel]$Panel26 = $null
 [System.Windows.Forms.Label]$Label83 = $null
 [System.Windows.Forms.Label]$Label82 = $null
@@ -174,7 +175,6 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.MaskedTextBox]$MaskedTextBox1 = $null
 [System.Windows.Forms.TabPage]$TabPage1 = $null
 [System.Windows.Forms.TextBox]$TextBox16 = $null
-[System.Windows.Forms.Panel]$Panel14 = $null
 [System.Windows.Forms.TabPage]$TabPage2 = $null
 [System.Windows.Forms.Panel]$Panel18 = $null
 [System.Windows.Forms.Panel]$Panel19 = $null
@@ -262,6 +262,9 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.ToolStripMenuItem]$OpenRootDirToolStripMenuItem = $null
 [System.Windows.Forms.ToolStripMenuItem]$ExitToolStripMenuItem = $null
 [System.Windows.Forms.ToolStripMenuItem]$ToolStripMenuItem2 = $null
+[System.Windows.Forms.Button]$Button47 = $null
+[System.Windows.Forms.Button]$Button48 = $null
+[System.Windows.Forms.Button]$Button49 = $null
 function InitializeComponent
 {
 $Button23 = (New-Object -TypeName System.Windows.Forms.Button)
@@ -527,6 +530,9 @@ $ResetHyperVManagerToolStripMenuItem = (New-Object -TypeName System.Windows.Form
 $OpenRootDirToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $ExitToolStripMenuItem = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
 $ToolStripMenuItem2 = (New-Object -TypeName System.Windows.Forms.ToolStripMenuItem)
+$Button47 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button48 = (New-Object -TypeName System.Windows.Forms.Button)
+$Button49 = (New-Object -TypeName System.Windows.Forms.Button)
 $MenuStripOverview.SuspendLayout()
 $Panel10.SuspendLayout()
 $Panel8.SuspendLayout()
@@ -627,9 +633,11 @@ $Label24.UseCompatibleTextRendering = $true
 #
 #LinkLabel1
 #
-$LinkLabel1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1249,[System.Int32]38))
+$LinkLabel1.BackColor = [System.Drawing.SystemColors]::ButtonFace
+$LinkLabel1.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$LinkLabel1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1251,[System.Int32]0))
 $LinkLabel1.Name = [System.String]'LinkLabel1'
-$LinkLabel1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]112,[System.Int32]14))
+$LinkLabel1.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]112,[System.Int32]24))
 $LinkLabel1.TabIndex = [System.Int32]12
 $LinkLabel1.UseCompatibleTextRendering = $true
 $LinkLabel1.add_LinkClicked($LinkLabel1_LinkClicked)
@@ -788,7 +796,7 @@ $Label14.UseCompatibleTextRendering = $true
 #
 #Label16
 #
-$Label16.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1237,[System.Int32]3))
+$Label16.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1232,[System.Int32]31))
 $Label16.Name = [System.String]'Label16'
 $Label16.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]122,[System.Int32]21))
 $Label16.TabIndex = [System.Int32]14
@@ -1041,7 +1049,7 @@ $Label33.add_Click($Label33_Click)
 $Panel8.BackColor = [System.Drawing.SystemColors]::ActiveBorder
 $Panel8.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
 $Panel8.Controls.Add($Label15)
-$Panel8.Controls.Add($LinkLabel1)
+$Panel8.Controls.Add($Label16)
 $Panel8.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]0,[System.Int32]739))
 $Panel8.Name = [System.String]'Panel8'
 $Panel8.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1363,[System.Int32]56))
@@ -1362,9 +1370,9 @@ $Button22.UseVisualStyleBackColor = $true
 #ComboBox4
 #
 $ComboBox4.FormattingEnabled = $true
-$ComboBox4.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1,[System.Int32]3))
+$ComboBox4.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]7))
 $ComboBox4.Name = [System.String]'ComboBox4'
-$ComboBox4.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]387,[System.Int32]21))
+$ComboBox4.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]346,[System.Int32]21))
 $ComboBox4.TabIndex = [System.Int32]6
 $ComboBox4.Text = [System.String]'Host'
 #
@@ -1413,7 +1421,7 @@ $Button15.UseVisualStyleBackColor = $true
 #
 #Button14
 #
-$Button14.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]393,[System.Int32]3))
+$Button14.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]292,[System.Int32]62))
 $Button14.Name = [System.String]'Button14'
 $Button14.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]75,[System.Int32]23))
 $Button14.TabIndex = [System.Int32]7
@@ -1616,11 +1624,10 @@ $Label13.UseCompatibleTextRendering = $true
 #Panel6
 #
 $Panel6.BorderStyle = [System.Windows.Forms.BorderStyle]::Fixed3D
-$Panel6.Controls.Add($Button14)
 $Panel6.Controls.Add($ComboBox4)
-$Panel6.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]45))
+$Panel6.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]26))
 $Panel6.Name = [System.String]'Panel6'
-$Panel6.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]473,[System.Int32]35))
+$Panel6.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]356,[System.Int32]35))
 $Panel6.TabIndex = [System.Int32]14
 #
 #Panel7
@@ -1809,7 +1816,7 @@ $Panel3.TabIndex = [System.Int32]8
 #
 #Button13
 #
-$Button13.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]398,[System.Int32]12))
+$Button13.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]209,[System.Int32]62))
 $Button13.Name = [System.String]'Button13'
 $Button13.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]77,[System.Int32]25))
 $Button13.TabIndex = [System.Int32]11
@@ -1820,7 +1827,7 @@ $Button13.UseVisualStyleBackColor = $true
 #LabelOverview
 #
 $LabelOverview.Font = (New-Object -TypeName System.Drawing.Font -ArgumentList @([System.String]'Times New Roman',[System.Single]14.25,[System.Drawing.FontStyle]::Bold,[System.Drawing.GraphicsUnit]::Point,([System.Byte][System.Byte]0)))
-$LabelOverview.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]14))
+$LabelOverview.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]0))
 $LabelOverview.Name = [System.String]'LabelOverview'
 $LabelOverview.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]390,[System.Int32]23))
 $LabelOverview.TabIndex = [System.Int32]0
@@ -1846,6 +1853,7 @@ $TabControl1.TabIndex = [System.Int32]29
 #TabPage7
 #
 $TabPage7.Controls.Add($TextBox35)
+$TabPage7.Controls.Add($Panel14)
 $TabPage7.Controls.Add($Panel26)
 $TabPage7.Controls.Add($Panel25)
 $TabPage7.Controls.Add($Button41)
@@ -2226,7 +2234,6 @@ $MaskedTextBox1.Text = [System.String]'sss'
 #TabPage1
 #
 $TabPage1.Controls.Add($TextBox16)
-$TabPage1.Controls.Add($Panel14)
 $TabPage1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage1.Name = [System.String]'TabPage1'
 $TabPage1.Padding = (New-Object -TypeName System.Windows.Forms.Padding -ArgumentList @([System.Int32]3))
@@ -2246,12 +2253,13 @@ $TextBox16.TabIndex = [System.Int32]16
 #Panel14
 #
 $Panel14.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$Panel14.Controls.Add($Button14)
 $Panel14.Controls.Add($LabelOverview)
 $Panel14.Controls.Add($Panel6)
 $Panel14.Controls.Add($Button13)
-$Panel14.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]3,[System.Int32]6))
+$Panel14.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]430,[System.Int32]285))
 $Panel14.Name = [System.String]'Panel14'
-$Panel14.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]483,[System.Int32]87))
+$Panel14.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]364,[System.Int32]91))
 $Panel14.TabIndex = [System.Int32]15
 #
 #TabPage2
@@ -3124,10 +3132,43 @@ $ExitToolStripMenuItem.Text = [System.String]'Exit'
 $ToolStripMenuItem2.Name = [System.String]'ToolStripMenuItem2'
 $ToolStripMenuItem2.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]222,[System.Int32]22))
 #
+#Button47
+#
+$Button47.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1170,[System.Int32]-2))
+$Button47.Name = [System.String]'Button47'
+$Button47.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]75,[System.Int32]23))
+$Button47.TabIndex = [System.Int32]30
+$Button47.Text = [System.String]'Close'
+$Button47.UseCompatibleTextRendering = $true
+$Button47.UseVisualStyleBackColor = $true
+#
+#Button48
+#
+$Button48.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1089,[System.Int32]-2))
+$Button48.Name = [System.String]'Button48'
+$Button48.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]75,[System.Int32]23))
+$Button48.TabIndex = [System.Int32]31
+$Button48.Text = [System.String]'Reload'
+$Button48.UseCompatibleTextRendering = $true
+$Button48.UseVisualStyleBackColor = $true
+#
+#Button49
+#
+$Button49.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]1008,[System.Int32]-2))
+$Button49.Name = [System.String]'Button49'
+$Button49.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]75,[System.Int32]23))
+$Button49.TabIndex = [System.Int32]32
+$Button49.Text = [System.String]'TuningPack'
+$Button49.UseCompatibleTextRendering = $true
+$Button49.UseVisualStyleBackColor = $true
+#
 #FormOverview
 #
 $FormOverview.ClientSize = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]1366,[System.Int32]795))
-$FormOverview.Controls.Add($Label16)
+$FormOverview.Controls.Add($Button49)
+$FormOverview.Controls.Add($LinkLabel1)
+$FormOverview.Controls.Add($Button48)
+$FormOverview.Controls.Add($Button47)
 $FormOverview.Controls.Add($TabControl1)
 $FormOverview.Controls.Add($RichTextBox1)
 $FormOverview.Controls.Add($Panel8)
@@ -3327,6 +3368,7 @@ Add-Member -InputObject $FormOverview -Name LabelOverview -Value $LabelOverview 
 Add-Member -InputObject $FormOverview -Name TabControl1 -Value $TabControl1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage7 -Value $TabPage7 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TextBox35 -Value $TextBox35 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Panel14 -Value $Panel14 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Panel26 -Value $Panel26 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label83 -Value $Label83 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label82 -Value $Label82 -MemberType NoteProperty
@@ -3364,7 +3406,6 @@ Add-Member -InputObject $FormOverview -Name Label63 -Value $Label63 -MemberType 
 Add-Member -InputObject $FormOverview -Name MaskedTextBox1 -Value $MaskedTextBox1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage1 -Value $TabPage1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TextBox16 -Value $TextBox16 -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name Panel14 -Value $Panel14 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage2 -Value $TabPage2 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Panel18 -Value $Panel18 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Panel19 -Value $Panel19 -MemberType NoteProperty
@@ -3452,5 +3493,8 @@ Add-Member -InputObject $FormOverview -Name ResetHyperVManagerToolStripMenuItem 
 Add-Member -InputObject $FormOverview -Name OpenRootDirToolStripMenuItem -Value $OpenRootDirToolStripMenuItem -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name ExitToolStripMenuItem -Value $ExitToolStripMenuItem -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name ToolStripMenuItem2 -Value $ToolStripMenuItem2 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button47 -Value $Button47 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button48 -Value $Button48 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Button49 -Value $Button49 -MemberType NoteProperty
 }
 . InitializeComponent
