@@ -117,11 +117,11 @@ Function Invoke-BalloonTip {
         [Parameter(HelpMessage="The number of milliseconds to display the message.")]
         [int]$Duration=1000
     )
-    If (-NOT $global:balloon) {
-        $global:balloon = New-Object System.Windows.Forms.NotifyIcon
+    If (-NOT $script:balloon) {
+        $script:balloon = New-Object System.Windows.Forms.NotifyIcon
         [void](Register-ObjectEvent -InputObject $balloon -EventName MouseDoubleClick -SourceIdentifier IconClicked -Action {
             Write-Verbose 'Disposing of balloon'
-            $global:balloon.dispose()
+            $script:balloon.dispose()
             Unregister-Event -SourceIdentifier IconClicked
             Remove-Job -Name IconClicked
             Remove-Variable -Name balloon -Scope Global
@@ -212,10 +212,10 @@ $Label16.Text = $ConfigVersion + "    " + $ConfigBuild
 #_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 #Funktion für BaloonTips
 Add-Type -AssemblyName  System.Windows.Forms 
-$global:balloon = New-Object System.Windows.Forms.NotifyIcon 
-Get-Member -InputObject  $Global:balloon 
+$script:balloon = New-Object System.Windows.Forms.NotifyIcon 
+Get-Member -InputObject  $script:balloon 
 [void](Register-ObjectEvent  -InputObject $balloon  -EventName MouseDoubleClick  -SourceIdentifier IconClicked  -Action {
-    $global:balloon.dispose()
+    $script:balloon.dispose()
     Unregister-Event  -SourceIdentifier IconClicked
     Remove-Job -Name IconClicked
     Remove-Variable  -Name balloon  -Scope Global
@@ -999,13 +999,13 @@ Einstellungen
 
 $Button33.Add_Click{Update-German}
 function Update-German{
-    $global:ConfigLanguage = 'de-DE'
+    $script:ConfigLanguage = 'de-DE'
     .\Script\UpdateGerman.ps1
 }
 
 $Button34.Add_Click{Update-Eng}
 function Update-Eng{
-    $global:ConfigLanguage = 'en-EN'
+    $script:ConfigLanguage = 'en-EN'
     .\Script\UpdateEnglisch.ps1
 }
 
