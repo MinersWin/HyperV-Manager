@@ -144,7 +144,7 @@ Add-Type -AssemblyName System.Windows.Forms
 . (Join-Path $PSScriptRoot 'Hyper-V.designer.ps1')
 
 #Hinzufügen der Funktionen zu den Buttons
-$Button1.Add_Click({ Set-VM })
+$Button1.Add_Click({ Configure-VM })
 $Button5.Add_Click({ Show-Snapshot })
 $Button4.Add_Click({ Create-Snapshot })
 $Button8.Add_Click({ VM-Start })
@@ -355,7 +355,7 @@ function Load-ComboBox-VMs{ #VM Auswahl
     Write-Output "$(Get-Date) Fertig" >> $MyDir\Log\Latest.log
     }
 
-function Load-ComboBox-Hosts{
+function Refresh-ComboBox-Hosts{
             Write-Output "" >> $MyDir\Log\Latest.log
             Write-Output "$(Get-Date) [Lade Hosts]" >> $MyDir\Log\Latest.log
             Write-Output "$(Get-Date) Lade Server mit dem Betriebsystem Windows Server in der Active Diretory" >> $MyDir\Log\Latest.log
@@ -377,9 +377,9 @@ $RichTextBox1.Text = "Bitte einen Host auswählen"
 
 
 #Setzt die gewählte VM als VM und listet Infos auf
-function Set-VM{
+function Configure-VM{
             Write-Output "" >> $MyDir\Log\Latest.log
-            Write-Output "$(Get-Date) [Set-VM]" >> $MyDir\Log\Latest.log
+            Write-Output "$(Get-Date) [Configure-VM]" >> $MyDir\Log\Latest.log
     switch ($ComboBox1.Text){
         VM {[System.Windows.Forms.MessageBox]::Show("Bitte eine VM auswählen","MinersWin HyperV Manager",1)
             Write-Output "$(Get-Date) Keine VM Ausgewählt" >> $MyDir\Log\Latest.log}
@@ -490,7 +490,7 @@ function VM-Start{
     $balloon.BalloonTipText  = "Die VM $($VMName) auf dem Host $($Hostname) wurde gestartet!"
     $balloon.Visible  = $true 
     $balloon.ShowBalloonTip(20)
-    Set-VM
+    Configure-VM
 }
 
 function VM-Stop{
@@ -509,7 +509,7 @@ function VM-Stop{
     $balloon.BalloonTipText  = "Die VM $($VMName) auf dem Host $($Hostname) wurde gestoppt!"
     $balloon.Visible  = $true 
     $balloon.ShowBalloonTip(20)
-    Set-VM
+    Configure-VM
 
 }
 
@@ -555,7 +555,7 @@ function Set-ISO{
     Write-Output $isopfad
     $VMName = $ComboBox1.Text
     $Hostname = $ComboBox4.Text
-    Set-VMDvdDrive -ComputerName $Hostname -VMName $VMName -Path $isopfad
+    Configure-VMDvdDrive -ComputerName $Hostname -VMName $VMName -Path $isopfad
     $balloon.BalloonTipText  = "Die ISO $($isopfad) wurde in die VM $($VMName) auf dem Host $($Hostname) eingebunden!"
     $balloon.Visible  = $true 
     $balloon.ShowBalloonTip(20)
@@ -707,14 +707,14 @@ function Set-Edit {
         Write-Output "CPU Count was not changed"
     } else {
         Write-Output "Change CPU Count from $($CPUCountbefore) to $($CPUCount)"
-        Set-VMProcessor -ComputerName $Hostname $VMName -Count $CPUCount
+        Configure-VMProcessor -ComputerName $Hostname $VMName -Count $CPUCount
     }
 
     #Memory setzen
-    Set-VMMemory -ComputerName $Hostname $VMName -StartupBytes $RAM
+    Configure-VMMemory -ComputerName $Hostname $VMName -StartupBytes $RAM
 
     #Virtuellen Switch setzen
-    Set-VMSwitch -ComputerName $Hostname $VMName -NetAdapterName $VirtuellerSwitch
+    Configure-VMSwitch -ComputerName $Hostname $VMName -NetAdapterName $VirtuellerSwitch
     
     #VMNamen setzen
     Rename-VM -ComputerName $Hostname $VMName $NeuerNameDerVM
@@ -876,7 +876,7 @@ function Reload-Hosts{
     $ComboBox4.Enabled = $true
     $TextBox13.Text = "$($env:UserDomain)\$($env:UserName)"
     $RadioButton1.Checked = $true
-    Load-ComboBox-Hosts
+    Refresh-ComboBox-Hosts
     ISO
     $balloon.BalloonTipText  = "Reload!!"
     $balloon.Visible  = $true 
@@ -909,14 +909,14 @@ function Erstelle-VM{
         $VMCrateFailed=$True
         $LastResultLabel.text = "VM " + $VMNameTextBox.Text + " Failed to Create :("
     }
-    Get-VM -ComputerName $Hostname $Name_Der_VM | Set-VMProcessor -Count $Prozessorkerne
+    Get-VM -ComputerName $Hostname $Name_Der_VM | Configure-VMProcessor -Count $Prozessorkerne
 
     #Setze Neue Boot Reinfolge
     if ($VMGeneration -eq "2")
     {
         $old_boot_order = Get-VMFirmware -ComputerName $Hostname -VMName $Name_Der_VM | Select-Object -ExpandProperty BootOrder
         $new_boot_order = $old_boot_order | Where-Object { $_.BootType -ne "Network" }
-        Set-VMFirmware -VMName $Name_Der_VM -ComputerName $HostName -BootOrder $new_boot_order
+        Configure-VMFirmware -VMName $Name_Der_VM -ComputerName $HostName -BootOrder $new_boot_order
     }
 
 
@@ -1268,5 +1268,5 @@ l    $LabelTitle.AutoSize             = $true
 
 Test_TuningPack
 ISOS
-Load-ComboBox-Hosts
+Refresh-ComboBox-Hosts
 $FormOverview.ShowDialog()
