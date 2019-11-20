@@ -100,7 +100,7 @@ $ConfigPathSaveInTemp = $Config.Update.SaveInTemp -eq "YES"
 $ConfigPathThumbnailPath = $Config.Path.ThumbnailPath
 $configPathLogPath = $Config.Path.LogPath
 
-Write-Host $ConfigName $ConfigDirectoryName $ConfigVersion $ConfigBuild $ConfigLastUpdate $ConfigLastUpdateSearch $ConfigAuthor $ConfigCompanyName $ConfigDescription $ConfigCheckForUpdates $ConfigNewestVersion $ConfigUpdateWarn $ConfigUpdateDownload $ConfigUpdateScript $ConfigUpdateReplaceOldVersion $ConfigUpdateSaveOldVersion $ConfigUpdateNewLanguages $ConfigLanguage $ConfigDonate1 $ConfigDonate2 $ConfigAboutSite $ConfigMailSendTo $ConfigSMTPUsername $ConfigSMTPPassword $ConfigSMTPServer $ConfigSMTPPort $ConfigPathSaveInTemp $ConfigPathThumbnailPath $configPathLogPath
+Write-Output $ConfigName $ConfigDirectoryName $ConfigVersion $ConfigBuild $ConfigLastUpdate $ConfigLastUpdateSearch $ConfigAuthor $ConfigCompanyName $ConfigDescription $ConfigCheckForUpdates $ConfigNewestVersion $ConfigUpdateWarn $ConfigUpdateDownload $ConfigUpdateScript $ConfigUpdateReplaceOldVersion $ConfigUpdateSaveOldVersion $ConfigUpdateNewLanguages $ConfigLanguage $ConfigDonate1 $ConfigDonate2 $ConfigAboutSite $ConfigMailSendTo $ConfigSMTPUsername $ConfigSMTPPassword $ConfigSMTPServer $ConfigSMTPPort $ConfigPathSaveInTemp $ConfigPathThumbnailPath $configPathLogPath
 
 #__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 #Erstellung der Funktion Invoke-BalloonTip
@@ -262,29 +262,29 @@ Write-Output "| |     | || |   | || | \   || |   | || | \_  || |      | |\  |  "
 Write-Output "| |     | || |   | || |  \  || |   | || |___| || |____/\| | \ \__" >> $MyDir\Log\Latest.log
 Write-Output "|/       \||/     \||/    |_||/     \||_______||_______/|/   \__/" >> $MyDir\Log\Latest.log
 Write-Output "" >> $MyDir\Log\Latest.log
-Write-Host "                   _______  _______  _______                 "
-Write-Host "|\     /||\     /||  ____ ||  ____ \|  ____ |       |\     /|"
-Write-Host "| |   | || \   / || |    ||| |    \/| |    ||       | |   | |"
-Write-Host "| |___| | \ \_/ / | |____||| |__    | |____|| _____ | |   | |"
-Write-Host "|  ___  |  \   /  |  _____||  __|   |    ___||_____|| |   | |"
-Write-Host "| |   | |   | |   | |      | |      | |\ \           \ \_/ / "
-Write-Host "| |   | |   | |   | |      | |____/\| | \ \_          \   /  "
-Write-Host "|/     \|   |_|   |/       |_______/|/   \__|          \_/   "
-Write-Host "                                                             "
-Write-Host " _________  _______  _        _______  _______  _______  _______ "
-Write-Host "|  _   _  ||  ___  || \    /||  ___  ||  ____ \|  ____ \|  ____ |"
-Write-Host "| | | | | || |   | ||  \  | || |   | || |    \/| |    \/| |    ||"
-Write-Host "| | | | | || |___| ||   \ | || |___| || |      | |__    | |____||"
-Write-Host "| | |_| | ||  ___  || |\ \| ||  ___  || | ____ |  __|   |     __|"
-Write-Host "| |     | || |   | || | \   || |   | || | \_  || |      | |\  |  "
-Write-Host "| |     | || |   | || |  \  || |   | || |___| || |____/\| | \ \__"
-Write-Host "|/       \||/     \||/    |_||/     \||_______||_______/|/   \__/"
+Write-Output "                   _______  _______  _______                 "
+Write-Output "|\     /||\     /||  ____ ||  ____ \|  ____ |       |\     /|"
+Write-Output "| |   | || \   / || |    ||| |    \/| |    ||       | |   | |"
+Write-Output "| |___| | \ \_/ / | |____||| |__    | |____|| _____ | |   | |"
+Write-Output "|  ___  |  \   /  |  _____||  __|   |    ___||_____|| |   | |"
+Write-Output "| |   | |   | |   | |      | |      | |\ \           \ \_/ / "
+Write-Output "| |   | |   | |   | |      | |____/\| | \ \_          \   /  "
+Write-Output "|/     \|   |_|   |/       |_______/|/   \__|          \_/   "
+Write-Output "                                                             "
+Write-Output " _________  _______  _        _______  _______  _______  _______ "
+Write-Output "|  _   _  ||  ___  || \    /||  ___  ||  ____ \|  ____ \|  ____ |"
+Write-Output "| | | | | || |   | ||  \  | || |   | || |    \/| |    \/| |    ||"
+Write-Output "| | | | | || |___| ||   \ | || |___| || |      | |__    | |____||"
+Write-Output "| | |_| | ||  ___  || |\ \| ||  ___  || | ____ |  __|   |     __|"
+Write-Output "| |     | || |   | || | \   || |   | || | \_  || |      | |\  |  "
+Write-Output "| |     | || |   | || |  \  || |   | || |___| || |____/\| | \ \__"
+Write-Output "|/       \||/     \||/    |_||/     \||_______||_______/|/   \__/"
   $balloon.BalloonTipText  = 'Starte Hyper-V Manager V.2'
   $balloon.BalloonTipTitle  = "Achtung  $Env:USERNAME" 
   $balloon.Visible  = $true 
   $balloon.ShowBalloonTip(20) 
 
-Write-Host "Look behind this Window!"
+Write-Output "Look behind this Window!"
 $FormOverview.text = $ConfigName
 $Icon = New-Object system.drawing.icon (".\Images\favicon.ico")
 $FormOverview.Icon = $Icon
@@ -305,7 +305,7 @@ if ($ConfigLanguage -eq 'de-DE'){
 
 #Fügt Domain\Name in die Rechtevergabe ein
 $TextBox13.Text = "$($env:UserDomain)\$($env:UserName)"
-Write-Host "$($env:UserDomain)\$($env:UserName)"
+Write-Output "$($env:UserDomain)\$($env:UserName)"
 
 #Überprüft die Version
 $Button40.Add_Click{(.\Check-Update.ps1)}
@@ -391,7 +391,7 @@ function Set-VM{
             $VMInfo = Get-VM -ComputerName $Hostname -Name $VMName | select VMName, State, CPUUsage, MemoryAssigned, Uptime, MemoryStartup, ProcessorCount | Format-Table | Out-String
                     Write-Output "$(Get-Date) Gib VMInfo aus `n $($VMInfo)" >> $MyDir\Log\Latest.log
             $RichTextBox1.Text = $VMInfo
-            Write-host $VMName
+            Write-Output $VMName
                     Write-Output "$(Get-Date) Fertig" >> $MyDir\Log\Latest.log
             
         }
@@ -422,16 +422,16 @@ function Set-Host{
         localhost {$Hostname = "localhost"
                 $VMs = Get-VM -ComputerName $Hostname -Name * | select VMName | Out-String
                 $RichTextBox1.Text = $VMs
-                Write-Host $Hostname
-                Write-Host $VMs
+                Write-Output $Hostname
+                Write-Output $VMs
                 $LabelOverview.text = $Hostname.ToString()}
                 
         default {
             $Hostname = $ComboBox4.Text
             $VMs = Get-VM -ComputerName $Hostname -Name * | select VMName | Out-String
             $RichTextBox1.Text = $VMs
-            Write-Host $Hostname
-            Write-Host $VMs
+            Write-Output $Hostname
+            Write-Output $VMs
             $LabelOverview.text = $Hostname.ToString()
             
         }
@@ -482,10 +482,10 @@ function Create-Snapshot{
 function VM-Start{
     $VMName = $ComboBox1.Text
     $Hostname = $ComboBox4.Text
-    Write-Host "VMNAME"
-    Write-Host $VMName
-    Write-Host "Hostname"
-    Write-Host $Hostname
+    Write-Output "VMNAME"
+    Write-Output $VMName
+    Write-Output "Hostname"
+    Write-Output $Hostname
     Get-VM $VMName -ComputerName $Hostname | Start-VM
     $balloon.BalloonTipText  = "Die VM $($VMName) auf dem Host $($Hostname) wurde gestartet!"
     $balloon.Visible  = $true 
@@ -552,7 +552,7 @@ function Set-ISO{
     } else {
         [System.Windows.Forms.MessageBox]::Show("Ein Problem ist aufgetreten! Bitte per Mail an hypervmanager@minerswin.de wenden.","Fehler - MinersWin HyperV Manager",1)
     }
-    Write-host $isopfad
+    Write-Output $isopfad
     $VMName = $ComboBox1.Text
     $Hostname = $ComboBox4.Text
     Set-VMDvdDrive -ComputerName $Hostname -VMName $VMName -Path $isopfad
@@ -634,15 +634,15 @@ function Fill-Edit{
     $Hostname = $ComboBox4.Text
     $CPU = Get-VM -ComputerName $Hostname -Name $VMName | Select ProcessorCount
     $CPU = $CPU.ProcessorCount
-    Write-Host $CPU
+    Write-Output $CPU
     $RAM = Get-VM -ComputerName $Hostname -Name $VMName | Select MemoryStartup
     $Memory = $RAM.MemoryStartup
     $Memory = $Memory/1073741824
-    Write-Host $RAM
-    Write-Host $Memory
+    Write-Output $RAM
+    Write-Output $Memory
     $VSwitch = Get-VMNetworkAdapter -ComputerName $Hostname $VMName | Select SwitchName
     $FirstBootDevice = 
-    Write-Host $VSwitch.SwitchName
+    Write-Output $VSwitch.SwitchName
     $ComboBox6.SelectedItem = $VSwitch.SwitchName
 
     $TextBox10.Clear()
@@ -682,8 +682,8 @@ function Fill-Edit{
 
     }
 
-    Write-Host $Generarion
-    Write-Host $Firmware.BootOrder
+    Write-Output $Generarion
+    Write-Output $Firmware.BootOrder
             $Datum = Get-Date
             Write-Output "$Datum Fertig" >> $MyDir\Log\Latest.log
 }
@@ -904,7 +904,7 @@ function Erstelle-VM{
     try    {
         New-VM -ComputerName $Hostname -Name $Name_Der_VM -MemoryStartupBytes ([int]$Ram_in_GB*1073741824) -SwitchName $Switchname -Generation $VMGeneration -ErrorAction Stop
     } catch {
-        write-host "Exception Message: $($_.Exception.Message)" -ForegroundColor Red
+        Write-Output "Exception Message: $($_.Exception.Message)" -ForegroundColor Red
         [System.Windows.MessageBox]::Show($_.Exception.Message)
         $VMCrateFailed=$True
         $LastResultLabel.text = "VM " + $VMNameTextBox.Text + " Failed to Create :("
