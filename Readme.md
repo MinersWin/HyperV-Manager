@@ -1,5 +1,5 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/855159d071d643d4920dfbeb7d42ea8a)](https://www.codacy.com/manual/MinersWin/HyperV-Manager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MinersWin/HyperV-Manager&amp;utm_campaign=Badge_Grade)
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fhyper-v-manager.de?style=for-the-badge&logo=internet)](https://www.hyper-v-manager.de/)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fhyper-v-manager.de?style=for-the-badge&logo=internet-explorer)](https://www.hyper-v-manager.de/)
 [![GitHub language count](https://img.shields.io/github/languages/count/minerswin/HyperV-Manager?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/PowerShell)
 [![GitHub top language](https://img.shields.io/github/languages/top/minerswin/HyperV-Manager?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/PowerShell)
 [![Discord](https://img.shields.io/discord/335805058262368256?style=for-the-badge&logo=appveyor)](https://discord.gg/TmZRat8)
