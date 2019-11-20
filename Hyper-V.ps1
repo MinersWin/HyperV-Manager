@@ -908,7 +908,6 @@ function Erstelle-VM{
         $LastResultLabel.text = "VM " + $VMNameTextBox.Text + " Failed to Create :("
     }
     Get-VM -ComputerName $Hostname $Name_Der_VM | Configure-VMProcessor -Count $Prozessorkerne
-
     #Setze Neue Boot Reinfolge
     if ($VMGeneration -eq "2")
     {
@@ -916,25 +915,12 @@ function Erstelle-VM{
         $new_boot_order = $old_boot_order | Where-Object { $_.BootType -ne "Network" }
         Configure-VMFirmware -VMName $Name_Der_VM -ComputerName $HostName -BootOrder $new_boot_order
     }
-
-
     #  F˜ge DVD Drive hinzu und binde es ein
     if ($ISO_der_VM -ne "") {Get-VM -ComputerName $Hostname $Name_Der_VM | Add-VMDvdDrive -Path $ISO_der_VM}
 
     $CDriveVHDPath=$VM_Root_Path+"\"+$Name_Der_VM+"\"+$Name_Der_VM+"-C.vhdx"
     New-VHD -ComputerName $Hostname -Path $CDriveVHDPath -SizeBytes (Invoke-Expression ($VHDGB+"GB")) -Dynamic
     Add-VMHardDiskDrive -ComputerName $Hostname -VMName $Name_Der_VM -Path $CDriveVHDPath -ControllerType SCSI -ControllerNumber 0
-
-
-
-
-
-
-
-
-
-
-
 
     $balloon.BalloonTipText  = "Die VM $($Name_Der_VM) auf dem Host $($Hostname) wurde Erstellt!"
     $balloon.Visible  = $true 
@@ -1134,8 +1120,15 @@ function Test_TuningPack{
         Test_TuningPack
     }
 
-
-
+    function ADClients{
+        $ClientArray = Get-ADComputer -filter * | Select-Object Name
+            Write-Output "$(Get-Date) Lade alle Clients der Active Directory $($MgrArray)" >> $MyDir\Log\Latest.log
+            Write-Output "$(Get-Date) Fülle ComboBox7 mit Clientnamen" >> $MyDir\Log\Latest.log
+            Write-Output "$(Get-Date) _" >> $MyDir\Log\Latest.log
+    ForEach ($item in $ClientArray) {
+        $ComboBox7.Items.Add($item.Name)
+    }
+}
 
 
 
@@ -1177,7 +1170,7 @@ function Send-Feedback{
 
     $LabelTitle                      = New-Object system.Windows.Forms.Label
     $LabelTitle.text                 = "Hier kannst du dein Feedback und Verbesserungsvorschläge"
-l    $LabelTitle.AutoSize             = $true
+    $LabelTitle.AutoSize             = $true
     $LabelTitle.width                = 25
     $LabelTitle.height               = 10
     $LabelTitle.location             = New-Object System.Drawing.Point(19,31)
@@ -1264,6 +1257,7 @@ l    $LabelTitle.AutoSize             = $true
     $FormMail.ShowDialog()
 }
 
+ADClients
 Test_TuningPack
 ISOS
 Refresh-ComboBox-Hosts
