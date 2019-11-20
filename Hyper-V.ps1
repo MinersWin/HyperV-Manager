@@ -168,6 +168,8 @@ $button2.Add_Click{( Get-BootISOFileName_2 )}
 $PictureBox1.Add_Click{( Connect-VM )}
 $Label38.Add_Click{( Invoke-Expression "$($MyDir)\Thumbnails\" <#Öffnet Ordner beim Klick#> )}
 $Button20.Add_Click{( Grant-Permission )}
+$Button47.Add_Click{( $FormOverview.Close() )}
+$Button48.Add_Click{ start powershell '.\Hyper-V.ps1'; $FormOverview.Close() }
 
 #Panel unsichtbar machen
 $Panel10.Enabled = $false #Rechte Vergeben
@@ -1111,7 +1113,28 @@ Function Get-FileName5($initialDirectory)
 } 
 
 
-
+function Test_TuningPack{
+    $TuningPack = Test-Path '.\TuningPack\TGF-Tuning-Pack-4.0-master\GUI.ps1'
+    if ($TuningPack){
+        $Button49.Add_Click{(TuningPack)}
+        $Button49.ForeColor = 'Green'
+    } else {
+        $Button49.Add_Click{(Download_TuningPack)}
+        $Button49.ForeColor = 'RED'
+    }
+    }
+    function TuningPack{
+        start powershell "Set-Location .\TuningPack\TGF-Tuning-Pack-4.0-master\; & '.\The Geek Freaks Tuning Pack 4.0.exe'"
+    }
+    function Download_TuningPack{
+        mkdir TuningPack
+        Set-Location .\TuningPack
+        wget 'https://github.com/MinersWin/TGF-Tuning-Pack-4.0/archive/master.zip' -OutFile 'TuningPack.zip'
+        Expand-Archive .\TuningPack.zip -DestinationPath .\
+        rm TuningPack.zip
+        Set-Location .\..\
+        Test_TuningPack
+    }
 
 
 
@@ -1243,7 +1266,7 @@ l    $LabelTitle.AutoSize             = $true
     $FormMail.ShowDialog()
 }
 
-
+Test_TuningPack
 ISOS
 Load-ComboBox-Hosts
 $FormOverview.ShowDialog()
