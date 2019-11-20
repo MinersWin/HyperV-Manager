@@ -1,4 +1,3 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/855159d071d643d4920dfbeb7d42ea8a)](https://www.codacy.com/manual/MinersWin/HyperV-Manager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MinersWin/HyperV-Manager&amp;utm_campaign=Badge_Grade)
 [![Website](https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fhyper-v-manager.de&logo=internet-explorer)](https://www.hyper-v-manager.de/)
 [![GitHub language count](https://img.shields.io/github/languages/count/minerswin/HyperV-Manager?style=for-the-badge&logo=powershell)](https://en.wikipedia.org/wiki/PowerShell)
 [![GitHub top language](https://img.shields.io/github/languages/top/minerswin/HyperV-Manager?style=for-the-badge&logo=powershell)](https://en.wikipedia.org/wiki/PowerShell)
@@ -11,6 +10,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/minerswin/HyperV-Manager?style=for-the-badge&logo=github)](https://github.com/MinersWin/HyperV-Manager/releases)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/minerswin/HyperV-Manager?style=for-the-badge&logo=github)](https://github.com/MinersWin/HyperV-Manager/commits/master)
 [![Maintenance](https://img.shields.io/maintenance/yes/2020?style=for-the-badge&logo=visual-studio-code)]((https://www.hyper-v-manager.de/status/))
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/855159d071d643d4920dfbeb7d42ea8a)](https://www.codacy.com/manual/MinersWin/HyperV-Manager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MinersWin/HyperV-Manager&amp;utm_campaign=Badge_Grade)
 [![GitHub followers](https://img.shields.io/github/followers/minerswin?style=social)](https://github.com/MinersWin)
 [![GitHub forks](https://img.shields.io/github/forks/minerswin/HyperV-Manager?style=social)](https://github.com/minerswin/hyperv-manager/)
 [![GitHub stars](https://img.shields.io/github/stars/minerswin/HyperV-Manager?style=social)](https://github.com/minerswin/hyperv-manager/)
