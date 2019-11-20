@@ -1,8 +1,9 @@
 <p align="center">
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/855159d071d643d4920dfbeb7d42ea8a)](https://www.codacy.com/manual/MinersWin/HyperV-Manager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MinersWin/HyperV-Manager&amp;utm_campaign=Badge_Grade)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/855159d071d643d4920dfbeb7d42ea8a)](https://www.codacy.com/manual/MinersWin/HyperV-Manager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MinersWin/HyperV-Manager&amp;utm_campaign=Badge_Grade)
 [![Logo](https://www.powershellmagazine.com/wp-content/uploads/2012/12/Hyper-V.png)](https://hyper-v-manager.de)
 </p>
+
 [![Website](https://img.shields.io/website?style=for-the-badge&url=https%3A%2F%2Fhyper-v-manager.de&logo=internet-explorer)](https://www.hyper-v-manager.de/)
 [![GitHub language count](https://img.shields.io/github/languages/count/minerswin/HyperV-Manager?style=for-the-badge&logo=powershell)](https://en.wikipedia.org/wiki/PowerShell)
 [![GitHub top language](https://img.shields.io/github/languages/top/minerswin/HyperV-Manager?style=for-the-badge&logo=powershell)](https://en.wikipedia.org/wiki/PowerShell)
