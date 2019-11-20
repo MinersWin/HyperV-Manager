@@ -137,7 +137,6 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.TabControl]$TabControl1 = $null
 [System.Windows.Forms.TabPage]$TabPage7 = $null
 [System.Windows.Forms.TextBox]$TextBox35 = $null
-[System.Windows.Forms.Panel]$Panel14 = $null
 [System.Windows.Forms.Panel]$Panel26 = $null
 [System.Windows.Forms.Label]$Label83 = $null
 [System.Windows.Forms.Label]$Label82 = $null
@@ -175,6 +174,7 @@ $FormOverview = New-Object -TypeName System.Windows.Forms.Form
 [System.Windows.Forms.MaskedTextBox]$MaskedTextBox1 = $null
 [System.Windows.Forms.TabPage]$TabPage1 = $null
 [System.Windows.Forms.TextBox]$TextBox16 = $null
+[System.Windows.Forms.Panel]$Panel14 = $null
 [System.Windows.Forms.TabPage]$TabPage2 = $null
 [System.Windows.Forms.Panel]$Panel18 = $null
 [System.Windows.Forms.Panel]$Panel19 = $null
@@ -405,6 +405,7 @@ $LabelOverview = (New-Object -TypeName System.Windows.Forms.Label)
 $TabControl1 = (New-Object -TypeName System.Windows.Forms.TabControl)
 $TabPage7 = (New-Object -TypeName System.Windows.Forms.TabPage)
 $TextBox35 = (New-Object -TypeName System.Windows.Forms.TextBox)
+$Panel14 = (New-Object -TypeName System.Windows.Forms.Panel)
 $Panel26 = (New-Object -TypeName System.Windows.Forms.Panel)
 $Label83 = (New-Object -TypeName System.Windows.Forms.Label)
 $Label82 = (New-Object -TypeName System.Windows.Forms.Label)
@@ -442,7 +443,6 @@ $Label63 = (New-Object -TypeName System.Windows.Forms.Label)
 $MaskedTextBox1 = (New-Object -TypeName System.Windows.Forms.MaskedTextBox)
 $TabPage1 = (New-Object -TypeName System.Windows.Forms.TabPage)
 $TextBox16 = (New-Object -TypeName System.Windows.Forms.TextBox)
-$Panel14 = (New-Object -TypeName System.Windows.Forms.Panel)
 $TabPage2 = (New-Object -TypeName System.Windows.Forms.TabPage)
 $Panel18 = (New-Object -TypeName System.Windows.Forms.Panel)
 $Panel19 = (New-Object -TypeName System.Windows.Forms.Panel)
@@ -550,10 +550,10 @@ $Panel2.SuspendLayout()
 $Panel3.SuspendLayout()
 $TabControl1.SuspendLayout()
 $TabPage7.SuspendLayout()
+$Panel14.SuspendLayout()
 $Panel26.SuspendLayout()
 $Panel25.SuspendLayout()
 $TabPage1.SuspendLayout()
-$Panel14.SuspendLayout()
 $TabPage2.SuspendLayout()
 $Panel18.SuspendLayout()
 $Panel19.SuspendLayout()
@@ -1853,7 +1853,6 @@ $TabControl1.TabIndex = [System.Int32]29
 #TabPage7
 #
 $TabPage7.Controls.Add($TextBox35)
-$TabPage7.Controls.Add($Panel14)
 $TabPage7.Controls.Add($Panel26)
 $TabPage7.Controls.Add($Panel25)
 $TabPage7.Controls.Add($Button41)
@@ -1881,6 +1880,18 @@ $TextBox35.Name = [System.String]'TextBox35'
 $TextBox35.ScrollBars = [System.Windows.Forms.ScrollBars]::Vertical
 $TextBox35.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]361,[System.Int32]496))
 $TextBox35.TabIndex = [System.Int32]10
+#
+#Panel14
+#
+$Panel14.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
+$Panel14.Controls.Add($Button14)
+$Panel14.Controls.Add($LabelOverview)
+$Panel14.Controls.Add($Panel6)
+$Panel14.Controls.Add($Button13)
+$Panel14.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]6,[System.Int32]6))
+$Panel14.Name = [System.String]'Panel14'
+$Panel14.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]364,[System.Int32]91))
+$Panel14.TabIndex = [System.Int32]15
 #
 #Panel26
 #
@@ -2234,6 +2245,7 @@ $MaskedTextBox1.Text = [System.String]'sss'
 #TabPage1
 #
 $TabPage1.Controls.Add($TextBox16)
+$TabPage1.Controls.Add($Panel14)
 $TabPage1.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]4,[System.Int32]22))
 $TabPage1.Name = [System.String]'TabPage1'
 $TabPage1.Padding = (New-Object -TypeName System.Windows.Forms.Padding -ArgumentList @([System.Int32]3))
@@ -2249,18 +2261,6 @@ $TextBox16.Multiline = $true
 $TextBox16.Name = [System.String]'TextBox16'
 $TextBox16.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]378,[System.Int32]486))
 $TextBox16.TabIndex = [System.Int32]16
-#
-#Panel14
-#
-$Panel14.BorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
-$Panel14.Controls.Add($Button14)
-$Panel14.Controls.Add($LabelOverview)
-$Panel14.Controls.Add($Panel6)
-$Panel14.Controls.Add($Button13)
-$Panel14.Location = (New-Object -TypeName System.Drawing.Point -ArgumentList @([System.Int32]430,[System.Int32]285))
-$Panel14.Name = [System.String]'Panel14'
-$Panel14.Size = (New-Object -TypeName System.Drawing.Size -ArgumentList @([System.Int32]364,[System.Int32]91))
-$Panel14.TabIndex = [System.Int32]15
 #
 #TabPage2
 #
@@ -3202,11 +3202,11 @@ $Panel3.PerformLayout()
 $TabControl1.ResumeLayout($false)
 $TabPage7.ResumeLayout($false)
 $TabPage7.PerformLayout()
+$Panel14.ResumeLayout($false)
 $Panel26.ResumeLayout($false)
 $Panel25.ResumeLayout($false)
 $TabPage1.ResumeLayout($false)
 $TabPage1.PerformLayout()
-$Panel14.ResumeLayout($false)
 $TabPage2.ResumeLayout($false)
 $Panel18.ResumeLayout($false)
 $Panel19.ResumeLayout($false)
@@ -3368,7 +3368,6 @@ Add-Member -InputObject $FormOverview -Name LabelOverview -Value $LabelOverview 
 Add-Member -InputObject $FormOverview -Name TabControl1 -Value $TabControl1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage7 -Value $TabPage7 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TextBox35 -Value $TextBox35 -MemberType NoteProperty
-Add-Member -InputObject $FormOverview -Name Panel14 -Value $Panel14 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Panel26 -Value $Panel26 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label83 -Value $Label83 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Label82 -Value $Label82 -MemberType NoteProperty
@@ -3406,6 +3405,7 @@ Add-Member -InputObject $FormOverview -Name Label63 -Value $Label63 -MemberType 
 Add-Member -InputObject $FormOverview -Name MaskedTextBox1 -Value $MaskedTextBox1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage1 -Value $TabPage1 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TextBox16 -Value $TextBox16 -MemberType NoteProperty
+Add-Member -InputObject $FormOverview -Name Panel14 -Value $Panel14 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name TabPage2 -Value $TabPage2 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Panel18 -Value $Panel18 -MemberType NoteProperty
 Add-Member -InputObject $FormOverview -Name Panel19 -Value $Panel19 -MemberType NoteProperty
