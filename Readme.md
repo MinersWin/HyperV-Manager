@@ -17,7 +17,7 @@ Allows you to manage your Hyper-V clusters and VMs in a easy to understang GUI.
 ## Getting Started
 
 Here's how you can do it: Click on ```Clone or Download```, then on ```Download Zip```. Unpack the Zip on your desktop and double-click on ```HyperV-Manager```.
-* Security Password: MinersWin
+* Security Password: ```MinersWin```
 
 ### Requirements
 
