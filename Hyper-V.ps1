@@ -100,8 +100,6 @@ $ConfigPathSaveInTemp = $Config.Update.SaveInTemp -eq "YES"
 $ConfigPathThumbnailPath = $Config.Path.ThumbnailPath
 $configPathLogPath = $Config.Path.LogPath
 
-Write-Output $ConfigName $ConfigDirectoryName $ConfigVersion $ConfigBuild $ConfigLastUpdate $ConfigLastUpdateSearch $ConfigAuthor $ConfigCompanyName $ConfigDescription $ConfigCheckForUpdates $ConfigNewestVersion $ConfigUpdateWarn $ConfigUpdateDownload $ConfigUpdateScript $ConfigUpdateReplaceOldVersion $ConfigUpdateSaveOldVersion $ConfigUpdateNewLanguages $ConfigLanguage $ConfigDonate1 $ConfigDonate2 $ConfigAboutSite $ConfigMailSendTo $ConfigSMTPUsername $ConfigSMTPPassword $ConfigSMTPServer $ConfigSMTPPort $ConfigPathSaveInTemp $ConfigPathThumbnailPath $configPathLogPath
-
 #__________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 #Erstellung der Funktion Invoke-BalloonTip
 

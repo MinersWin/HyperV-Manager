@@ -15,7 +15,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/minerswin/HyperV-Manager?style=for-the-badge&logo=github)](https://github.com/minerswin/hyperv-manager/)
 [![GitHub watchers](https://img.shields.io/github/watchers/minerswin/HyperV-Manager?style=for-the-badge&logo=github)](https://github.com/minerswin/hyperv-manager/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/minerswins?style=for-the-badge&logo=twitter)](https://twitter.com/minerswins)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/855159d071d643d4920dfbeb7d42ea8a)](https://www.codacy.com/manual/MinersWin/HyperV-Manager?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MinersWin/HyperV-Manager&amp;utm_campaign=Badge_Grade)
+
 # PowerShell Hyper-V Manager V.2
 
 Allows you to manage your Hyper-V clusters and VMs in a easy to understang GUI.
