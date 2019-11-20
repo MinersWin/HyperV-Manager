@@ -14,7 +14,7 @@
 [![GitHub watchers](https://img.shields.io/github/watchers/minerswin/HyperV-Manager?style=social)](https://github.com/minerswin/hyperv-manager/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/minerswins?style=social)](https://twitter.com/minerswins)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/minerswin/HyperV-Manager)](https://github.com/MinersWin/HyperV-Manager/releases)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/minerswin/HyperV-Manager)](https://github.com/MinersWin/HyperV-Manager/commits/master)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/minerswin/HyperV-Manager))](https://github.com/MinersWin/HyperV-Manager/commits/master)
 [![Maintenance](https://img.shields.io/maintenance/yes/2020)]((https://www.hyper-v-manager.de/status/))
 # PowerShell Hyper-V Manager V.2
 
